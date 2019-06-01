@@ -21,31 +21,6 @@
 	<script src="./js/jquery-3.3.1.min.js"></script>
 	<script src="./js/jquery-ui.min.js"></script>
 	<script src="./js/common.js"></script>
-	<script>
-		$(function () {
-			var dateFormat = "yy-mm-dd",
-				from = $("#from")
-				.datepicker()
-				.on("change", function () {
-					to.datepicker("option", "minDate", getDate(this));
-				}),
-				to = $("#to").datepicker()
-				.on("change", function () {
-					from.datepicker("option", "maxDate", getDate(this));
-				});
-
-			function getDate(element) {
-				var date;
-				try {
-					date = $.datepicker.parseDate(dateFormat, element.value);
-				} catch (error) {
-					date = null;
-				}
-
-				return date;
-			}
-		});
-	</script>
 </head>
 
 <body>

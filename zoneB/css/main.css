@@ -758,9 +758,6 @@ h2 {
   .m1 .inner.col2 > ul > li:first-child {
     border-left: none;
   }
-  .m1 .inner.col2 > ul > li .btns.mt_space {
-    margin-top: 170px;
-  }
 }
 
 .m1 .menu_t1 ul {
@@ -898,6 +895,13 @@ h2 {
 
 .m1 .info_exp em {
   color: #000;
+}
+
+@media only screen and (min-width: 1280px) {
+  .m1 .info_exp {
+    font-size: 18px;
+    margin-top: 30px;
+  }
 }
 
 .m1 .text_list > li {
