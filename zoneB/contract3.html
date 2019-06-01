@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="세무앤, 세무사 비교 견적 어플리케이션">
+	<meta name="keywords" content="세무앤,세무사,비교견적,가격비교,세무사 견적,세무사 비교,세무사 추천,세무사 찾기">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="세무앤">
+	<meta property="og:url" content="http://www.semuand.com">
+	<meta property="og:description" content="세무앤, 좋은 세무사를 만나는 공식">
+	<meta property="og:image" content="http://www.semuand.com/resources/images/ad_icon.png">
+	<link rel="icon" href="../resources/images/favicon.ico">
+	<title>세무앤 파트너 : 계약관리-포인트내역</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto" rel="stylesheet">
+	<link href="./css/jquery-ui.min.css" rel="stylesheet">
+	<link href="./css/sub2.css" rel="stylesheet">
+
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<script src="./js/common.js"></script>
+	<script>
+		$(function () {
+			var dateFormat = "yy-mm-dd",
+				from = $("#from")
+				.datepicker()
+				.on("change", function () {
+					to.datepicker("option", "minDate", getDate(this));
+				}),
+				to = $("#to").datepicker()
+				.on("change", function () {
+					from.datepicker("option", "maxDate", getDate(this));
+				});
+
+			function getDate(element) {
+				var date;
+				try {
+					date = $.datepicker.parseDate(dateFormat, element.value);
+				} catch (error) {
+					date = null;
+				}
+
+				return date;
+			}
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="inner">
+			<button class="btn_gnb p_hide" title="메인메뉴 보기">
+				<span>
+					<i class="gl1"></i>
+					<i class="gl2"></i>
+					<i class="gl3"></i>
+				</span>
+			</button>
+			<h1><a href="index.html"><img src="images/logo.png" alt="세무앤 파트너"></a></h1>
+			<a href="notice.html" class="btn_notice p_hide" title="알림"><i>3</i></a>
+		</div>
+		<nav class="gnb">
+			<div class="inner">
+				<ul class="g1">
+					<li><a href="estimate.html">견적요청현황</a></li>
+					<li><a href="bidding.html">내입찰현황</a></li>
+					<li><a href="contract.html" class="on">계약관리</a></li>
+					<li><a href="mypage.html">내정보관리</a></li>
+				</ul>
+				<ul class="g2">
+					<li><a href="info.html">이용안내<i></i></a></li>
+					<li><a href="cs.html">고객센터<i></i></a></li>
+					<li class="notice m_hide"><a href="notice.html">알림<i>3</i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<h2 class="tit_sub">
+			계약관리
+		</h2>
+		<section class="b2">
+			<div class="inner t2">
+				<ul class="cate_btns col3">
+					<li><a href="contract.html">계약현황</a></li>
+					<li><a href="contract2.html">수수료관리</a></li>
+					<li><a href="contract3.html" class="on">포인트내역</a></li>
+				</ul>
+			</div>
+			<div class="inner t2">
+				<ul class="total">
+					<li class="w100">
+						<dl>
+							<dt>현재 ○○세무사님이 수수료 결제시 사용가능한 포인트</dt>
+							<dd><strong>123,000</strong>P</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="inner t2">
+				<div class="search_wrap">
+					<div class="search1">
+						<select>
+							<option>전체</option>
+							<option>고객상담</option>
+							<option>계약진행</option>
+							<option>계약완료</option>
+							<option>미성사</option>
+							<option>결제완료</option>
+						</select>
+					</div>
+					<div class="search2">
+						<p><input type="datetime" id="from" name="from"><i></i></p>
+						<span>~</span>
+						<p><input type="datetime" id="to" name="to"><i></i></p>
+					</div>
+					<div class="search3">
+						<p><input type="search"><i></i></p>
+						<button>검색</button>
+					</div>
+				</div>
+			</div>
+			<div class="inner">
+				<ul class="n_list">
+					<li>
+						<div class="pr3">
+							<p class="tit">발생일자 : 2019.03.20</p>
+							<p class="info p_tac">[낙찰] 입찰성공 축하</p>
+							<p class="exp">
+								<span>포인트 : <b>1,000</b>P</span>
+								<em>누계 <strong>213,000</strong>P</em>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="pr3">
+							<p class="tit">발생일자 : 2019.03.20</p>
+							<p class="info p_tac">[고객상담] 입찰성공 축하</p>
+							<p class="exp">
+								<span>포인트 : <b>1,000</b>P</span>
+								<em>누계 <strong>212,000</strong>P</em>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="pr3">
+							<p class="tit">발생일자 : 2019.03.20</p>
+							<p class="info p_tac">[포인트 환불] 결제취소</p>
+							<p class="exp">
+								<span>포인트 : <b>100,000</b>P</span>
+								<em>누계 <strong>211,000</strong>P</em>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="pr3">
+							<p class="tit">발생일자 : 2019.03.20</p>
+							<p class="info p_tac">[포인트 차감] 수수료 결제</p>
+							<p class="exp">
+								<span>포인트 : <b>-100,000</b>P</span>
+								<em>누계 <strong>111,000</strong>P</em>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="pr3">
+							<p class="tit">발생일자 : 2019.03.20</p>
+							<p class="info p_tac">[입찰] 비교견적 입찰</p>
+							<p class="exp">
+								<span>포인트 : <b>1,000</b>P</span>
+								<em>누계 <strong>211,000</strong>P</em>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="inner t2">
+				<div class="paging">
+					<button class="go_first" title="첫 페이지로"></button>
+					<button class="go_prev" title="이전 페이지로"></button>
+					<span>1/100</span>
+					<button class="go_next" title="다음 페이지로"></button>
+					<button class="go_last" title="마지막 페이지로"></button>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="inner">
+			<div class="tel">
+				<dl>
+					<dt>고객센터</dt>
+					<dd><strong>1588-1588</strong>오전9시 ~ 오후6시 (토/일/공휴일 제외)</dd>
+				</dl>
+			</div>
+			<div class="info">
+				<ul>
+					<li><span>전화 : 1555-1555</span> <span>팩스 : 02-2222-2222</span></li>
+					<li><span>대표메일 : semuand@semuand.com</span></li>
+					<li><span>대표 : 김형태</span> <span>사업자번호 : 999-99-99999</span></li>
+					<li><span>서울시 강남구 역삼동 853-12 6층</span></li>
+				</ul>
+				<p class="copy">COPYRIGHT 2019 SEMUAND. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

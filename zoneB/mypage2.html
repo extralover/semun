@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="세무앤, 세무사 비교 견적 어플리케이션">
+	<meta name="keywords" content="세무앤,세무사,비교견적,가격비교,세무사 견적,세무사 비교,세무사 추천,세무사 찾기">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="세무앤">
+	<meta property="og:url" content="http://www.semuand.com">
+	<meta property="og:description" content="세무앤, 좋은 세무사를 만나는 공식">
+	<meta property="og:image" content="http://www.semuand.com/resources/images/ad_icon.png">
+	<link rel="icon" href="../resources/images/favicon.ico">
+	<title>세무앤 파트너 : 내 정보 관리-세무사 소개</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto" rel="stylesheet">
+	<link href="./css/jquery-ui.min.css" rel="stylesheet">
+	<link href="./css/sub2.css" rel="stylesheet">
+
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<script src="./js/common.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="inner">
+			<button class="btn_gnb p_hide" title="메인메뉴 보기">
+				<span>
+					<i class="gl1"></i>
+					<i class="gl2"></i>
+					<i class="gl3"></i>
+				</span>
+			</button>
+			<h1><a href="index.html"><img src="images/logo.png" alt="세무앤 파트너"></a></h1>
+			<a href="notice.html" class="btn_notice p_hide" title="알림"><i>3</i></a>
+		</div>
+		<nav class="gnb">
+			<div class="inner">
+				<ul class="g1">
+					<li><a href="estimate.html">견적요청현황</a></li>
+					<li><a href="bidding.html">내입찰현황</a></li>
+					<li><a href="contract.html">계약관리</a></li>
+					<li><a href="mypage.html" class="on">내정보관리</a></li>
+				</ul>
+				<ul class="g2">
+					<li><a href="info.html">이용안내<i></i></a></li>
+					<li><a href="cs.html">고객센터<i></i></a></li>
+					<li class="notice m_hide"><a href="notice.html">알림<i>3</i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<h2 class="tit_sub">
+			내 정보 관리
+		</h2>
+		<section class="b2">
+			<div class="inner t2">
+				<ul class="cate_btns col3">
+					<li><a href="mypage.html">사업자정보</a></li>
+					<li><a href="mypage2.html" class="on">세무사소개</a></li>
+					<li><a href="mypage3.html">입찰안내문구</a></li>
+				</ul>
+			</div>
+			<div class="inner">
+				<h3>세무사 정보</h3>
+				<ul class="n_list">
+					<li>
+						<div class="col1">
+							<p class="tit">세무사 소개</p>
+							<div class="exp">
+								<textarea></textarea>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="col1">
+							<p class="tit">주요학력 및 경력</p>
+							<div class="exp">
+								<textarea></textarea>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="col1">
+							<p class="tit">사무실 사진<br> (간판, 외관, 내부 등)</p>
+							<div class="exp">
+								<div class="filebox preview-image">
+									<div class="file_wrap">
+										<input class="upload-name" value="파일선택" disabled="disabled">
+										<label for="input_file4">사진등록</label>
+										<input type="file" id="input_file4" class="upload-hidden">
+									</div>
+								</div>
+								<ul class="info">
+									<li>jpg, png, gif 확장자의 이미지 파일만 업로드 가능합니다.</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="col1">
+							<p class="tit">관심 견적</p>
+							<div class="exp">
+								<ul class="checkbox_list col2-4">
+									<li class="w100">
+										<input type="checkbox" name="p2" id="p2_0" class="check_all"> <label for="p2_0">전체선택</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p2" id="p2_1"> <label for="p2_1">기장대행</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p2" id="p2_2"> <label for="p2_2">부가세신고</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p2" id="p2_3"> <label for="p2_3">프리랜서신고</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p2" id="p2_4"> <label for="p2_4">양도소득세신고</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p2" id="p2_5"> <label for="p2_5">증여세신고</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p2" id="p2_6"> <label for="p2_6">상속세신고</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p2" id="p2_7"> <label for="p2_7">세무조사</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p2" id="p2_8"> <label for="p2_8">조세불복</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p2" id="p2_9"> <label for="p2_9">감사</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p2" id="p2_10"> <label for="p2_10">자문</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p2" id="p2_11"> <label for="p2_11">프리미엄</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="col1">
+							<p class="tit">관심지역 </p>
+							<div class="exp">
+								<ul class="checkbox_list col2-4">
+									<li class="w100">
+										<input type="checkbox" name="p3" id="p3_0" class="check_all"> <label for="p3_0">전체선택</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_1"> <label for="p3_1">서울시</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_2"> <label for="p3_2">경기도</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_3"> <label for="p3_3">인천시</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_4"> <label for="p3_4">부산시</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_5"> <label for="p3_5">대전시</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_6"> <label for="p3_6">대구시</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_7"> <label for="p3_7">울산시</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_8"> <label for="p3_8">세종시</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_9"> <label for="p3_9">광주시</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_10"> <label for="p3_10">강원도</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_11"> <label for="p3_11">충청북도</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_12"> <label for="p3_12">충청남도</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_13"> <label for="p3_13">경상북도</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_14"> <label for="p3_14">경상남도</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_15"> <label for="p3_15">전라북도</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_16"> <label for="p3_16">전라남도</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p3" id="p3_17"> <label for="p3_17">제주도</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="col1">
+							<p class="tit">전문분야</p>
+							<div class="exp">
+								<ul class="checkbox_list col2-4">
+									<li class="w100">
+										<input type="checkbox" name="p4" id="p4_0" class="check_all"> <label for="p4_0">전체선택</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p4" id="p4_1"> <label for="p4_1">음식점</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p4" id="p4_2"> <label for="p4_2">도소매(쇼핑몰)</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p4" id="p4_3"> <label for="p4_3">서비스</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p4" id="p4_4"> <label for="p4_4">학원</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p4" id="p4_5"> <label for="p4_5">제조업</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p4" id="p4_6"> <label for="p4_6">병원</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p4" id="p4_7"> <label for="p4_7">IT/기술</label>
+									</li>
+									<li>
+										<input type="checkbox" name="p4" id="p4_8"> <label for="p4_8">임대업</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="btns">
+				<a href="#" class="btn_l">취소</a>
+				<a href="#" class="btn_r">저장</a>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="inner">
+			<div class="tel">
+				<dl>
+					<dt>고객센터</dt>
+					<dd><strong>1588-1588</strong>오전9시 ~ 오후6시 (토/일/공휴일 제외)</dd>
+				</dl>
+			</div>
+			<div class="info">
+				<ul>
+					<li><span>전화 : 1555-1555</span> <span>팩스 : 02-2222-2222</span></li>
+					<li><span>대표메일 : semuand@semuand.com</span></li>
+					<li><span>대표 : 김형태</span> <span>사업자번호 : 999-99-99999</span></li>
+					<li><span>서울시 강남구 역삼동 853-12 6층</span></li>
+				</ul>
+				<p class="copy">COPYRIGHT 2019 SEMUAND. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

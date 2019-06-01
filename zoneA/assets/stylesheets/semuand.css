@@ -1,0 +1,607 @@
+@charset "utf-8";
+
+html,
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+}
+
+/* 공통 */
+.w_auto {
+    width: auto !important;
+}
+.w100 {
+    width: 100px !important;
+}
+.w150 {
+    width: 150px !important;
+}
+.w300 {
+    width: 300px !important;
+}
+
+.pd0 {
+    padding: 0 !important;
+}
+.mt5 {
+    margin-top: 5px;
+}
+.mt30 {
+    margin-top: 30px;
+}
+
+.ml20 {
+    margin-left: 20px !important;
+}
+
+/* 공통 */
+.page-header .right-wrapper {
+    float: right;
+    margin-right: 60px;
+}
+
+.logo-container img {
+    height: 35px;
+}
+
+.cont_tit {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #666;
+}
+
+.cont_tit:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+div.dataTables_paginate {
+    text-align: center;
+}
+
+.table>tbody>tr>th,
+.table>tbody>tr>td {
+    border-bottom: 1px solid #ddd;
+}
+
+.table.type2>tbody>tr>th,
+.table.type2>tbody>tr>td,
+.table.type3>tbody>tr>th,
+.table.type3>tbody>tr>td {
+    vertical-align: middle;
+}
+
+.table.type2>tbody>tr>th,
+.table.type3>tbody>tr>th {
+    background-color: #eee;
+    text-align: center;
+}
+
+.table.type3 {
+    width: 30%;
+    float: right;
+}
+
+.table>thead>tr>th {
+    background-color: #eee;
+    border-top: 2px solid #dddddd !important;
+    padding: 12px 5px;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.table>tbody>tr>td {
+    padding: 12px 5px;
+    word-break: keep-all;
+}
+
+.tbl_center td {
+    text-align: center;
+    /* cursor: pointer; */
+}
+
+/* .tbl_list tr:hover td {
+    background-color: #a38248;
+    color: #fff;
+} */
+.table.table-hover thead th {
+    background-color: #f3f3f3;
+}
+
+.input-daterange .input-group-addon:first-of-type {
+    border-left: solid #cccccc 1px;
+}
+
+.row.pop_detail {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.tabs-primary .nav-tabs li a,
+.tabs-primary .nav-tabs li a:hover {
+    border-left: #ddd solid 1px;
+}
+
+.panel-heading::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.panel-heading .panel-title {
+    float: left;
+    margin-top: 35px;
+}
+
+.panel-heading .panel-btn {
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.panel-heading .panel-widget {
+    float: right;
+    width: 340px;
+    overflow: hidden;
+}
+
+.panel-heading .panel-widget .panel-body {
+    width: 160px;
+    margin-left: 10px;
+    float: left;
+}
+
+.btn_center_wrap.mt50 {
+    margin-top: 50px;
+}
+
+.btn_center_wrap.mb50 {
+    margin-bottom: 50px;
+}
+
+.btn_center_wrap {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.btn_left_wrap {
+    text-align: left;
+    padding: 10px 0;
+}
+
+.btn_right_wrap {
+    text-align: right;
+    padding: 10px 0;
+}
+
+.ml_btn {
+    margin-left: 20px;
+}
+
+.well_info {
+    overflow: hidden;
+}
+
+.well_info li:nth-child(1) {
+    margin-left: 0;
+}
+
+.well_info li {
+    list-style: none;
+    float: left;
+    margin-left: 30px;
+}
+
+.table-responsive {
+    overflow-x: hidden;
+}
+
+.select_tit_wrap {
+    margin-bottom: 30px;
+}
+
+.detail_tit_wrap {
+    padding: 10px 0;
+    border-bottom: 2px solid #666;
+}
+
+.detail_tit {
+    margin: 5px 0 0 0;
+    color: #33353f;
+}
+
+.panel:nth-of-type(1) {
+    margin-bottom: 0;
+}
+
+.inB input,
+.inB select,
+.inB button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inline_txt {
+    min-width: 60px;
+    display: inline-block;
+    line-height: 34px;
+    padding: 0 5px;
+}
+
+.td_middle tbody tr td {
+    vertical-align: middle;
+}
+
+.table-responsive table tbody tr td {
+    margin-left: 50px;
+}
+
+.right_btn_wrap {
+    float: right;
+}
+
+.inline_check_wrap:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.inline_check_wrap label {
+    min-width: 150px;
+}
+
+.inline_check_wrap.check_lineheight label {
+    line-height: 34px;
+}
+
+.check_float {
+    float: left;
+}
+
+.check_float.ml {
+    margin-left: 10px;
+}
+
+.padding_add {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 5px 0;
+}
+
+.padding_add:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.tbl_inline_wrap {
+    margin: 5px 0;
+}
+
+.tbl_inline_wrap:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.radio_lineheight label {
+    line-height: 34px;
+}
+
+.txtbtn_wrap {
+    padding: 12px 12px;
+    background: #f3f3f3;
+}
+
+.txtbtn_wrap strong {
+    display: inline-block;
+    padding-right: 10px;
+    line-height: 34px;
+}
+
+.dataTables_wrapper .datatables-footer {
+    margin-bottom: 15px;
+}
+.dataTables_wrapper table thead th.sorting_disabled {
+  padding-right: 0 !important;
+}
+
+.radio-custom.center {
+    position: relative;
+    padding: 0 0 0 25px;
+    margin-bottom: 7px;
+    margin-top: 0;
+    display: inline-block;
+}
+
+.textarea_warp {
+    margin: 0 auto;
+}
+
+.float_clear {
+    float: none;
+}
+
+.tbl_space {
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.tbl_inline_txt {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.textarea_txt {
+    line-height: 74px;
+}
+
+.inp_byte {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.img_wrap img {
+    display: block;
+    margin: 0 auto;
+}
+
+.inline_wrap {
+    display: inline-block;
+}
+
+.pop_cont_wrap {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666;
+}
+
+.middle_wrap {
+    min-height: 774px;
+}
+
+.btn_block_wrap {
+    position: absolute;
+    top: 50%;
+    margin-top: -198px;
+    left: 0;
+    right: 0;
+}
+
+.btn_block_wrap button {
+    display: block;
+    margin: 15px auto;
+}
+
+.checkbox-custom.center input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -15px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.checkbox-custom.center label:before {
+    content: '';
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -9px;
+    width: 19px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 2px;
+    border: 1px solid #bbb;
+    background: #fff;
+}
+
+.checkbox-custom.center input[type="checkbox"]:checked+label:after {
+    position: absolute;
+    display: inline-block;
+    font-family: 'FontAwesome';
+    content: '\F00C';
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -11px;
+    font-size: 11px;
+    line-height: 1;
+    width: 16px;
+    height: 16px;
+    color: #333;
+}
+
+/* 사인인 */
+.body-sign {
+    max-width: 600px;
+}
+
+.body-sign .panel-sign .panel-title-sign .title {
+    background-color: #60584c;
+}
+
+.body-sign .panel-sign .panel-body {
+    border-top-color: #60584c;
+}
+
+body .btn-primary {
+    color: #000 !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #ffbb00;
+    border-color: #ffbb00;
+}
+
+body .btn-primary:hover {
+    color: #000;
+    border-color: #ffde00 !important;
+    background-color: #ffde00;
+}
+
+body .btn-primary:active,
+body .btn-primary:focus {
+    border-color: #ffde00 !important;
+    background-color: #ffde00;
+}
+
+/* 목록 */
+html.sidebar-left-collapsed.fixed .sidebar-left .nano {
+    background: #60584c;
+    box-shadow: -5px 0 0 #333333 inset;
+}
+
+.sidebar-left {
+    background: #60584c;
+}
+
+ul.nav-main>li.nav-active>a {
+    box-shadow: 2px 0 0 #ffbb00 inset;
+}
+
+ul.nav-main li a {
+    font-size: 16px;
+    color: #fff;
+}
+
+ul.nav-main li a:hover {
+    color: #ffde00 !important;
+}
+
+ul.nav-main li .nav-children li.nav-active>a {
+    color: #ffde00;
+}
+
+.page-header {
+    background: #60584c;
+    border-bottom: none;
+    border-left: 1px solid #3a3a3a;
+    box-shadow: 1px 3px 0 1px #cccccc;
+    height: 50px;
+    margin: -40px -40px 40px -40px;
+    padding: 0;
+}
+
+.page-header h2 {
+    border-bottom-color: #ffbb00;
+    font-size: 1.5em;
+}
+
+.page-header .breadcrumbs a,
+.page-header .breadcrumbs span {
+    color: #fff;
+    font-size: 1.0rem;
+}
+
+.pagination>li a {
+    color: #000;
+}
+
+.pagination>li a:hover {
+    color: #000;
+    border-color: #ddd;
+}
+
+html .pagination>li.active a,
+html.dark .pagination>li.active a {
+    background-color: #ffbb00;
+    border-color: #ffbb00;
+    color: #000;
+}
+
+html .pagination>li.active a:hover {
+    border-color: #ffde00;
+    background-color: #ffde00;
+    color: #000;
+}
+
+.datepicker table thead tr th,
+.datepicker table td {
+    font-size: 1.0rem;
+}
+
+/* 상세 */
+.widget-summary.widget-summary-sm .summary .title {
+    font-size: 1rem;
+}
+
+html body .tabs-primary .nav-tabs li a {
+    color: #60584c !important;
+}
+
+html body .tabs-primary .nav-tabs li.active a {
+    border-top-color: #ffbb00 !important;
+    color: #60584c !important;
+}
+
+html body .tabs-primary .nav-tabs li a:hover {
+    border-top-color: #ffbb00 !important;
+    color: #000 !important;
+}
+
+body .btn-info {
+    background-color: #a38248 !important;
+    border-color: #a38248 !important;
+}
+
+body .btn-info:hover {
+    background-color: #60584c !important;
+    border-color: #60584c !important;
+}
+
+.bg-primary {
+    background: #a38248;
+}
+
+.tab-content {
+    padding: 15px 0;
+}
+
+.radio-primary input[type="radio"]:checked+label:after {
+    background: #ffbb00;
+    box-shadow: 0px 0px 1px #a38248;
+}
+.checkbox-primary label:before {
+    background: #ffbb00 !important;
+    border-color: #a38248 !important;
+}
+.checkbox-primary label:after {
+    color: #000 !important;
+}
+table td img {
+    max-width: 100%;
+}
+
+.form-control {
+    padding: 4px 12px;
+    font-size: inherit;
+}
+html.dark .checkbox-primary label:before,
+.checkbox-primary label:before {
+    background: #ffbb00;
+    border-color: #a38248;
+}
+.ta_r {text-align: right !important;}
+
+.point i.fa-star {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #ccc;
+}
+.point i.fa-star.on {
+    color: #ffbb00;
+}
+.point button.fa-star {
+    background: transparent;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.point button.fa-star.on {
+    color: #ffbb00;
+}

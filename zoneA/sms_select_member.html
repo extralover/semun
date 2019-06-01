@@ -1,0 +1,372 @@
+<!doctype html>
+<html class="fixed">
+
+<head>
+	<!-- Basic -->
+	<meta charset="UTF-8">
+	<link rel="icon" href="../resources/images/favicon.ico">
+	<title>세무앤 관리자</title>
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<!-- Web Fonts  -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light"
+		rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet" type="text/css">
+
+	<!-- Vendor CSS -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
+	<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+	<link rel="stylesheet" href="assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.css" />
+	<link rel="stylesheet" href="assets/vendor/summernote/summernote.css" />
+	<link rel="stylesheet" href="assets/vendor/summernote/summernote-bs3.css" />
+
+	<!-- Specific Page Vendor CSS -->
+	<link rel="stylesheet" href="assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css" />
+	<link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
+	<link rel="stylesheet" href="assets/vendor/morris/morris.css" />
+
+	<link rel="stylesheet" href="assets/vendor/select2/select2.css" />
+	<link rel="stylesheet" href="assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="assets/stylesheets/theme.css" />
+
+	<!-- Skin CSS -->
+	<link rel="stylesheet" href="assets/stylesheets/skins/default.css" />
+
+	<!-- Theme Custom CSS -->
+	<link rel="stylesheet" href="assets/stylesheets/theme-custom.css">
+
+	<!-- Semuand CSS-->
+	<link rel="stylesheet" href="assets/stylesheets/semuand.css">
+
+	<!-- Head Libs -->
+	<script src="assets/vendor/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+	<div class="row pop_detail">
+		<section class="panel panel-detail">
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="table-responsive">
+							<h4 class="cont_tit">회원선택</h4>
+							<table class="table type2">
+								<colgroup>
+									<col width="90px">
+									<col width="">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>검색어</th>
+										<td>
+											<div class="col-md-4 w_auto">
+												<select class="form-control">
+													<option>이름</option>
+												</select>
+											</div>
+											<div class="col-md-6 w_auto">
+												<input type="text" class="form-control">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>회원구분</th>
+										<td>
+											<div class="col-sm-3 w_auto tbl_space">
+												<div class="radio-custom radio-primary">
+													<input type="radio" id="member_select_radio1" name="radio_approve"
+														checked>
+													<label for="member_select_radio1">전체</label>
+												</div>
+											</div>
+											<div class="col-sm-3 w_auto tbl_space">
+												<div class="radio-custom radio-primary">
+													<input type="radio" id="member_select_radio2" name="radio_approve">
+													<label for="member_select_radio2">일반회원</label>
+												</div>
+											</div>
+											<div class="col-sm-3 w_auto tbl_space">
+												<div class="radio-custom radio-primary">
+													<input type="radio" id="member_select_radio3" name="radio_approve">
+													<label for="member_select_radio3">세무사_일반</label>
+												</div>
+											</div>
+											<div class="col-sm-3 w_auto tbl_space">
+												<div class="radio-custom radio-primary">
+													<input type="radio" id="member_select_radio4" name="radio_approve">
+													<label for="member_select_radio4">세무사_프리미엄</label>
+												</div>
+											</div>
+											<div class="col-sm-3 w_auto tbl_space">
+												<div class="radio-custom radio-primary">
+													<input type="radio" id="member_select_radio5" name="radio_approve">
+													<label for="member_select_radio5">협력사_광고</label>
+												</div>
+											</div>
+											<div class="col-sm-3 w_auto tbl_space">
+												<div class="radio-custom radio-primary">
+													<input type="radio" id="member_select_radio6" name="radio_approve">
+													<label for="member_select_radio6">협력사_제휴</label>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>메일수신동의</th>
+										<td>
+											<div class="col-sm-3 w_auto tbl_space">
+												<div class="radio-custom radio-primary">
+													<input type="radio" id="member_select_radio7" name="radio_approve"
+														checked>
+													<label for="member_select_radio7">전체</label>
+												</div>
+											</div>
+											<div class="col-sm-3 w_auto tbl_space">
+												<div class="radio-custom radio-primary">
+													<input type="radio" id="member_select_radio8" name="radio_approve">
+													<label for="member_select_radio8">수신</label>
+												</div>
+											</div>
+											<div class="col-sm-3 w_auto tbl_space">
+												<div class="radio-custom radio-primary">
+													<input type="radio" id="member_select_radio9" name="radio_approve">
+													<label for="member_select_radio9">수신거부</label>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>SMS수신동의</th>
+										<td>
+											<div class="col-sm-3 w_auto tbl_space">
+												<div class="radio-custom radio-primary">
+													<input type="radio" id="member_select_radio10" name="radio_approve"
+														checked>
+													<label for="member_select_radio10">전체</label>
+												</div>
+											</div>
+											<div class="col-sm-3 w_auto tbl_space">
+												<div class="radio-custom radio-primary">
+													<input type="radio" id="member_select_radio11" name="radio_approve">
+													<label for="member_select_radio11">수신</label>
+												</div>
+											</div>
+											<div class="col-sm-3 w_auto tbl_space">
+												<div class="radio-custom radio-primary">
+													<input type="radio" id="member_select_radio12" name="radio_approve">
+													<label for="member_select_radio12">수신거부</label>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="btn_center_wrap">
+							<button type="button" class="btn btn-lg btn-primary">검색</button>
+						</div>
+
+						<div class="btn_left_wrap">
+							<button type="button" id="estimate_admin_bidding" class="btn btn-primary">검색</button>
+						</div>
+						<div class="table-responsive tbl_center">
+							<table class="table table-hover tbl_data_2">
+								<thead>
+									<tr>
+										<th>
+											<div class="checkbox-custom checkbox-primary center">
+												<input type="checkbox" id="member_select1_allcheck1">
+												<label for="member_select1_allcheck1"></label>
+											</div>
+										</th>
+										<th>번호</th>
+										<th>ID</th>
+										<th>이름</th>
+										<th>회원구분</th>
+										<th>이메일</th>
+										<th>전화번호</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="checkbox-custom checkbox-primary center">
+												<input type="checkbox" id="member_select1_check10">
+												<label for="member_select1_check10"></label>
+											</div>
+										</td>
+										<td>12</td>
+										<td>tses1212</td>
+										<td>김관우</td>
+										<td>세무사</td>
+										<td>tses1212@naver.com</td>
+										<td>010-1245-1245</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="checkbox-custom checkbox-primary center">
+												<input type="checkbox" id="member_select1_check9">
+												<label for="member_select1_check9"></label>
+											</div>
+										</td>
+										<td>11</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="checkbox-custom checkbox-primary center">
+												<input type="checkbox" id="member_select1_check8">
+												<label for="member_select1_check8"></label>
+											</div>
+										</td>
+										<td>10</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col-md-2 middle_wrap">
+						<div class="btn_block_wrap">
+							<button type="button" class="btn btn-lg btn-default">추가 +</button>
+							<button type="button" class="btn btn-lg btn-primary">선택 완료 V</button>
+							<button type="button" class="btn btn-lg btn-default">삭제 -</button>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<h4 class="cont_tit">선택회원리스트</h4>
+						<div class="table-responsive tbl_center">
+							<table class="table table-hover tbl_data_2">
+								<thead>
+									<tr>
+										<th>
+											<div class="checkbox-custom checkbox-primary center">
+												<input type="checkbox" id="member_select2_allcheck1">
+												<label for="member_select2_allcheck1"></label>
+											</div>
+										</th>
+										<th>번호</th>
+										<th>ID</th>
+										<th>이름</th>
+										<th>회원구분</th>
+										<th>이메일</th>
+										<th>전화번호</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="checkbox-custom checkbox-primary center">
+												<input type="checkbox" id="member_select2_check10">
+												<label for="member_select2_check10"></label>
+											</div>
+										</td>
+										<td>12</td>
+										<td>tses1212</td>
+										<td>김관우</td>
+										<td>세무사</td>
+										<td>tses1212@naver.com</td>
+										<td>010-1245-1245</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="checkbox-custom checkbox-primary center">
+												<input type="checkbox" id="member_select2_check9">
+												<label for="member_select2_check9"></label>
+											</div>
+										</td>
+										<td>11</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="checkbox-custom checkbox-primary center">
+												<input type="checkbox" id="member_select2_check8">
+												<label for="member_select2_check8"></label>
+											</div>
+										</td>
+										<td>10</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="btn_center_wrap">
+					<button type="button" class="btn btn-lg btn-default">취소</button>
+					<button type="button" class="btn btn-lg btn-primary">선택완료</button>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	<!-- Vendor -->
+	<script src="assets/vendor/jquery/jquery.js"></script>
+	<script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+	<script src="assets/vendor/nanoscroller/nanoscroller.js"></script>
+	<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
+	<script src="assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+
+	<!-- Specific Page Vendor -->
+	<script src="assets/vendor/jquery-autosize/jquery.autosize.js"></script>
+	<script src="assets/vendor/select2/select2.js"></script>
+	<script src="assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+	<script src="assets/vendor/jquery-datatables/extras/TableTools/js/dataTables.tableTools.min.js"></script>
+	<script src="assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
+	<script src="assets/vendor/summernote/summernote.js"></script>
+
+	<!-- Theme Base, Components and Settings -->
+	<script src="assets/javascripts/theme.js"></script>
+
+	<!-- Theme Custom -->
+	<script src="assets/javascripts/theme.custom.js"></script>
+
+	<!-- Theme Initialization Files -->
+	<script src="assets/javascripts/theme.init.js"></script>
+
+	<!-- Examples -->
+	<script src="assets/javascripts/tables/examples.datatables.default.js"></script>
+	<script>
+		$("#estimate_admin_bidding").on("click", function () {
+			var pop_width = $(window).width() - 20;
+			var pop_height = $(window).height() - 50;
+			var url = "./estimate_admin_bidding.html";
+			var name = "";
+			var specs = "width=" + pop_width + ", height=" + pop_height + ", top=50, left=10, resizable=yes";
+			window.open(url, name, specs);
+			return false;
+		});
+	</script>
+</body>
+
+</html>

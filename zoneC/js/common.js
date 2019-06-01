@@ -1,0 +1,296 @@
+$(document).ready(function () {
+	// gnb 버튼
+	$(".btn_gnb").on("click", function () {
+		if ($(this).hasClass("on")) {
+			if ($(window).width() <= 1280) {
+				$("body").css({
+					"height": "auto",
+					"overflow": "visible"
+				});
+				$(".gnb").removeClass("on");
+				setTimeout(function () {
+					$(".btn_gnb").removeClass("on");
+					$("header").removeClass("menu");
+				}, 310)
+			}
+		} else {
+			if ($(window).width() <= 1280) {
+				$("body").css({
+					"height": "100%",
+					"overflow": "hidden"
+				});
+				$("header").addClass("menu");
+				$(".btn_gnb").addClass("on");
+				$(".gnb").addClass("on");
+			}
+			
+		}
+	});
+
+	// 비교견적 신청
+	// 견적요청 단계
+	$(".c2 .radio_list label").on("click", function () {
+		$(".btn_next").addClass("on");
+	});
+	// 정보입력 단계
+	// 팝업 띄우기
+	$(".c2 .check_list label").on("click", function () {
+		$("body").css({
+			"height": "100%",
+			"overflow": "hidden"
+		});
+		$(".c2_pop").show();
+		$(".c2_pop .radio_list_pop").hide();
+		$(".c2_pop h3").html($(this).find(".bt").text());
+
+		if ($(this).attr("for") == "btn_address") { // 주소
+			$(".c2_pop .radio_list_pop[id='pop_address1']").show();
+		} else {
+			var btn_id = $(this).attr("for").substring(3);
+			$(".c2_pop .radio_list_pop[id='pop_i" + btn_id + "']").show();
+		}
+	});
+	// 팝업값 받아 넣기 (주소제외 radio)
+	$(".c2_pop .radio_list_pop[id^='pop_i'] label").on("click", function () {
+		var pop_id = $(this).parent().parent().attr("id").substring(5);
+		$("body").css({
+			"height": "auto",
+			"overflow": "visible"
+		});
+		$(".c2_pop").hide();
+		$(".c2_pop .radio_list_pop[id^='pop_i'] label").removeClass("on");
+		
+		if ( !($(this).find("input").hasClass("none")) ) {
+			$(this).addClass("on");
+			$(".c2 .check_list input[id='p1_" + pop_id + "']").attr("checked", true);
+			$(".c2 .check_list input[id='p1_" + pop_id + "']").siblings("label").find(".bd").html($(this).text());
+		} else {
+			$(".c2 .check_list input[id='p1_" + pop_id + "']").attr("checked", false);
+			$(".c2 .check_list input[id='p1_" + pop_id + "']").siblings("label").find(".bd").html("");
+		}
+
+		if ($("input.required").length == $("input.required:checked").length) {
+			$(".btn_next").addClass("on");
+		}
+	});
+	// 팝업값 받아 넣기 (select)
+	$(".c2_pop .radio_list_pop[id^='pop_i'] .btn_select").on("click", function () {
+		var pop_id = $(this).parent().parent().attr("id").substring(5);
+		$("body").css({
+			"height": "auto",
+			"overflow": "visible"
+		});
+		$(".c2_pop").hide();
+		$(".c2_pop .radio_list_pop[id^='pop_i'] label").removeClass("on");
+
+		var selectYear = $(this).parent().find(".dyear option:selected").val();
+		var selectMonth = $(this).parent().find(".dmonth option:selected").val();
+		var selectDate = $(this).parent().find(".ddate option:selected").val();
+
+		var selectValue = selectYear + "-" + selectMonth + "-" + selectDate;
+		$(".c2 .check_list input[id='p1_" + pop_id + "']").attr("checked", true);
+		$(".c2 .check_list input[id='p1_" + pop_id + "']").siblings("label").find(".bd").html(selectValue);
+	});
+
+	// 팝업값 받아 넣기 (textarea)
+	$(".c2_pop .radio_list_pop[id^='pop_i'] .btn_textarea").on("click", function () {
+		var pop_id = $(this).parent().parent().attr("id").substring(5);
+		$("body").css({
+			"height": "auto",
+			"overflow": "visible"
+		});
+		$(".c2_pop").hide();
+		$(".c2_pop .radio_list_pop[id^='pop_i'] label").removeClass("on");
+
+		var textValue = $(this).parent().find("textarea").val();
+		$(".c2 .check_list input[id='p1_" + pop_id + "']").attr("checked", true);
+		$(".c2 .check_list input[id='p1_" + pop_id + "']").siblings("label").find(".bd").html(textValue);
+	});
+
+	// 팝업값 받아 넣기 (상세주소)
+	$(".c2_pop .radio_list_pop[id^='pop_i'] .btn_inputs").on("click", function () {
+		var pop_id = $(this).parent().parent().attr("id").substring(5);
+		$("body").css({
+			"height": "auto",
+			"overflow": "visible"
+		});
+		$(".c2_pop").hide();
+		$(".c2_pop .radio_list_pop[id^='pop_i'] label").removeClass("on");
+
+		var postcodeValue = $(this).parent().find("#postcode").val();
+		var addressValue = $(this).parent().find("#address").val();
+		var detailaddressValue = $(this).parent().find("#detailAddress").val();
+		var extraaddressValue = $(this).parent().find("#extraAddress").val();
+
+		var textValue = "[" + postcodeValue + "] " + addressValue + " " + detailaddressValue + " " + extraaddressValue;
+
+		$(".c2 .check_list input[id='p1_" + pop_id + "']").attr("checked", true);
+		$(".c2 .check_list input[id='p1_" + pop_id + "']").siblings("label").find(".bd").html(textValue);
+	});
+
+	// 간이주소 1단계
+	$(".c2_pop .radio_list_pop[id='pop_address1'] label").on("click", function () {
+		var address1_id = $(this).find("input").attr("id").substring(4);
+		$(".c2_pop .radio_list_pop[id='pop_address1']").hide();
+		$(".c2_pop .radio_list_pop[id='pop_address2_" + address1_id + "']").show();
+		$(".c2_pop .radio_list_pop[id='pop_address1'] label").removeClass("on");
+		$(this).addClass("on");
+		$(".c2 .check_list input[id='btn_address']").siblings("label").find(".bd.a1").html($(this).text());
+	});
+	// 간이주소 2단계
+	$(".c2_pop .radio_list_pop[id^='pop_address2'] label").on("click", function () {
+		$("body").css({
+			"height": "auto",
+			"overflow": "visible"
+		});
+		$(".c2_pop").hide();
+		$(".c2_pop .radio_list_pop[id^='pop_address2'] label").removeClass("on");
+		$(this).addClass("on");
+		$(".c2 .check_list input[id='btn_address']").attr("checked", true);
+		$(".c2 .check_list input[id='btn_address']").siblings("label").find(".bd.a2").html($(this).text());
+
+		if ($("input.required").length == $("input.required:checked").length) {
+			$(".btn_next").addClass("on");
+		}
+	});
+	// 기타
+	// $(".c2_pop .radio_list_pop .etc_wrap button").on("click", function () {
+	// 	var pop_id = $(this).parent().parent().attr("id").substring(5);
+	// 	$("body").css({
+	// 		"height": "auto",
+	// 		"overflow": "visible"
+	// 	});
+	// 	$(".c2_pop").hide();
+	// 	$(".c2 .btn_list button").eq(pop_id - 1).addClass("comp");
+	// 	$(".c2 .btn_list button").eq(pop_id - 1).find(".bd").html($(this).siblings("textarea").val());
+	// });
+
+	// 특이사항 및 문의사항
+	$(".add_question textarea").on("focus", function () {
+		$(window).scrollTop($(document).height());
+	});
+	$(".add_question textarea").on("keyup", function (e) {
+		var content = $(this).val();
+		$(this).height(((content.split('\n').length + 1) * 1.5) + "em");
+		$(".add_question .counter").html(content.length + "/300");
+
+		if (content != 0) {
+			$(this).parent().addClass("on");
+		} else {
+			$(this).parent().removeClass("on");
+		}
+	});
+	$(".add_question textarea").keyup();
+
+	// 팝업 닫기
+	$(".c2_pop .btn_pop").on("click", function () {
+		$("body").css({
+			"height": "auto",
+			"overflow": "visible"
+		});
+		$(".c2_pop").hide();
+	});
+
+	// 인증단계
+	$(".c2 .text_list input").on("keyup", function () {
+		if ($(".terms_list").length) {
+			if (($("input[type='text'].required").val() != "") && ($("input[type='tel'].required").val() != "") && ($("input[type='checkbox'].required").is(":checked"))) {
+				$(".btn_next").addClass("on");
+			} else {
+				$(".btn_next").removeClass("on");
+			}
+		} else {
+			if (($("input[type='text'].required").val() != "") && ($("input[type='tel'].required").val() != "")) {
+				$(".btn_next").addClass("on");
+			} else {
+				$(".btn_next").removeClass("on");
+			}
+		}
+	});
+	$(".c2 .terms_list input").on("click", function () {
+		if ( ($("input[type='text'].required").val() != "") && ($("input[type='tel'].required").val() != "") && ($("input[type='checkbox'].required").is(":checked")) ) {
+			$(".btn_next").addClass("on");
+		} else {
+			$(".btn_next").removeClass("on");
+		}
+		var thisTop = $(this).siblings("label").position().top;
+		$(window).scrollTop(thisTop);
+	});
+
+	// 세무사 정보
+	$(".box_list .btn_l").on("click", function () {
+		$("body").css({
+			"height": "100%",
+			"overflow": "hidden"
+		});
+		$(".b2_pop").show();
+	});
+
+	// 팝업 닫기
+	$(".b2_pop .btn_pop").on("click", function () {
+		$("body").css({
+			"height": "auto",
+			"overflow": "visible"
+		});
+		$(".b2_pop").hide();
+	});
+
+	// 자주 묻는 질문
+	$(".n_list .pr3 dt button").on("click", function () {
+		if ($(this).parent().parent(".pr3").hasClass("on")) {
+			$(this).parent().parent(".pr3").removeClass("on");
+		} else {
+			$(".n_list .pr3").removeClass("on");
+			$(this).parent().parent(".pr3").addClass("on");
+		}
+	});
+});
+
+// 주소 입력
+function execDaumPostcode() {
+	new daum.Postcode({
+		oncomplete: function (data) {
+			// 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+			// 각 주소의 노출 규칙에 따라 주소를 조합한다.
+			// 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+			var addr = ''; // 주소 변수
+			var extraAddr = ''; // 참고항목 변수
+
+			//사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+			if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+				addr = data.roadAddress;
+			} else { // 사용자가 지번 주소를 선택했을 경우(J)
+				addr = data.jibunAddress;
+			}
+
+			// 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+			if (data.userSelectedType === 'R') {
+				// 법정동명이 있을 경우 추가한다. (법정리는 제외)
+				// 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+				if (data.bname !== '' && /[동|로|가]$/g.test(data.bname)) {
+					extraAddr += data.bname;
+				}
+				// 건물명이 있고, 공동주택일 경우 추가한다.
+				if (data.buildingName !== '' && data.apartment === 'Y') {
+					extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+				}
+				// 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+				if (extraAddr !== '') {
+					extraAddr = ' (' + extraAddr + ')';
+				}
+				// 조합된 참고항목을 해당 필드에 넣는다.
+				document.getElementById("extraAddress").value = extraAddr;
+
+			} else {
+				document.getElementById("extraAddress").value = '';
+			}
+
+			// 우편번호와 주소 정보를 해당 필드에 넣는다.
+			document.getElementById('postcode').value = data.zonecode;
+			document.getElementById("address").value = addr;
+			// 커서를 상세주소 필드로 이동한다.
+			document.getElementById("detailAddress").focus();
+		}
+	}).open();
+}

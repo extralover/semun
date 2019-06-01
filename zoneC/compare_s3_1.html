@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="세무앤, 세무사 비교 견적 어플리케이션">
+	<meta name="keywords" content="세무앤,세무사,비교견적,가격비교,세무사 견적,세무사 비교,세무사 추천,세무사 찾기">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="세무앤">
+	<meta property="og:url" content="http://www.semuand.com">
+	<meta property="og:description" content="세무앤, 좋은 세무사를 만나는 공식">
+	<meta property="og:image" content="http://www.semuand.com/resources/images/ad_icon.png">
+	<link rel="icon" href="../resources/images/favicon.ico">
+	<title>세무앤 : 비교견적 신청</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto" rel="stylesheet">
+	<link href="./css/sub1.css" rel="stylesheet">
+
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/common.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="inner">
+			<button class="btn_gnb p_hide" title="메인메뉴 보기">
+				<span>
+					<i class="gl1"></i>
+					<i class="gl2"></i>
+					<i class="gl3"></i>
+				</span>
+			</button>
+			<h1><a href="index.html"><img src="images/logo.png" alt="세무앤"></a></h1>
+			<a href="notice.html" class="btn_notice p_hide" title="알림"><i>3</i></a>
+		</div>
+		<nav class="gnb">
+			<div class="inner">
+				<ul class="g1">
+					<li class="m_hide"><a href="compare_s2.html">기장/신고대행</a></li>
+					<li class="m_hide"><a href="compare_s2.html">양도/상속/증여</a></li>
+					<li class="m_hide"><a href="compare_s2.html">세무조사</a></li>
+					<li class="m_hide"><a href="compare_s2.html">회계감사</a></li>
+					<li class="w50"><a href="mypage.html" class="btn_my">내 견적 요청 현황</a></li>
+					<li class="w50"><a href="compare.html" class="btn_compare">비교견적 신청</a></li>
+					<!-- <li class="imp"><a href="premium.html">프리미엄 서비스</a></li> -->
+					<li class="w100 p_hide"><a href="recommend.html" class="btn_recomm"><i></i> 추천인 보기</a></li>
+				</ul>
+				<ul class="g2">
+					<li><a href="info.html">이용안내<i></i></a></li>
+					<li><a href="company.html">회사소개<i></i></a></li>
+					<li><a href="cowith.html">제휴문의<i></i></a></li>
+					<li><a href="announce.html">공지사항<i></i></a></li>
+					<li><a href="cs.html">고객센터<i></i></a></li>
+					<li><a href="https://blog.naver.com/extralover" target="_blank">세무 이야기<i></i></a></li>
+					<li class="m_hide"><a href="recommend.html">추천인 보기<i></i></a></li>
+					<li class="notice m_hide"><a href="notice.html">알림<i>3</i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<h2 class="tit_sub t1">
+			등록하실 정보를<br> 입력해 주세요
+		</h2>
+		<section class="c1">
+			<div class="inner">
+				<ol class="step_list">
+					<li class="past">
+						<b></b>
+						<i></i>
+						<span>견적요청</span>
+					</li>
+					<li class="on">
+						<b></b>
+						<i></i>
+						<span>정보입력</span>
+					</li>
+					<li class="">
+						<b></b>
+						<i></i>
+						<span>인증</span>
+					</li>
+					<li class="">
+						<b></b>
+						<i></i>
+						<span>신청완료</span>
+					</li>
+				</ol>
+			</div>
+		</section>
+		<section class="c2">
+			<div class="inner">
+				<ul class="check_list">
+					<li>
+						<input type="checkbox" name="p1" id="p1_1" disabled="disabled" class="required">
+						<label for="p1_1">
+							<span class="bt">(필수) 사업자 유형</span> <span class="bd"></span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="p1" id="p1_2" disabled="disabled" class="required">
+						<label for="p1_2">
+							<span class="bt">(필수) 과세 유형</span> <span class="bd"></span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="p1" id="btn_address" disabled="disabled" class="required">
+						<label for="btn_address">
+							<span class="bt">(필수) 사업장 지역</span> <span class="bd a1"></span> <span class="bd a2"></span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="p1" id="p1_4" disabled="disabled">
+						<label for="p1_4">
+							<span class="bt">업종</span> <span class="bd"></span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="p1" id="p1_5" disabled="disabled">
+						<label for="p1_5">
+							<span class="bt">매출액</span> <span class="bd"></span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="p1" id="p1_6" disabled="disabled">
+						<label for="p1_6">
+							<span class="bt">4대보험 가입 직원수</span> <span class="bd"></span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="p1" id="p1_7" disabled="disabled">
+						<label for="p1_7">
+							<span class="bt">기간유형</span> <span class="bd"></span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="p1" id="p1_11" disabled="disabled">
+						<label for="p1_11">
+							<span class="bt">세무사 선호 조건</span> <span class="bd"></span>
+						</label>
+					</li>
+					<li class="w100">
+						<div class="add_question">
+							<textarea maxlength="300" placeholder="추가 문의 사항"></textarea>
+							<p><span class="counter">0/300</span></p>
+						</div>
+					</li>
+				</ul>
+				<div class="btns col2">
+					<a href="compare_s2.html" class="btn_prev">이전</a>
+					<a href="compare_s4.html" class="btn_next">다음</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="c2_pop">
+			<div class="pop_header">
+				<button class="btn_pop" title="정보입력창 닫기">
+					<span><i class="pl1"></i><i class="pl2"></i><i class="pl3"></i></span>
+				</button>
+				<h3>정보입력</h3>
+			</div>
+			<div class="pop_in">
+				<ul id="pop_i1" class="radio_list_pop">
+					<li>
+						<label><input type="radio" name="p21" id="p21_1">개인 사업자</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p21" id="p21_2">법인 사업자</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p21" id="p21_3">개인</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p21" id="p21_4">기타</label>
+					</li>
+				</ul>
+				<ul id="pop_i2" class="radio_list_pop">
+					<li>
+						<label><input type="radio" name="p22" id="p22_1">일반</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p22" id="p22_2">간이</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p22" id="p22_3">면세 등 기타</label>
+					</li>
+				</ul>
+				
+				<ul id="pop_i4" class="radio_list_pop">
+					<li>
+						<label><input type="radio" name="p24" id="p24_1">음식점</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p24" id="p24_2">도소매 (쇼핑몰)</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p24" id="p24_3">서비스</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p24" id="p24_4">학원</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p24" id="p24_5">제조업</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p24" id="p24_6">병원</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p24" id="p24_7">IT/기술</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p24" id="p24_8">임대업</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p24" id="p24_9">기타</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p24" id="p24_10" class="none">선택안함</label>
+					</li>
+				</ul>
+				<ul id="pop_i5" class="radio_list_pop">
+					<li>
+						<label><input type="radio" name="p25" id="p25_1">7천5백만원 미만</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p25" id="p25_2">7천5백만원 ~ 1억5천만원</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p25" id="p25_3">1억5천만원 ~ 3억원</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p25" id="p25_4">3억원 ~ 6억원</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p25" id="p25_5">6억원 ~ 10억원</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p25" id="p25_6">10억원 이상</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p25" id="p25_7" class="none">선택안함</label>
+					</li>
+				</ul>
+				<ul id="pop_i6" class="radio_list_pop">
+					<li>
+						<label><input type="radio" name="p26" id="p26_1">없음</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p26" id="p26_2">1명</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p26" id="p26_3">2명</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p26" id="p26_4">3명</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p26" id="p26_5">4명</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p26" id="p26_6">5명</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p26" id="p26_7">6명 이상</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p26" id="p26_8" class="none">선택안함</label>
+					</li>
+				</ul>
+				<ul id="pop_i7" class="radio_list_pop">
+					<li>
+						<label><input type="radio" name="p27" id="p27_1">기한 전 신고</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p27" id="p27_2">기한 후 신고</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p27" id="p27_4" class="none">선택안함</label>
+					</li>
+				</ul>
+				<ul id="pop_i21" class="radio_list_pop">
+					<li>
+						<label><input type="radio" name="p221" id="p221_1">아파트</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p221" id="p221_2">단독주택(다가구)</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p221" id="p221_3">다세대(빌라)</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p221" id="p221_4">겸용주택상가</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p221" id="p221_5">오피스텔</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p221" id="p221_6">토지</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p221" id="p221_7">재건축아파트</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p221" id="p221_8">분양권</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p221" id="p221_9">기타</label>
+					</li>
+				</ul>
+				<ul id="pop_i22" class="radio_list_pop">
+					<li>
+						<select class="dtype">
+							<option>양력</option>
+							<option value="(+)">양력</option>
+							<option value="(-)">음력</option>
+						</select>
+						<br>
+						<select class="dyear">
+							<option vaule="">년</option>
+							<option value="2014">2014년</option>
+							<option value="2015">2015년</option>
+							<option value="2016">2016년</option>
+							<option value="2017">2017년</option>
+							<option value="2018">2018년</option>
+							<option value="2019">2019년</option>
+							<option value="2020">2020년</option>
+							<option vaule="">모름</option>
+						</select>
+						<select class="dmonth">
+							<option vaule="">월</option>
+							<option value="01">1월</option>
+							<option value="02">2월</option>
+							<option value="03">3월</option>
+							<option value="04">4월</option>
+							<option value="05">5월</option>
+							<option value="06">6월</option>
+							<option value="07">7월</option>
+							<option value="08">8월</option>
+							<option value="09">9월</option>
+							<option value="10">10월</option>
+							<option value="11">11월</option>
+							<option value="12">12월</option>
+							<option vaule="">모름</option>
+						</select>
+						<select class="ddate">
+							<option vaule="">일</option>
+							<option value="01">1일</option>
+							<option value="02">2일</option>
+							<option value="03">3일</option>
+							<option vaule="">모름</option>
+						</select>
+						<button class="btn_select">날짜 입력</button>
+					</li>
+					<li>
+						<label><input type="radio" name="p222" id="p222_2">모름</label>
+					</li>
+				</ul>
+				<ul id="pop_i23" class="radio_list_pop">
+					<li>
+						<textarea placeholder="주소를 직접 입력해주세요" id="p223_1"></textarea>
+						<button class="btn_textarea">주소 입력</button>
+					</li>
+					<li>
+						<label><input type="radio" name="p223" id="p223_2">모름</label>
+					</li>
+				</ul>
+				<ul id="pop_i24" class="radio_list_pop">
+					<li>
+						<textarea placeholder="매도가액을 직접 입력해주세요" id="p224_1"></textarea>
+						<button class="btn_textarea">금액 입력</button>
+					</li>
+					<li>
+						<label><input type="radio" name="p224" id="p224_2">모름</label>
+					</li>
+				</ul>
+				<ul id="pop_i25" class="radio_list_pop">
+					<li>
+						<textarea placeholder="취득가액 직접 입력해주세요" id="p225_1"></textarea>
+						<button class="btn_textarea">금액 입력</button>
+					</li>
+					<li>
+						<label><input type="radio" name="p225" id="p225_2">모름</label>
+					</li>
+				</ul>
+
+				<ul id="pop_i31" class="radio_list_pop">
+					<li>
+						<label><input type="radio" name="p231" id="p231_1">모르겠음</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p231" id="p231_2">1억원 이하</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p231" id="p231_3">1억원~5억원 이하</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p231" id="p231_4">5억원~10억원</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p231" id="p231_5">10억원~30억원</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p231" id="p231_6">30억원 초과</label>
+					</li>
+				</ul>
+				<ul id="pop_i32" class="radio_list_pop">
+					<li>
+						<textarea placeholder="주소를 직접 입력해주세요" id="p232_1"></textarea>
+						<button class="btn_textarea">주소 입력</button>
+					</li>
+					<li>
+						<label><input type="radio" name="p232" id="p232_2">모름</label>
+					</li>
+				</ul>
+				<ul id="pop_i33" class="radio_list_pop">
+					<li>
+						<select class="dtype">
+							<option>양력</option>
+							<option value="(+)">양력</option>
+							<option value="(-)">음력</option>
+						</select>
+						<br>
+						<select class="dyear">
+							<option vaule="">년</option>
+							<option value="2014">2014년</option>
+							<option value="2015">2015년</option>
+							<option value="2016">2016년</option>
+							<option value="2017">2017년</option>
+							<option value="2018">2018년</option>
+							<option value="2019">2019년</option>
+							<option value="2020">2020년</option>
+							<option vaule="">모름</option>
+						</select>
+						<select class="dmonth">
+							<option vaule="">월</option>
+							<option value="01">1월</option>
+							<option value="02">2월</option>
+							<option value="03">3월</option>
+							<option value="04">4월</option>
+							<option value="05">5월</option>
+							<option value="06">6월</option>
+							<option value="07">7월</option>
+							<option value="08">8월</option>
+							<option value="09">9월</option>
+							<option value="10">10월</option>
+							<option value="11">11월</option>
+							<option value="12">12월</option>
+							<option vaule="">모름</option>
+						</select>
+						<select class="ddate">
+							<option vaule="">일</option>
+							<option value="01">1일</option>
+							<option value="02">2일</option>
+							<option value="03">3일</option>
+							<option vaule="">모름</option>
+						</select>
+						<button class="btn_select">날짜 입력</button>
+					</li>
+					<li>
+						<label><input type="radio" name="p233" id="p233_2">모름</label>
+					</li>
+				</ul>
+
+				<ul id="pop_i41" class="radio_list_pop">
+					<li>
+						<label><input type="radio" name="p241" id="p241_1">부동산</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p241" id="p241_9">기타</label>
+					</li>
+				</ul>
+				<ul id="pop_i42" class="radio_list_pop">
+					<li>
+						<label><input type="radio" name="p242" id="p242_1">모르겠음</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p242" id="p242_2">1억원 이하</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p242" id="p242_3">1억원~5억원 이하</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p242" id="p242_4">5억원~10억원</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p242" id="p242_5">10억원~30억원</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p242" id="p242_6">30억원 초과</label>
+					</li>
+				</ul>
+				<ul id="pop_i43" class="radio_list_pop">
+					<li>
+						<label><input type="radio" name="p243" id="p243_1">자녀</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p243" id="p243_9">기타</label>
+					</li>
+				</ul>
+
+				<ul id="pop_i11" class="radio_list_pop">
+					<li>
+						<label><input type="radio" name="p31" id="p31_1">위치(가까운 거리)</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p31" id="p31_2">금액(저렴한 비용)</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p31" id="p31_3">전문성</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p31" id="p31_4" class="none">선택안함</label>
+					</li>
+				</ul>
+
+				<ul id="pop_address1" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23" id="p23_1">서울시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_2">경기도</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_3">인천시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_4">부산시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_5">대전시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_6">대구시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_7">울산시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_8">세종시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_9">광주시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_10">강원도</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_11">충청북도</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_12">충청남도</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_13">경상북도</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_14">경상남도</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_15">전라북도</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_16">전라남도</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23" id="p23_17">제주도</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_1" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_1">강남구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_2">강동구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_3">강북구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_4">강서구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_5">관악구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_6">광진구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_7">구로구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_8">금천구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_9">노원구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_10">도봉구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_11">동대문구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_12">동작구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_13">마포구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_14">서대문구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_15">서초구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_16">성동구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_17">성북구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_18">송파구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_19">양천구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_20">영등포구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_21">용산구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_22">은평구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_23">종로구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_24">중구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub1" id="p23_sub1_25">중랑구</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_2" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_1">가평군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_2">고양시 덕양구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_3">고양시 일산동구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_4">고양시 일산서구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_5">과천시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_6">광명시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_7">광주시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_8">구리시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_9">군포시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_10">김포시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_11">남양주시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_12">동두천시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_13">부천시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_14">성남시 분당구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_15">성남시 수정구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_16">성남시 중원구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_17">수원시 권선구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_18">수원시 영통구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_19">수원시 장안구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_20">수원시 팔달구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_21">시흥시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_22">안산시 단원구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_23">안산시 상록구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_24">안성시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_25">안양시 동안구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_26">안양시 만안구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_27">양주시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_28">양평군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_29">여주시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_30">연천군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_31">오산시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_32">용인시 기흥구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_33">용인시 수지구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_34">용인시 처인구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_35">의왕시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_36">의정부시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_37">이천시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_38">파주시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_39">평택시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_40">포천시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_41">하남시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub2" id="p23_sub2_42">화성시</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_3" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub3" id="p23_sub3_1">강화군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub3" id="p23_sub3_2">계양구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub3" id="p23_sub3_3">남구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub3" id="p23_sub3_4">남동구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub3" id="p23_sub3_5">동구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub3" id="p23_sub3_6">부평구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub3" id="p23_sub3_7">서구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub3" id="p23_sub3_8">연수구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub3" id="p23_sub3_9">옹진군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub3" id="p23_sub3_10">중구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub3" id="p23_sub3_11">미추홀구</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_4" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_1">강서구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_2">금정구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_3">기장군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_4">남구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_5">동구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_6">동래구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_7">부산진구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_8">북구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_9">사상구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_10">사하구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_11">서구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_12">수영구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_13">연제구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_14">영도구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_15">중구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub4" id="p23_sub4_16">해운대구</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_5" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub5" id="p23_sub5_1">대덕구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub5" id="p23_sub5_2">동구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub5" id="p23_sub5_3">서구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub5" id="p23_sub5_4">유성구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub5" id="p23_sub5_5">중구</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_6" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub6" id="p23_sub6_1">남구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub6" id="p23_sub6_2">달서구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub6" id="p23_sub6_3">달성군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub6" id="p23_sub6_4">동구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub6" id="p23_sub6_5">북구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub6" id="p23_sub6_6">서구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub6" id="p23_sub6_7">수성구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub6" id="p23_sub6_8">중구</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_7" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub7" id="p23_sub7_1">남구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub7" id="p23_sub7_2">동구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub7" id="p23_sub7_3">북구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub7" id="p23_sub7_4">울주군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub7" id="p23_sub7_5">중구</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_8" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_1">가람동</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_2">고운동</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_3">금남면</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_4">나성동</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_5">다정동</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_6">대평동</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_7">도담동</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_8">반곡동</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_9">보람동</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_10">부강면</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_11">새롬동</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_12">소담동</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_13">소정면</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_14">아름동</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_15">어진동</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_16">연기면</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_17">연동면</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_18">연서면</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_19">장군면</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_20">전동면</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_21">전의면</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_22">조치원읍</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_23">종촌동</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_24">한솔동</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub8" id="p23_sub8_25">한누리대로</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_9" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub9" id="p23_sub9_1">광산구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub9" id="p23_sub9_2">남구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub9" id="p23_sub9_3">동구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub9" id="p23_sub9_4">북구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub9" id="p23_sub9_5">서구</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_10" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_1">강릉시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_2">고성군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_3">동해시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_4">삼척시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_5">속초시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_6">양구군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_7">양양군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_8">영월군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_9">원주시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_10">인제군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_11">정선군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_12">철원군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_13">춘천시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_14">태백시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_15">평창군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_16">홍천군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_17">화천군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub10" id="p23_sub10_18">횡성군</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_11" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub11" id="p23_sub11_1">괴산군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub11" id="p23_sub11_2">단양군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub11" id="p23_sub11_3">보은군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub11" id="p23_sub11_4">영동군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub11" id="p23_sub11_5">옥천군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub11" id="p23_sub11_6">음성군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub11" id="p23_sub11_7">제천시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub11" id="p23_sub11_8">증평군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub11" id="p23_sub11_9">진천군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub11" id="p23_sub11_10">청주시 상당구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub11" id="p23_sub11_11">청주시 서원구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub11" id="p23_sub11_12">청주시 청원구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub11" id="p23_sub11_13">청주시 흥덕구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub11" id="p23_sub11_14">충주시</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_12" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_1">계룡시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_2">공주시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_3">금산군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_4">논산시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_5">당진시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_6">보령시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_7">부여군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_8">서산시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_9">서천군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_10">아산시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_11">예산군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_12">천안시 동남구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_13">천안시 서북구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_14">청양군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_15">태안군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub12" id="p23_sub12_16">홍성군</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_13" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_1">경산시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_2">경주시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_3">고령군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_4">구미시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_5">군위군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_6">김천시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_7">문경시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_8">봉화군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_9">상주시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_10">성주군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_11">안동시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_12">영덕군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_13">영양군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_14">영주시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_15">영천시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_16">예천군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_17">울릉군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_18">울진군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_19">의성군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_20">청도군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_21">청송군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_22">칠곡군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_23">포항시 남구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub13" id="p23_sub13_24">포항시 북구</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_14" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_1">거제시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_2">거창군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_3">고성군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_4">김해시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_5">남해군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_6">밀양시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_7">사천시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_8">산청군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_9">양산시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_10">의령군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_11">진주시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_12">창녕군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_13">창원시 마산합포구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_14">창원시 마산회원구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_15">창원시 성산구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_16">창원시 의창구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_17">창원시 진해구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_18">통영시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_19">하동군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_20">함안군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_21">함양군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub14" id="p23_sub14_22">합천군</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_15" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_1">고창군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_2">군산시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_3">김제시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_4">남원시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_5">무주군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_6">부안군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_7">순창군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_8">완주군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_9">익산시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_10">임실군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_11">장수군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_12">전주시 덕진구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_13">전주시 완산구</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_14">정읍시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub15" id="p23_sub15_15">진안군</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_16" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_1">강진군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_2">고흥군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_3">곡성군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_4">광양시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_5">구례군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_6">나주시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_7">담양군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_8">목포시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_9">무안군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_10">보성군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_11">순천시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_12">신안군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_13">여수시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_14">영광군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_15">영암군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_16">완도군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_17">장성군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_18">장흥군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_19">진도군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_20">함평군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_21">해남군</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub16" id="p23_sub16_22">화순군</label>
+					</li>
+				</ul>
+				<ul id="pop_address2_17" class="radio_list_pop col2">
+					<li>
+						<label><input type="radio" name="p23_sub17" id="p23_sub17_1">서귀포시</label>
+					</li>
+					<li>
+						<label><input type="radio" name="p23_sub17" id="p23_sub17_2">제주시</label>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="inner">
+			<div class="links">
+				<p>
+					<a href="terms1.html">이용약관</a>
+					<a href="terms2.html">개인정보처리방침</a>
+				</p>
+				<p>
+					<a href="partner.html" class="btn1">파트너 센터</a>
+				</p>
+			</div>
+			<div class="sns">
+				<button class="kakao" title="Kakao Talk"></button>
+				<button class="facebook" title="Facebook"></button>
+				<button class="instagram" title="Instagram"></button>
+				<button class="youtube" title="Youtube"></button>
+				<button class="naver" title="naver blog"></button>
+			</div>
+			<div class="tel">
+				<dl>
+					<dt>고객센터</dt>
+					<dd><strong>1588-1588</strong>오전9시 ~ 오후6시 (토/일/공휴일 제외)</dd>
+				</dl>
+			</div>
+			<div class="info">
+				<ul>
+					<li><span>전화 : 1555-1555</span> <span>팩스 : 02-2222-2222</span></li>
+					<li><span>대표메일 : semuand@semuand.com</span></li>
+					<li><span>대표 : 김형태</span> <span>사업자번호 : 999-99-99999</span></li>
+					<li><span>서울시 강남구 역삼동 853-12 6층</span></li>
+				</ul>
+				<p class="copy">COPYRIGHT 2019 SEMUAND. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

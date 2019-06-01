@@ -1,0 +1,27 @@
+참고사항
+
+1. 
+The coding artifacts consist of three parts as shown below.
+Each part folder file is independent, and there are no files used together. Common files are located in the resources folder.
+- user : /semun/zoneC
+- tax accountant : /semun/zoneB
+- administrator : /semun/zoneA
+
+2. Refer to the file below for a list of output pages, and if there is a file to be modified / added in the future, I will fill it update and share it.
+- /semun/index.html
+
+3. Currently, most of the users and tax accountant parts are completed, and the admin page will be modified in general, so please refer to the file now.
+
+4. The paths (or links) within the file are all relative paths.
+
+5. The page button has a temporary link. This is a link to make the flow between pages easier to see, and may be different from what is actually applied.
+
+6. A page displaying a step of a user page has all the states on a page, so it is necessary to perform an if else for each state. (There is also a separate reference file.)
+
+7. The text in the data area is temporary. In practice, you need to apply data that fits your state.
+
+8. The pages of the user and tax accountant parts are implemented as a reaction type. It can be seen normally from PC to Mobile.
+
+9. The class name is associated with the css style. It is recommended to use as is.
+There are some things that do not have an id, but some are related to label for and javascript (jQuery), you need to confirm when you need to replace it.
+

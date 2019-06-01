@@ -1,0 +1,1319 @@
+.c1 {
+	padding: 40px 20px 20px 20px;
+
+	@include respond-to('large-over') {
+		padding: 100px 20px 50px 20px;
+	}
+
+	.step_list {
+		@include clearfix;
+
+		&>li {
+			float: left;
+			width: 25%;
+			text-align: center;
+			position: relative;
+
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: -50%;
+				top: 14px;
+				width: 100%;
+				height: 2px;
+				background-color: #e5e5e5;
+
+				@include respond-to('large-over') {
+					top: 21px;
+					height: 4px;
+				}
+			}
+
+			&:first-child::before {
+				display: none;
+			}
+
+			&:first-child b {
+				display: none;
+			}
+
+			b {
+				display: block;
+				position: absolute;
+				left: -50%;
+				top: 14px;
+				width: 100%;
+				height: 2px;
+				z-index: 5;
+				background-color: #e5e5e5;
+
+				@include respond-to('large-over') {
+					top: 21px;
+					height: 4px;
+				}
+			}
+
+			i {
+				position: relative;
+				z-index: 10;
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: #999;
+				vertical-align: middle;
+
+				@include respond-to('large-over') {
+					width: 18px;
+					height: 18px;
+					margin-top: 15px;
+				}
+			}
+
+			span {
+				display: block;
+				color: #999;
+				font-size: 15px;
+				margin-top: 10px;
+
+				@include respond-to('large-over') {
+					font-size: 24px;
+					margin-top: 30px;
+				}
+			}
+
+			&.on {
+				b {
+					background-color: #a38248;
+					width: 100%;
+					animation: progressAnimationStrike 4s;
+				}
+
+				i {
+					background-color: #fff;
+					border: #a38248 solid 10px;
+					animation-name: progressAnimationCircle;
+					animation-duration: 1s;
+					animation-delay: 2s;
+					animation-iteration-count: 4;
+
+					@include respond-to('large-over') {
+						border: #a38248 solid 15px;
+						margin-top: 0;
+					}
+				}
+
+				span {
+					color: #a38248;
+					font-size: 16px;
+					margin-top: 5px;
+
+					@include respond-to('large-over') {
+						font-size: 24px;
+						margin-top: 15px;
+					}
+				}
+
+				@keyframes progressAnimationStrike {
+					from {
+						width: 0;
+						background-color: #e5e5e5;
+					}
+
+					to {
+						width: 100%;
+						background-color: #a38248;
+					}
+				}
+
+				@keyframes progressAnimationCircle {
+					from {
+						border-color: #fff;
+					}
+
+					to {
+						border-color: #a38248;
+					}
+				}
+			}
+
+			&.past {
+				&::before {
+					background-color: #a38248;
+				}
+
+				b {
+					background-color: #a38248;
+				}
+
+				i {
+					background-color: #a38248;
+					border: #a38248 solid 10px;
+					text-align: center;
+					color: #fff;
+					font-size: 12px;
+					@include fas;
+
+					&::after {
+						content: "\f00c";
+					}
+
+					@include respond-to('large-over') {
+						border: #a38248 solid 15px;
+						margin-top: 0;
+						font-size: 18px;
+					}
+				}
+
+				span {
+					color: #a38248;
+					font-size: 16px;
+					margin-top: 5px;
+
+					@include respond-to('large-over') {
+						font-size: 24px;
+						margin-top: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.c2 {
+	padding: 20px 20px 50px 20px;
+
+	ul.btn_list {
+		&>li {
+			margin-top: 10px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			a,
+			button {
+				display: table;
+				box-sizing: border-box;
+				height: 100px;
+				width: 100%;
+				padding: 15px 40px 15px 90px;
+				position: relative;
+				border: #e5e5e5 solid 1px;
+
+				&::before {
+					content: '';
+					display: block;
+					position: absolute;
+					left: 10px;
+					top: 50%;
+					width: 60px;
+					height: 60px;
+					margin-top: -30px;
+					background-image: url('../images/icon_process.png');
+					background-size: 60px auto;
+					background-repeat: no-repeat;
+				}
+
+				b {
+					display: table-cell;
+					vertical-align: middle;
+
+					strong {
+						display: block;
+						font-size: 18px;
+						color: #000;
+					}
+
+					span {
+						display: block;
+						font-size: 14px;
+						color: #555;
+						margin-top: 5px;
+					}
+				}
+
+				i {
+					display: inline-block;
+					width: 40px;
+					height: 40px;
+					line-height: 40px;
+					text-align: center;
+					font-size: 20px;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -20px;
+					color: #7f7f7f;
+					@include fas;
+
+					&::before {
+						content: "\f054";
+					}
+				}
+
+				&.btn1 {
+					&::before {
+						background-position: 0 0;
+					}
+				}
+
+				&.btn2 {
+					&::before {
+						background-position: 0 -240px;
+					}
+				}
+
+				&.btn3 {
+					&::before {
+						background-position: 0 -480px;
+					}
+				}
+
+				&.btn4 {
+					&::before {
+						background-position: 0 -600px;
+					}
+				}
+			}
+		}
+	}
+
+	ul.radio_list {
+		&>li {
+			margin-top: 10px;
+			position: relative;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			input[type="radio"] {
+				position: absolute;
+				top: 0;
+				right: 0;
+				opacity: 0;
+			}
+
+			label {
+				display: table;
+				box-sizing: border-box;
+				height: 60px;
+				width: 100%;
+				padding: 15px 40px 15px 90px;
+				position: relative;
+				border: #e5e5e5 solid 1px;
+				vertical-align: middle;
+				font-size: 16px;
+				color: #999;
+
+				&::before {
+					content: '';
+					display: block;
+					position: absolute;
+					left: 10px;
+					top: 50%;
+					width: 60px;
+					height: 60px;
+					margin-top: -30px;
+					background-image: url('../images/icon_process.png');
+					background-size: 60px auto;
+					background-repeat: no-repeat;
+				}
+
+				&::after {
+					content: '';
+					display: block;
+					width: 40px;
+					height: 40px;
+					line-height: 40px;
+					text-align: center;
+					font-size: 20px;
+					position: absolute;
+					right: 20px;
+					top: 50%;
+					margin-top: -20px;
+					border: #e5e5e5 solid 2px;
+					border-radius: 50%;
+				}
+
+				&.radio1 {
+					&::before {
+						background-position: 0 0;
+					}
+				}
+
+				&.radio2 {
+					&::before {
+						background-position: 0 -60px;
+					}
+				}
+
+				&.radio3 {
+					&::before {
+						background-position: 0 -120px;
+					}
+				}
+
+				&.radio4 {
+					&::before {
+						background-position: 0 -180px;
+					}
+				}
+
+				&.radio5 {
+					&::before {
+						background-position: 0 -240px;
+					}
+				}
+
+				&.radio6 {
+					&::before {
+						background-position: 0 -300px;
+					}
+				}
+
+				&.radio7 {
+					&::before {
+						background-position: 0 -360px;
+					}
+				}
+
+				&.radio8 {
+					&::before {
+						background-position: 0 -420px;
+					}
+				}
+
+				&.radio9 {
+					&::before {
+						background-position: 0 -480px;
+					}
+				}
+
+				&.radio10 {
+					&::before {
+						background-position: 0 -540px;
+					}
+				}
+
+				&.radio11 {
+					&::before {
+						background-position: 0 -600px;
+					}
+				}
+
+				&.radio12 {
+					&::before {
+						background-position: 0 -660px;
+					}
+				}
+
+				&.radio13 {
+					&::before {
+						background-position: 0 -720px;
+					}
+				}
+
+				&.radio14 {
+					&::before {
+						background-position: 0 -780px;
+					}
+				}
+			}
+
+			input[type="radio"]:checked+label {
+				border: #ffde00 solid 2px;
+				color: #000;
+
+				&::after {
+					border: 0;
+					background-color: #ffde00;
+					color: #000;
+					@include fas;
+					content: "\f00c";
+				}
+			}
+		}
+	}
+
+	ul.check_list {
+		&>li {
+			margin-top: 10px;
+			position: relative;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			input[type="checkbox"] {
+				position: absolute;
+				top: 0;
+				right: 0;
+				opacity: 0;
+			}
+
+			label {
+				display: table;
+				box-sizing: border-box;
+				height: 60px;
+				width: 100%;
+				padding: 15px 60px 15px 10px;
+				position: relative;
+				border: #e5e5e5 solid 1px;
+				vertical-align: middle;
+				font-size: 16px;
+				color: #999;
+
+				&::after {
+					content: '';
+					display: block;
+					width: 40px;
+					height: 40px;
+					line-height: 40px;
+					text-align: center;
+					font-size: 20px;
+					position: absolute;
+					right: 20px;
+					top: 50%;
+					margin-top: -20px;
+					border: #e5e5e5 solid 2px;
+					border-radius: 50%;
+				}
+			}
+
+			input[type="checkbox"]:checked+label {
+				border: #ffde00 solid 2px;
+
+				.bt {
+					color: #999;
+					font-size: 12px;
+				}
+
+				.bd {
+					color: #000;
+					font-size: 16px;
+					margin-left: 10px;
+				}
+
+				&::after {
+					border: 0;
+					background-color: #ffde00;
+					color: #000;
+					@include fas;
+					content: "\f00c";
+				}
+			}
+
+			.add_question {
+				border: #e5e5e5 solid 1px;
+				padding: 15px 10px 15px 10px;
+
+				&.on {
+					border: #ffde00 solid 2px;
+				}
+
+				textarea {
+					border: 0;
+					width: 100%;
+				}
+
+				p {
+					text-align: right;
+					color: #666;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+	ul.text_list {
+		border-top: #53647c solid 3px;
+
+		&>li {
+			margin-top: 15px;
+
+			label {
+				color: #000;
+				font-size: 16px;
+				font-weight: bold;
+			}
+
+			input {
+				margin-top: 10px;
+				border: #e5e5e5 solid 1px;
+				padding: 5px 10px;
+				width: 100%;
+				height: 50px;
+				box-sizing: border-box;
+			}
+
+			.tel_wrap {
+				position: relative;
+				padding: 0 80px;
+
+				select {
+					position: absolute;
+					left: 0;
+					top: 10px;
+					width: 80px;
+					height: 50px;
+					padding: 5px 10px;
+					box-sizing: border-box;
+					border: #e5e5e5 solid 1px;
+					background-color: #fff;
+					border-right: 0;
+					text-align: center;
+				}
+
+				.btn_tel {
+					position: absolute;
+					right: 0;
+					top: 10px;
+					width: 70px;
+					height: 50px;
+					background-color: #000;
+					color: #fff;
+					font-size: 14px;
+				}
+			}
+			.txt_tel {
+				color: #ff2222;
+				font-size: 14px;
+			}
+		}
+	}
+
+	ul.terms_list {
+		margin-top: 20px;
+		border-top: #e5e5e5 solid 1px;
+
+		&>li {
+			margin-top: 15px;
+
+			input[type="checkbox"] {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+			}
+
+			label {
+				display: table;
+				box-sizing: border-box;
+				height: 20px;
+				width: 100%;
+				padding: 0 0 0 25px;
+				position: relative;
+				vertical-align: middle;
+				font-size: 13px;
+				letter-spacing: -1px;
+
+				&.terms1 {
+					color: #000;
+				}
+
+				&.terms2 {
+					color: #777;
+				}
+
+				&::before {
+					content: '';
+					display: block;
+					width: 20px;
+					height: 20px;
+					line-height: 20px;
+					text-align: center;
+					font-size: 10px;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					margin-top: -10px;
+					border: #e5e5e5 solid 2px;
+					box-sizing: border-box;
+				}
+			}
+
+			input[type="checkbox"]:checked+label {
+				&::before {
+					border: 0;
+					background-color: #ffde00;
+					color: #000;
+					@include fas;
+					content: "\f00c";
+				}
+			}
+		}
+	}
+
+	.step_complete {
+		border-top: #53647c solid 3px;
+		border-bottom: #e5e5e5 solid 1px;
+		background: url('../images/bg_complete.png') center 50px no-repeat;
+		background-size: 70px auto;
+		padding: 130px 0 50px 0;
+		text-align: center;
+
+		strong {
+			font-size: 25px;
+			color: #000;
+		}
+
+		p {
+			font-size: 14px;
+			color: #777;
+		}
+	}
+
+	@include respond-to('large-over') {
+		ul.btn_list {
+			@include clearfix;
+			margin-left: -20px;
+
+			&>li {
+				margin-top: 20px;
+				float: left;
+				box-sizing: border-box;
+				width: 25%;
+				padding-left: 20px;
+
+				&:first-child {
+					margin-top: 20px;
+				}
+
+				a,
+				button {
+					height: 400px;
+					padding: 0;
+
+					&::before {
+						left: 50%;
+						top: 65px;
+						width: 120px;
+						height: 120px;
+						margin-top: 0;
+						margin-left: -60px;
+						background-size: 120px auto;
+					}
+
+					b {
+						vertical-align: top;
+						text-align: center;
+
+						strong {
+							display: block;
+							font-size: 28px;
+							margin-top: 220px;
+						}
+
+						span {
+							display: block;
+							font-size: 18px;
+							margin-top: 10px;
+						}
+					}
+
+					i {
+						display: none;
+					}
+
+					&.btn1 {
+						&::before {
+							background-position: 0 0;
+						}
+					}
+
+					&.btn2 {
+						&::before {
+							background-position: 0 -480px;
+						}
+					}
+
+					&.btn3 {
+						&::before {
+							background-position: 0 -960px;
+						}
+					}
+
+					&.btn4 {
+						&::before {
+							background-position: 0 -1200px;
+						}
+					}
+				}
+			}
+		}
+
+		ul.radio_list {
+			@include clearfix;
+			margin-left: -20px;
+			text-align: center;
+
+			&>li {
+				margin-top: 20px;
+				display: inline-block;
+				box-sizing: border-box;
+				width: 20%;
+				padding-left: 20px;
+				margin-left: -4px;
+
+				&:first-child {
+					margin-top: 20px;
+				}
+
+				label {
+					height: 320px;
+					width: 100%;
+					padding: 0;
+					vertical-align: top;
+					text-align: center;
+					font-size: 20px;
+					padding-top: 200px;
+
+					&::before {
+						content: '';
+						display: block;
+						position: absolute;
+						left: 50%;
+						top: 40px;
+						width: 120px;
+						height: 120px;
+						margin-top: 0;
+						margin-left: -60px;
+						background-size: 120px auto;
+					}
+
+					&::after {
+						content: '';
+						display: block;
+						width: 40px;
+						height: 40px;
+						line-height: 40px;
+						font-size: 20px;
+						right: 50%;
+						top: 250px;
+						margin-top: 0;
+						margin-right: -20px;
+					}
+
+					&.radio1 {
+						&::before {
+							background-position: 0 0;
+						}
+					}
+
+					&.radio2 {
+						&::before {
+							background-position: 0 -120px;
+						}
+					}
+
+					&.radio3 {
+						&::before {
+							background-position: 0 -240px;
+						}
+					}
+
+					&.radio4 {
+						&::before {
+							background-position: 0 -360px;
+						}
+					}
+
+					&.radio5 {
+						&::before {
+							background-position: 0 -480px;
+						}
+					}
+
+					&.radio6 {
+						&::before {
+							background-position: 0 -600px;
+						}
+					}
+
+					&.radio7 {
+						&::before {
+							background-position: 0 -720px;
+						}
+					}
+
+					&.radio8 {
+						&::before {
+							background-position: 0 -840px;
+						}
+					}
+
+					&.radio9 {
+						&::before {
+							background-position: 0 -960px;
+						}
+					}
+
+					&.radio10 {
+						&::before {
+							background-position: 0 -1080px;
+						}
+					}
+
+					&.radio11 {
+						&::before {
+							background-position: 0 -1200px;
+						}
+					}
+
+					&.radio12 {
+						&::before {
+							background-position: 0 -1320px;
+						}
+					}
+
+					&.radio13 {
+						&::before {
+							background-position: 0 -1440px;
+						}
+					}
+
+					&.radio14 {
+						&::before {
+							background-position: 0 -1560px;
+						}
+					}
+				}
+			}
+		}
+
+		ul.check_list {
+			@include clearfix;
+			margin-left: -20px;
+
+			&>li {
+				margin-top: 20px;
+				float: left;
+				box-sizing: border-box;
+				width: 50%;
+				padding-left: 20px;
+
+				&:first-child {
+					margin-top: 20px;
+				}
+
+				&.w100 {
+					width: 100%;
+				}
+
+				label {
+					height: 100px;
+					padding: 32px 60px 32px 20px;
+					font-size: 20px;
+				}
+
+				input[type="checkbox"]:checked+label {
+					.bt {
+						font-size: 16px;
+					}
+
+					.bd {
+						font-size: 20px;
+					}
+				}
+
+				.add_question {
+					padding: 30px 20px 30px 20px;
+
+					textarea {
+						font-size: 20px;
+					}
+
+					p {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		ul.text_list {
+			width: 650px;
+			margin: 20px auto 0 auto;
+
+			&>li {
+				margin-top: 30px;
+
+				label {
+					font-size: 20px;
+					font-weight: normal;
+				}
+
+				input {
+					height: 60px;
+					font-size: 20px;
+				}
+
+				.tel_wrap {
+					position: relative;
+					padding: 0 150px 0 100px;
+
+					select {
+						width: 100px;
+						height: 60px;
+						font-size: 20px;
+					}
+
+					.btn_tel {
+						width: 140px;
+						height: 60px;
+						font-size: 20px;
+					}
+				}
+
+				.txt_tel {
+					font-size: 16px;
+				}
+			}
+		}
+
+		ul.terms_list {
+			width: 650px;
+			margin: 30px auto 0 auto;
+
+			&>li {
+				margin-top: 15px;
+
+				label {
+					height: 30px;
+					width: 100%;
+					padding: 0 0 0 45px;
+					font-size: 20px;
+
+					&::before {
+						width: 30px;
+						height: 30px;
+						line-height: 30px;
+						font-size: 20px;
+						margin-top: -15px;
+					}
+				}
+			}
+		}
+
+		.step_complete {
+			background: url('../images/bg_complete.png') center 100px no-repeat;
+			background-size: 140px auto;
+			padding: 250px 0 50px 0;
+
+			strong {
+				font-size: 40px;
+			}
+
+			p {
+				font-size: 20px;
+			}
+		}
+
+	}
+}
+
+.c2_pop {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	box-sizing: border-box;
+	background-color: #fff;
+
+	.pop_header {
+		height: 60px;
+		box-sizing: border-box;
+		padding: 10px 15px;
+		z-index: 5;
+		background-color: #fff;
+		@include clearfix;
+
+		.btn_pop {
+			float: right;
+			width: 40px;
+			height: 40px;
+
+			span {
+				display: block;
+				width: 28px;
+				height: 34px;
+				margin: 0 auto;
+				position: relative;
+
+				i {
+					display: block;
+					width: 29px;
+					top: 15px;
+					position: absolute;
+					left: 0;
+					width: 28px;
+					height: 3px;
+					background: #333;
+					transition: all 0.7s ease-out;
+
+					&.pl1 {
+						transform: rotate(45deg);
+						-webkit-transform: rotate(45deg);
+					}
+
+					&.pl2 {
+						opacity: 0;
+					}
+
+					&.pl3 {
+						transform: rotate(-45deg);
+						-webkit-transform: rotate(-45deg);
+					}
+				}
+			}
+		}
+
+		h3 {
+			text-align: center;
+			color: #000;
+			font-size: 22px;
+			padding-top: 5px;
+		}
+	}
+
+	.pop_in {
+		padding: 0 20px;
+		height: 100%;
+		background-color: #fff;
+	}
+
+	.radio_list_pop {
+		display: none;
+		border-top: #53647c solid 3px;
+		height: calc(100% - 60px);
+		overflow: auto;
+
+		&>li {
+			position: relative;
+
+			input[type="radio"] {
+				position: absolute;
+				top: 0;
+				right: 0;
+				opacity: 0;
+			}
+
+			label {
+				display: table;
+				box-sizing: border-box;
+				height: 55px;
+				width: 100%;
+				padding: 15px 10px 15px 40px;
+				position: relative;
+				border-bottom: #e5e5e5 solid 1px;
+				vertical-align: middle;
+				font-size: 16px;
+				color: #000;
+
+				&::before {
+					content: '';
+					display: block;
+					width: 25px;
+					height: 25px;
+					line-height: 25px;
+					text-align: center;
+					font-size: 16px;
+					position: absolute;
+					left: 5px;
+					top: 50%;
+					margin-top: -12px;
+					border: #e5e5e5 solid 2px;
+					border-radius: 50%;
+				}
+
+				&.on::before {
+					color: #ffbb00;
+					@include fas;
+					content: "\f111";
+				}
+			}
+
+			select {
+				margin-top: 10px;
+				width: 33.333%;
+				margin-right:-4px;
+				height: 40px;
+				background-color: #fff;
+				font-size: 16px;
+			}
+			textarea {
+				margin-top: 10px;
+				box-sizing: border-box;
+				padding: 10px;
+				width: 100%;
+				height: 4.5em;
+				font-size: 16px;
+			}
+			input[type="text"],
+			input[type="tel"] {
+				margin-top: 10px;
+				padding: 5px 5px;
+				height: 40px;
+				width: 100%;
+				box-sizing: border-box;
+				font-size: 16px;
+			}
+			.postcode_wrap {
+				position: relative;
+				padding-right: 100px;
+				.btn_postcode {
+					position: absolute;
+					right: 0;
+					top: 10px;
+					width: 100px;
+					height: 40px;
+					background-color: #000;
+					color: #fff;
+					font-size: 14px;
+				}
+			}
+				
+			.btn_select,
+			.btn_textarea,
+			.btn_inputs {
+				background-color: #ffde00;
+				width: 100%;
+				height: 40px;
+				margin-top: 5px;
+			}
+		}
+
+		&.col2 {
+			@include clearfix;
+
+			&>li {
+				float: left;
+				width: 50%;
+			}
+		}
+	}
+
+	@include respond-to('large-over') {
+		left: 50%;
+		top: 50%;
+		width: 500px;
+		height: 500px;
+		margin: -250px 0 0 -250px;
+
+		&::after {
+			content: '';
+			display: block;
+			position: fixed;
+			z-index: -1;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			opacity: 0.5;
+		}
+
+		.pop_header {
+			h3 {
+				text-align: left;
+				font-size: 26px;
+				padding-top: 0;
+			}
+		}
+
+		.radio_list_pop {
+			&>li {
+				label {
+					font-size: 20px;
+				}
+				select {
+					height: 60px;
+					font-size: 20px;
+				}
+				textarea {
+					font-size: 20px;
+				}
+				.btn_select,
+				.btn_textarea,
+				.btn_inputs {
+					height: 60px;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+.btns {
+	margin-top: 50px;
+
+	@include respond-to('large-over') {
+		text-align: center;
+	}
+
+	a,
+	button {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		color: #000;
+		font-size: 21px;
+
+		@include respond-to('large-over') {
+			display: inline-block;
+			width: 260px;
+			height: 90px;
+			line-height: 90px;
+			font-size: 24px;
+		}
+	}
+
+	.btn_prev {
+		border: #b2b2b2 solid 1px;
+		background-color: #fff;
+	}
+
+	.btn_next {
+		background-color: #e2e0d9;
+
+		&.on {
+			background-color: #ffde00;
+		}
+	}
+
+	&.col2 {
+		@include clearfix;
+
+		.btn_prev {
+			float: left;
+			width: 30%;
+
+			@include respond-to('large-over') {
+				float: none;
+				width: 260px;
+				margin: 0 10px;
+			}
+		}
+
+		.btn_next {
+			float: right;
+			width: 68%;
+
+			@include respond-to('large-over') {
+				float: none;
+				width: 260px;
+				margin: 0 10px;
+			}
+		}
+	}
+}

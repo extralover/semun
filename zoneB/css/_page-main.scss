@@ -1,0 +1,498 @@
+.login {
+    
+
+    @include respond-to('large-over') {
+        width: 560px;
+        margin: 50px auto;
+    }
+}
+
+.m1 {
+    padding: 20px 20px 30px 20px;
+    background-color: #fff;
+
+    h1 {
+        margin-bottom: 10px;
+        height: 22px;
+        text-align: center;
+        
+        img {
+            max-height: 100%;
+        }
+        @include respond-to('large-over') {
+            margin-bottom: 20px;
+            height: 44px;
+            text-align: left;
+        }
+    }
+
+    .inner.col2 > ul > li {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: #e5e5e5 solid 1px;
+        
+        &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+        }
+    }
+
+    @include respond-to('large-over') {
+        padding: 0 0 50px 0;
+        background-color: #fafafa;
+
+        .inner {
+            background-color: #fff;
+            border: #e5e5e5 solid 1px;
+            padding: 20px 60px 60px 60px;
+            width: 700px;
+            max-width: 100%;
+            box-sizing: border-box;
+
+            &.col2 {
+                width: 1024px;
+                padding: 0;
+                &>ul {
+                    @include clearfix;
+                    &>li {
+                        float: left;
+                        width: 50%;
+                        box-sizing: border-box;
+                        padding: 0 50px !important;
+                        margin: 50px 0 !important;
+                        border-left: #e5e5e5 solid 1px;
+                        border-top: none;
+
+                        &:first-child {
+                            border-left: none;
+                        }
+
+                        .btns.mt_space {
+                            margin-top: 170px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .menu_t1 {
+        ul {
+            @include clearfix;
+            margin-left: -2px;
+            &>li {
+                float: left;
+                box-sizing: border-box;
+                padding-left: 2px;
+
+                a {
+                    display: block;
+                    padding: 10px 0;
+                    text-align: center;
+                    font-size: 18px;
+                    color: #767676;
+                    border-bottom: #f5f2ed solid 2px;
+
+                    &.on {
+                        color: #5c4d3e;
+                        font-weight: bold;
+                        border-bottom: #988068 solid 2px;
+                    }
+                }
+            }
+
+            @include respond-to('large-over') {
+                margin-left: -8px;
+                &>li {
+                    padding-left: 8px;
+
+                    a {
+                        padding: 15px 0;
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+
+        &.col2 ul > li {
+            width: 50%;
+        }
+    }
+
+    .info1 {
+        margin: 20px 0 0 0;
+        font-size: 16px;
+        .tit {            
+            color: #000;
+        }
+        .exp {
+            color: #555;
+        }
+
+        @include respond-to('large-over') {
+            margin: 30px 0 30px 0;
+            font-size: 20px;
+        }
+    }
+
+    .info2 {
+        margin-top: 20px;
+        text-align: center;
+
+        .tit {
+            color: #000;
+            font-size: 16px;
+        }
+
+        .exp {
+            color: #000;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        @include respond-to('large-over') {
+            margin-top: 100px;
+
+            .tit {
+                font-size: 24px;
+            }
+
+            .exp {
+                font-size: 26px;
+                margin-top: 70px;
+            }
+        }
+    }
+
+    .info3 {
+        margin-top: 20px;
+        text-align: center;
+
+        .tit {
+            color: #000;
+            font-size: 18px;
+        }
+
+        .exp {
+            color: #000;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        @include respond-to('large-over') {
+            margin-top: 100px;
+
+            .tit {
+                font-size: 32px;
+            }
+
+            .exp {
+                font-size: 18px;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .info_exp {
+        color: #555;
+        font-size: 16px;
+        margin-top: 10px;
+        em {
+            color: #000;
+        }
+    }
+
+    .text_list {
+
+        &>li {
+            margin-top: 15px;
+
+            label {
+                color: #000;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            input[type="text"],
+            input[type="password"],
+            input[type="tel"],
+            input[type="email"],
+            input[type="search"] {
+                margin-top: 10px;
+                border: #e5e5e5 solid 1px;
+                padding: 5px 10px;
+                width: 100%;
+                height: 50px;
+                box-sizing: border-box;
+            }
+
+            .tel_wrap {
+                position: relative;
+                padding: 0 80px;
+
+                &.pr0 {
+                    padding-right: 0;
+                }
+
+                select {
+                    position: absolute;
+                    left: 0;
+                    top: 10px;
+                    width: 80px;
+                    height: 50px;
+                    padding: 5px 10px;
+                    box-sizing: border-box;
+                    border: #e5e5e5 solid 1px;
+                    background-color: #fff;
+                    border-right: 0;
+                    text-align: center;
+                }
+
+                .btn_tel {
+                    position: absolute;
+                    right: 0;
+                    top: 10px;
+                    width: 70px;
+                    height: 50px;
+                    background-color: #000;
+                    color: #fff;
+                    font-size: 14px;
+                }
+            }
+
+            .txt_tel {
+                color: #ff2222;
+                font-size: 16px;
+            }
+        }
+
+        @include respond-to('large-over') {
+            &>li {
+
+                label {
+                    font-size: 18px;
+                    font-weight: normal;
+                }
+
+                input[type="text"],
+                input[type="password"],
+                input[type="tel"],
+                input[type="email"],
+                input[type="search"] {
+                    font-size: 18px;
+                }
+
+                .tel_wrap {
+                    position: relative;
+                    padding: 0 150px 0 100px;
+
+                    select {
+                        width: 100px;
+                        font-size: 18px;
+                    }
+
+                    .btn_tel {
+                        width: 140px;
+                        font-size: 18px;
+                    }
+                }
+
+                .tel_wrap2 {
+                    position: relative;
+
+                    .txt_tel {
+                        position: absolute;
+                        right: 10px;
+                        top: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .checkbox_list {
+        margin-top: 20px;
+        &>li {
+            margin-top: 10px;
+
+            input[type="checkbox"] {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+
+            label {
+                display: table;
+                box-sizing: border-box;
+                height: 20px;
+                width: 100%;
+                padding: 0 0 0 25px;
+                position: relative;
+                vertical-align: middle;
+                font-size: 16px;
+                letter-spacing: -1px;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    font-size: 10px;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    margin-top: -10px;
+                    border: #e5e5e5 solid 2px;
+                    box-sizing: border-box;
+                }
+            }
+
+            input[type="checkbox"]:checked+label {
+                &::before {
+                    border: 0;
+                    background-color: #ffde00;
+                    color: #000;
+                    @include fas;
+                    content: "\f00c";
+                }
+            }
+        }
+
+        @include respond-to('large-over') {
+            &>li {
+
+                label {
+                    height: 30px;
+                    width: 100%;
+                    padding: 0 0 0 45px;
+                    font-size: 20px;
+
+                    &::before {
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 20px;
+                        margin-top: -15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.m2 {
+    background-color: #645b4c;
+    padding: 30px 20px;
+
+    @include respond-to('large-over') {
+        margin-top: -40px;
+    }
+
+    .info_exp {
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .btns {
+        margin-top: 20px;
+
+        .btn_join {
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            color: #000;
+            font-size: 18px;
+            background-color: #ffde00;
+            border-radius: 100px;
+
+            @include respond-to('large-over') {
+                display: inline-block;
+                width: 210px;
+            }
+        }
+    }
+}
+
+.btns {
+    margin-top: 50px;
+
+    @include respond-to('large-over') {
+        text-align: center;
+    }
+
+    a,
+    button {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        color: #000;
+        font-size: 21px;
+
+        @include respond-to('large-over') {
+            display: inline-block;
+            height: 80px;
+            line-height: 80px;
+            font-size: 24px;
+        }
+    }
+
+    .btn_prev {
+        border: #b2b2b2 solid 1px;
+        background-color: #fff;
+    }
+
+    .btn_next {
+        background-color: #ffde00;
+    }
+
+    &.col2 {
+        @include clearfix;
+
+        .btn_prev {
+            float: left;
+            width: 30%;
+
+            @include respond-to('large-over') {
+                float: none;
+                width: 260px;
+                margin: 0 10px;
+            }
+        }
+
+        .btn_next {
+            float: right;
+            width: 68%;
+
+            @include respond-to('large-over') {
+                float: none;
+                width: 260px;
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+.btn_r {
+    margin-top: 10px;
+    text-align: right;
+    .btn_link {
+        font-size: 16px;
+        color: #006feb;
+        text-decoration: underline;
+
+        @include respond-to('large-over') {
+            font-size: 18px;
+        }
+    }
+}
