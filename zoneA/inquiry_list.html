@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html class="fixed">
 
 <head>
@@ -57,7 +57,7 @@
 		<!-- start: header -->
 		<header class="header">
 			<div class="logo-container">
-				<a href="member1_list.html" class="logo">
+				<a href="index.html" class="logo">
 					<img src="assets/images/logo.png">
 				</a>
 				<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html"
@@ -138,7 +138,7 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fa fa-users"></i>
-										<span>회원관리</span>
+										<span>사용자 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -147,13 +147,13 @@
 											</a>
 										</li>
 										<li>
-											<a href="alliance_list.html">
-												제휴 관리
+											<a href="taxaccountant_list.html">
+												세무사 관리
 											</a>
 										</li>
 										<li>
-											<a href="taxaccountant_list.html">
-												세무사 관리
+											<a href="alliance_list.html">
+												제휴업체 관리
 											</a>
 										</li>
 									</ul>
@@ -161,17 +161,12 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-calculator"></i>
-										<span>견적관리</span>
+										<span>비교견적 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="estimate_list.html">
-												견적관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="estimate_set.html">
-												견적관리 기본설정
+												비교견적 요청현황
 											</a>
 										</li>
 									</ul>
@@ -179,53 +174,22 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-dollar-sign"></i>
-										<span>결제관리</span>
+										<span>정산 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="payment_list.html">
-												결제관리 목록
+												계약 관리
 											</a>
 										</li>
 										<li>
-											<a href="payment_set.html">
-												결제관리 기본설정
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-seedling"></i>
-										<span>마일리지 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="mileage_set.html">
-												마일리지 기본 설정
+											<a href="recommend_list.html">
+												페이백 관리
 											</a>
 										</li>
 										<li>
 											<a href="mileage_list.html">
-												마일리지 지급/차감
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-thumbs-up"></i>
-										<span>추천인 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="recommend_list.html">
-												추천인 관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="recommend_set.html">
-												추천인 기본 설정
+												포인트 관리
 											</a>
 										</li>
 									</ul>
@@ -233,7 +197,30 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-exclamation-circle"></i>
-										<span>게시판 관리</span>
+										<span>콘텐츠 관리</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="banner_list.html">
+												메인배너 관리
+											</a>
+										</li>
+										<li>
+											<a href="popup_list.html">
+												팝업 관리
+											</a>
+										</li>
+										<li>
+											<a href="reply_list.html">
+												후기 관리
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent nav-expanded nav-active">
+									<a href="#">
+										<i class="fas far fa-cogs"></i>
+										<span>고객센터</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -241,14 +228,9 @@
 												공지사항
 											</a>
 										</li>
-										<li>
-											<a href="faq_list.html">
-												자주하는 질문
-											</a>
-										</li>
-										<li>
-											<a href="reply_list.html">
-												사용자후기
+										<li class="nav-active">
+											<a href="inquiry_list.html">
+												제휴 문의
 											</a>
 										</li>
 									</ul>
@@ -256,7 +238,7 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas far fa-envelope"></i>
-										<span>SMS/카카오톡/이메일</span>
+										<span>서비스 설정</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -296,24 +278,6 @@
 										</li>
 									</ul>
 								</li>
-								<li class="nav-parent nav-expanded nav-active">
-									<a href="#">
-										<i class="fas far fa-cogs"></i>
-										<span>팝업/이벤트 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="popup_list.html">
-												팝업관리
-											</a>
-										</li>
-										<li class="nav-active">
-											<a href="event_list.html">
-												이벤트 관리
-											</a>
-										</li>
-									</ul>
-								</li>
 								<li>
 									<a href="statistics_list.html">
 										<i class="fas fa-bar-chart-o"></i>
@@ -331,114 +295,55 @@
 
 			<section role="main" class="content-body">
 				<header class="page-header">
-					<h2>이벤트 등록</h2>
+					<h2>제휴문의</h2>
 					<div class="right-wrapper pull-right">
 						<ol class="breadcrumbs">
 							<li>
-								<a href="member1_list.html">
+								<a href="index.html">
 									<i class="fa fa-home"></i>
 								</a>
 							</li>
-							<li><span>팝업/이벤트 관리</span></li>
-							<li><span>이벤트 등록</span></li>
+							<li><span>고객센터</span></li>
+							<li><span>제휴문의</span></li>
 						</ol>
 					</div>
 				</header>
 				<!-- start: page -->
 				<div class="panel-body">
-					<div class="table-responsive">
-						<table class="table type2">
-							<colgroup>
-								<col width="20%">
-								<col width="*">
-							</colgroup>
+					<div class="tbl_center">
+						<table class="table table-hover tbl_data">
+
+							<thead>
+								<tr>
+									<th>번호</th>
+                                    <th>이름</th>
+                                    <th>연락처</th>
+                                    <th>이메일</th>
+                                    <th>내용</th>
+									<th>등록일</th>
+								</tr>
+							</thead>
 							<tbody>
 								<tr>
-									<th>팝업 제목</th>
-									<td>
-										<input type="text" class="form-control">
-									</td>
+                                    <td>10</td>
+                                    <td>홍길동</td>
+                                    <td>010-2222-3333</td>
+                                    <td>happy35@semuand.com</td>
+									<td><a href="inquiry_detail.html" class="line1">저희 회사는 이러저러한 회사이고, 이러저러한 업무제휴관계를 맺어
+									        양사간의 업무제휴를 진행하고 싶습니다.
+									        담당자와 미팅 진행을 희망하오니 연락바랍니다.</a></td>
+									<td>2019-02-20</td>
 								</tr>
 								<tr>
-									<th>노출여부</th>
-									<td>
-										<div class="col-sm-3 w_auto">
-											<div class="radio-custom radio-primary">
-												<input type="radio" name="event1_radio" id="event1_radio1" checked="checked">
-												<label for="event1_radio1">노출</label>
-											</div>
-										</div>
-										<div class="col-sm-3 w_auto">
-											<div class="radio-custom radio-primary">
-												<input type="radio" name="event1_radio" id="event1_radio2">
-												<label for="event1_radio2">미노출</label>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th rowspan="3">이미지</th>
-									<td>
-										<div>
-											<img src="assets/images/temp/project.jpg" alt="">
-										</div>
-										<div class="fileupload fileupload-new tbl_space" data-provides="fileupload">
-											<div class="input-append">
-												<div class="uneditable-input">
-													<i class="fa fa-file fileupload-exists"></i>
-													<span class="fileupload-preview"></span>
-												</div>
-												<span class="btn btn-default btn-primary btn-file">
-													<span class="fileupload-exists">바꾸기</span>
-													<span class="fileupload-new">찾아보기</span>
-													<input type="file" />
-												</span>
-												<a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">삭제</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="tbl_space">
-											<div class="col-sm-12">
-												<div class="radio-custom radio-primary">
-													<input type="radio" name="event3_radio" id="event3_radio1" checked="checked">
-													<label for="event3_radio1">견적요청 페이지 이동</label>
-												</div>
-											</div>
-										</div>
-										<div class="tbl_space">
-											<div class="col-sm-6 w_auto">
-												<div class="radio-custom radio-primary">
-													<input type="radio" name="event3_radio" id="event3_radio2">
-													<label for="event3_radio2">그 외 페이지</label>
-												</div>
-											</div>
-											<div class="col-sm-6 w_auto">
-												<input type="text" class="form-control">
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="tbl_space">
-											<div class="col-md-12">
-												<span class="inline_txt">설명</span>
-												<div class="w_auto">
-													<input type="text" class="form-control">
-												</div>
-											</div>
-										</div>
-									</td>
+								    <td>9</td>
+								    <td>홍길동</td>
+								    <td>010-2222-3333</td>
+								    <td>happy35@semuand.com</td>
+								    <td><a href="inquiry_detail.html" class="line1">부가가치세 신고기간</a></td>
+								    <td>2019-02-20</td>
 								</tr>
 							</tbody>
 						</table>
-					</div>
-					<div class="btn_center_wrap">
-						<a href="event_list.html" class="btn btn-lg btn-default w150">목록</a>
-						<button type="button" class="btn btn-lg btn-primary w150">등록</button>
 					</div>
 				</div>
 				<!-- end: page -->
@@ -463,7 +368,6 @@
 	<script src="assets/vendor/jquery-datatables/extras/TableTools/js/dataTables.tableTools.min.js"></script>
 	<script src="assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
 	<script src="assets/vendor/summernote/summernote.js"></script>
-	<script src="assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
 
 	<!-- Theme Base, Components and Settings -->
 	<script src="assets/javascripts/theme.js"></script>
@@ -476,6 +380,17 @@
 
 	<!-- Examples -->
 	<script src="assets/javascripts/tables/examples.datatables.default.js"></script>
+	<!-- <script>
+			$("#tbl_member tbody tr").on("click", function() {
+				var pop_width = $(window).width() - 20;
+				var pop_height = $(window).height() - 50;
+				var url = "./notice1_admin_detail.html";
+				var name = "";
+				var specs = "width="+pop_width+", height="+pop_height+", top=50, left=10, resizable=yes";
+				window.open(url, name, specs);
+				return false;
+			});
+		</script> -->
 </body>
 
 </html>

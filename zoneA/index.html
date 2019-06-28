@@ -45,13 +45,13 @@
 
 				<div class="panel panel-sign">
 					<div class="panel-title-sign mt-xl text-right">
-						<h2 class="title text-uppercase text-bold m-none"><i class="fa fa-user mr-xs"></i> Sign In</h2>
+						<h2 class="title text-uppercase text-bold m-none"><i class="fa fa-user mr-xs"></i> 로그인</h2>
 					</div>
 					<div class="panel-body">
 						<form action="customer_list.html" method="post">
 							<!-- login link -->
 							<div class="form-group mb-lg">
-								<label>Username</label>
+								<label>아이디</label>
 								<div class="input-group input-group-icon">
 									<input name="username" type="text" class="form-control input-lg" />
 									<span class="input-group-addon">
@@ -64,8 +64,8 @@
 
 							<div class="form-group mb-lg">
 								<div class="clearfix">
-									<label class="pull-left">Password</label>
-									<a href="recover_password.html" class="pull-right">Lost Password?</a>
+									<label class="pull-left">비밀번호</label>
+									<a href="recover_password.html" class="pull-right">비밀번호 찾기</a>
 								</div>
 								<div class="input-group input-group-icon">
 									<input name="pwd" type="password" class="form-control input-lg" />
@@ -80,21 +80,14 @@
 							<div class="row">
 								<div class="col-sm-8">
 									<div class="checkbox-custom checkbox-default">
-										<input id="RememberMe" name="rememberme" type="checkbox"/>
-										<label for="RememberMe">Remember Me</label>
+										<input id="staysignin" name="staysignin" type="checkbox" />
+										<label for="staysignin">로그인상태유지</label>
 									</div>
 								</div>
 								<div class="col-sm-4 text-right">
-									<button type="submit" class="btn btn-primary hidden-xs">Sign In</button>
-									<button type="submit" class="btn btn-primary btn-block btn-lg visible-xs mt-lg">Sign In</button>
+									<button type="submit" class="btn btn-primary btn-block btn-lg">로그인</button>
 								</div>
 							</div>
-
-							<span class="mt-lg mb-lg line-thru text-center text-uppercase">
-								<span>or</span>
-							</span>
-
-							<p class="text-center"><a href="signup.html">Sign Up!</a></p>
 						</form>
 					</div>
 				</div>

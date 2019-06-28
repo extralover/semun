@@ -57,7 +57,7 @@
 		<!-- start: header -->
 		<header class="header">
 			<div class="logo-container">
-				<a href="member1_list.html" class="logo">
+				<a href="index.html" class="logo">
 					<img src="assets/images/logo.png">
 				</a>
 				<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html"
@@ -138,7 +138,7 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fa fa-users"></i>
-										<span>회원관리</span>
+										<span>사용자 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -147,13 +147,13 @@
 											</a>
 										</li>
 										<li>
-											<a href="alliance_list.html">
-												제휴 관리
+											<a href="taxaccountant_list.html">
+												세무사 관리
 											</a>
 										</li>
 										<li>
-											<a href="taxaccountant_list.html">
-												세무사 관리
+											<a href="alliance_list.html">
+												제휴업체 관리
 											</a>
 										</li>
 									</ul>
@@ -161,71 +161,35 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-calculator"></i>
-										<span>견적관리</span>
+										<span>비교견적 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="estimate_list.html">
-												견적관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="estimate_set.html">
-												견적관리 기본설정
+												비교견적 요청현황
 											</a>
 										</li>
 									</ul>
 								</li>
-								<li class="nav-parent nav-expanded nav-active">
+								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-dollar-sign"></i>
-										<span>결제관리</span>
+										<span>정산 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="payment_list.html">
-												결제관리 목록
+												계약 관리
 											</a>
 										</li>
-										<li class="nav-active">
-											<a href="payment_set.html">
-												결제관리 기본설정
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-seedling"></i>
-										<span>마일리지 관리</span>
-									</a>
-									<ul class="nav nav-children">
 										<li>
-											<a href="mileage_set.html">
-												마일리지 기본 설정
+											<a href="recommend_list.html">
+												페이백 관리
 											</a>
 										</li>
 										<li>
 											<a href="mileage_list.html">
-												마일리지 지급/차감
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-thumbs-up"></i>
-										<span>추천인 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="recommend_list.html">
-												추천인 관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="recommend_set.html">
-												추천인 기본 설정
+												포인트 관리
 											</a>
 										</li>
 									</ul>
@@ -233,7 +197,30 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-exclamation-circle"></i>
-										<span>게시판 관리</span>
+										<span>콘텐츠 관리</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="banner_list.html">
+												메인배너 관리
+											</a>
+										</li>
+										<li>
+											<a href="popup_list.html">
+												팝업 관리
+											</a>
+										</li>
+										<li>
+											<a href="reply_list.html">
+												후기 관리
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent nav-expanded nav-active">
+									<a href="#">
+										<i class="fas far fa-cogs"></i>
+										<span>고객센터</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -241,14 +228,9 @@
 												공지사항
 											</a>
 										</li>
-										<li>
-											<a href="faq_list.html">
-												자주하는 질문
-											</a>
-										</li>
-										<li>
-											<a href="reply_list.html">
-												사용자후기
+										<li class="nav-active">
+											<a href="inquiry_list.html">
+												제휴 문의
 											</a>
 										</li>
 									</ul>
@@ -256,7 +238,7 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas far fa-envelope"></i>
-										<span>SMS/카카오톡/이메일</span>
+										<span>서비스 설정</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -296,24 +278,6 @@
 										</li>
 									</ul>
 								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas far fa-cogs"></i>
-										<span>팝업/이벤트 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="popup_list.html">
-												팝업관리
-											</a>
-										</li>
-										<li>
-											<a href="event_list.html">
-												이벤트 관리
-											</a>
-										</li>
-									</ul>
-								</li>
 								<li>
 									<a href="statistics_list.html">
 										<i class="fas fa-bar-chart-o"></i>
@@ -331,56 +295,54 @@
 
 			<section role="main" class="content-body">
 				<header class="page-header">
-					<h2>결제 기본 설정</h2>
+					<h2>제휴문의</h2>
 					<div class="right-wrapper pull-right">
 						<ol class="breadcrumbs">
 							<li>
-								<a href="member1_list.html">
+								<a href="index.html">
 									<i class="fa fa-home"></i>
 								</a>
 							</li>
-							<li><span>결제관리</span></li>
-							<li><span>결제관리 기본설정</span></li>
+							<li><span>고객센터</span></li>
+							<li><span>제휴문의</span></li>
 						</ol>
 					</div>
 				</header>
 				<!-- start: page -->
 				<div class="panel-body">
 					<div class="table-responsive">
-						<table class="table type2 td_middle">
+						<table class="table type2">
 							<colgroup>
 								<col width="20%">
 								<col width="*">
-							</colgroup>
-							<tbody>
-								<tr>
-									<th rowspan="2">계약금액에 따른 결제 금액 산정</th>
-									<td class="inB">
-										<div class="checkbox-custom checkbox-primary">
-											<input type="checkbox" id="admin_check1">
-											<label for="admin_check1">
-												기장 대행 월 X
-												<input type="text" class="form-control w_auto ta_r" value="6"> 배를 결재금액으로 설정
-											</label>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="inB">
-										<div class="checkbox-custom checkbox-primary">
-											<input type="checkbox" id="admin_check2">
-											<label for="admin_check2">
-												그 외 계약은 전체 계약 금액의
-												<input type="text" class="form-control w_auto ta_r" value="10"> % 를 결제 금액으로 설정
-											</label>
-										</div>
-									</td>
-								</tr>
-							</tbody>
+                            </colgroup>
+                            <tr>
+                                <th>이름</th>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <th>연락처</th>
+                                <td>010-2222-3333</td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>happy35@semuand.com</td>
+                            </tr>
+							<tr>
+								<th>내용</th>
+								<td>저희 회사는 이러저러한 회사이고, 이러저러한 업무제휴관계를 맺어
+								    양사간의 업무제휴를 진행하고 싶습니다.
+                                    담당자와 미팅 진행을 희망하오니 연락바랍니다.
+                                </td>
+							</tr>
+							<tr>
+								<th>등록일</th>
+								<td>2019-02-20</td>
+							</tr>
 						</table>
-						<div class="btn_center_wrap">
-							<button type="button" class="btn btn-lg btn-primary w300">저장</button>
-						</div>
+					</div>
+					<div class="btn_center_wrap">
+						<a href="inquiry_list.html" class="btn btn-lg btn-primary ">목록</a>
 					</div>
 				</div>
 				<!-- end: page -->
@@ -417,17 +379,17 @@
 
 	<!-- Examples -->
 	<script src="assets/javascripts/tables/examples.datatables.default.js"></script>
-	<!-- <script>
-			$("#tbl_member tbody tr").on("click", function() {
-				var pop_width = $(window).width() - 20;
-				var pop_height = $(window).height() - 50;
-				var url = "./member1_detail.html";
-				var name = "";
-				var specs = "width="+pop_width+", height="+pop_height+", top=50, left=10, resizable=yes";
-				window.open(url, name, specs);
-				return false;
-			});
-		</script> -->
+	<script>
+		$("#notice1_admin_modify").on("click", function () {
+			var pop_width = $(window).width() - 20;
+			var pop_height = $(window).height() - 50;
+			var url = "./notice1_admin_modify.html";
+			var name = "";
+			var specs = "width=" + pop_width + ", height=" + pop_height + ", top=50, left=10, resizable=yes";
+			window.open(url, name, specs);
+			return false;
+		});
+	</script>
 </body>
 
 </html>

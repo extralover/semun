@@ -57,7 +57,7 @@
 		<!-- start: header -->
 		<header class="header">
 			<div class="logo-container">
-				<a href="member1_list.html" class="logo">
+				<a href="index.html" class="logo">
 					<img src="assets/images/logo.png">
 				</a>
 				<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html"
@@ -138,7 +138,7 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fa fa-users"></i>
-										<span>회원관리</span>
+										<span>사용자 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -147,13 +147,13 @@
 											</a>
 										</li>
 										<li>
-											<a href="alliance_list.html">
-												제휴 관리
+											<a href="taxaccountant_list.html">
+												세무사 관리
 											</a>
 										</li>
 										<li>
-											<a href="taxaccountant_list.html">
-												세무사 관리
+											<a href="alliance_list.html">
+												제휴업체 관리
 											</a>
 										</li>
 									</ul>
@@ -161,17 +161,12 @@
 								<li class="nav-parent nav-expanded nav-active">
 									<a href="#">
 										<i class="fas fa-calculator"></i>
-										<span>견적관리</span>
+										<span>비교견적 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li class="nav-active">
 											<a href="estimate_list.html">
-												견적관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="estimate_set.html">
-												견적관리 기본설정
+												비교견적 요청현황
 											</a>
 										</li>
 									</ul>
@@ -179,53 +174,22 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-dollar-sign"></i>
-										<span>결제관리</span>
+										<span>정산 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="payment_list.html">
-												결제관리 목록
+												계약 관리
 											</a>
 										</li>
 										<li>
-											<a href="payment_set.html">
-												결제관리 기본설정
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-seedling"></i>
-										<span>마일리지 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="mileage_set.html">
-												마일리지 기본 설정
+											<a href="recommend_list.html">
+												페이백 관리
 											</a>
 										</li>
 										<li>
 											<a href="mileage_list.html">
-												마일리지 지급/차감
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-thumbs-up"></i>
-										<span>추천인 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="recommend_list.html">
-												추천인 관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="recommend_set.html">
-												추천인 기본 설정
+												포인트 관리
 											</a>
 										</li>
 									</ul>
@@ -233,7 +197,30 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-exclamation-circle"></i>
-										<span>게시판 관리</span>
+										<span>콘텐츠 관리</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="banner_list.html">
+												메인배너 관리
+											</a>
+										</li>
+										<li>
+											<a href="popup_list.html">
+												팝업 관리
+											</a>
+										</li>
+										<li>
+											<a href="reply_list.html">
+												후기 관리
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent">
+									<a href="#">
+										<i class="fas far fa-cogs"></i>
+										<span>고객센터</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -242,13 +229,8 @@
 											</a>
 										</li>
 										<li>
-											<a href="faq_list.html">
-												자주하는 질문
-											</a>
-										</li>
-										<li>
-											<a href="reply_list.html">
-												사용자후기
+											<a href="inquiry_list.html">
+												제휴 문의
 											</a>
 										</li>
 									</ul>
@@ -256,7 +238,7 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas far fa-envelope"></i>
-										<span>SMS/카카오톡/이메일</span>
+										<span>서비스 설정</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -296,24 +278,6 @@
 										</li>
 									</ul>
 								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas far fa-cogs"></i>
-										<span>팝업/이벤트 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="popup_list.html">
-												팝업관리
-											</a>
-										</li>
-										<li>
-											<a href="event_list.html">
-												이벤트 관리
-											</a>
-										</li>
-									</ul>
-								</li>
 								<li>
 									<a href="statistics_list.html">
 										<i class="fas fa-bar-chart-o"></i>
@@ -331,85 +295,425 @@
 
 			<section role="main" class="content-body">
 				<header class="page-header">
-					<h2>견적관리 목록</h2>
+					<h2>비교견적 요청현황</h2>
 					<div class="right-wrapper pull-right">
 						<ol class="breadcrumbs">
 							<li>
-								<a href="member1_list.html">
+								<a href="index.html">
 									<i class="fa fa-home"></i>
 								</a>
 							</li>
-							<li><span>견적관리</span></li>
-							<li><span>견적관리 목록</span></li>
+							<li><span>비교견적 관리</span></li>
+							<li><span>비교견적 요청현황</span></li>
 						</ol>
 					</div>
 				</header>
 				<!-- start: page -->
 				<div class="panel-body">
-					<h4 class="cont_tit">견적 정보 검색</h4>
 					<div class="table-responsive">
 						<table class="table type2">
 							<colgroup>
-								<col width="90px">
+								<col width="120px">
 								<col width="">
-								<col width="90px">
+								<col width="120px">
 								<col width="">
 							</colgroup>
 							<tbody>
 								<tr>
-									<th>검색어</th>
+									<th>고객명</th>
 									<td>
-										<div class="col-md-4 w_auto">
-											<select class="form-control">
-												<option>고객명</option>
-												<option>세무사명</option>
-												<option>지역</option>
-											</select>
-										</div>
-										<div class="col-md-6 form-group">
+										<div class="col-md-6 w_auto">
 											<input type="text" class="form-control">
 										</div>
 									</td>
-									<th>견적번호</th>
+									<th>견적코드</th>
 									<td>
-										<div class="col-md-6 form-group">
+										<div class="col-md-6 w_auto">
 											<input type="text" class="form-control">
 										</div>
 									</td>
 								</tr>
 								<tr>
-									<th>견적유형</th>
+									<th>업무구분</th>
 									<td>
-										<div class="col-md-4 w_auto">
-											<select class="form-control">
-												<option>기장/신고대행</option>
-												<option>기장 대행</option>
-												<option>부가가치세 신고대행</option>
-												<option>프리랜서 신고대행</option>
-												<option>상속세</option>
-												<option>소득세</option>
-												<option>증여세</option>
+										<div class="col-md-6 w_auto">
+											<select class="form-control select_rr">
+												<option>1차 선택</option>
+												<option class="rh1">기장/신고 대행</option>
+												<option class="rh2">양도/상속/증여</option>
+												<option class="rh3">세무조사</option>
+												<option class="rh4">회계감사</option>
+											</select>
+										</div>
+										<div class="col-md-6 w_auto">
+											<select class="form-control select_ss">
+												<option>2차 선택</option>
+												<!-- 1차 선택 기장/신고 대행 시 -->
+												<option class="sh1">기장/신고 대행</option>
+												<option class="sh2">부가가치세 신고 대행</option>
+												<option class="sh3">종합소득세 신고 대행</option>
+												<option class="sh4">프리랜서 신고 대행</option>
+												<!-- 1차 양도/상속/증여 시 -->
+												<option class="sh5">양도 소득세 신고</option>
+												<option class="sh6">상속세 신고</option>
+												<option class="sh7">증여세 신고</option>
+												<option class="sh8">자문 기타</option>
+												<!-- 1차 세무조사 시 -->
+												<option class="sh9">세무조사</option>
+												<option class="sh10">조세불복</option>
+												<!-- 1차 회계감사 시 -->
+												<option class="sh11">회계감사</option>
+												<option class="sh12">아파트감사</option>
+												<option class="sh13">기타자문</option>
+												<option class="sh0">전화 상담</option>
 											</select>
 										</div>
 									</td>
-									<th>진행상태</th>
+									<th>지역</th>
+									<td>
+										<div class="col-md-6 w_auto">
+											<select class="form-control ch11 select_ar1">
+												<option>시/도</option>
+												<option class="ah1">서울시</option>
+												<option class="ah2">경기도</option>
+												<option class="ah3">인천시</option>
+												<option class="ah4">부산시</option>
+												<option class="ah5">대전시</option>
+												<option class="ah6">대구시</option>
+												<option class="ah7">울산시</option>
+												<option class="ah8">세종시</option>
+												<option class="ah9">광주시</option>
+												<option class="ah10">강원도</option>
+												<option class="ah11">충청북도</option>
+												<option class="ah12">충청남도</option>
+												<option class="ah13">경상북도</option>
+												<option class="ah14">경상남도</option>
+												<option class="ah15">전라북도</option>
+												<option class="ah16">전라남도</option>
+												<option class="ah17">제주도</option>
+											</select>
+										</div>
+										<div class="col-md-6 w_auto">
+											<select class="form-control ch11 select_ar2">
+												<option>구/군</option>
+												<!-- 1차 서울시 -->
+												<option class="ah1">강남구</option>
+												<option class="ah1">강동구</option>
+												<option class="ah1">강북구</option>
+												<option class="ah1">강서구</option>
+												<option class="ah1">관악구</option>
+												<option class="ah1">광진구</option>
+												<option class="ah1">구로구</option>
+												<option class="ah1">금천구</option>
+												<option class="ah1">노원구</option>
+												<option class="ah1">도봉구</option>
+												<option class="ah1">동대문구</option>
+												<option class="ah1">동작구</option>
+												<option class="ah1">마포구</option>
+												<option class="ah1">서대문구</option>
+												<option class="ah1">서초구</option>
+												<option class="ah1">성동구</option>
+												<option class="ah1">성북구</option>
+												<option class="ah1">송파구</option>
+												<option class="ah1">양천구</option>
+												<option class="ah1">영등포구</option>
+												<option class="ah1">용산구</option>
+												<option class="ah1">은평구</option>
+												<option class="ah1">종로구</option>
+												<option class="ah1">중구</option>
+												<option class="ah1">중랑구</option>
+												<!-- 1차 경기도 -->
+												<option class="ah2">가평군</option>
+												<option class="ah2">고양시 덕양구</option>
+												<option class="ah2">고양시 일산동구</option>
+												<option class="ah2">고양시 일산서구</option>
+												<option class="ah2">과천시</option>
+												<option class="ah2">광명시</option>
+												<option class="ah2">광주시</option>
+												<option class="ah2">구리시</option>
+												<option class="ah2">군포시</option>
+												<option class="ah2">김포시</option>
+												<option class="ah2">남양주시</option>
+												<option class="ah2">동두천시</option>
+												<option class="ah2">부천시</option>
+												<option class="ah2">성남시 분당구</option>
+												<option class="ah2">성남시 수정구</option>
+												<option class="ah2">성남시 중원구</option>
+												<option class="ah2">수원시 권선구</option>
+												<option class="ah2">수원시 영통구</option>
+												<option class="ah2">수원시 장안구</option>
+												<option class="ah2">수원시 팔달구</option>
+												<option class="ah2">시흥시</option>
+												<option class="ah2">안산시 단원구</option>
+												<option class="ah2">안산시 상록구</option>
+												<option class="ah2">안성시</option>
+												<option class="ah2">안양시 동안구</option>
+												<option class="ah2">안양시 만안구</option>
+												<option class="ah2">양주시</option>
+												<option class="ah2">양평군</option>
+												<option class="ah2">여주시</option>
+												<option class="ah2">연천군</option>
+												<option class="ah2">오산시</option>
+												<option class="ah2">용인시 기흥구</option>
+												<option class="ah2">용인시 수지구</option>
+												<option class="ah2">용인시 처인구</option>
+												<option class="ah2">의왕시</option>
+												<option class="ah2">의정부시</option>
+												<option class="ah2">이천시</option>
+												<option class="ah2">파주시</option>
+												<option class="ah2">평택시</option>
+												<option class="ah2">포천시</option>
+												<option class="ah2">하남시</option>
+												<option class="ah2">화성시</option>
+												<!-- 1차 인천시 -->
+												<option class="ah3">강화군</option>
+												<option class="ah3">계양구</option>
+												<option class="ah3">남구</option>
+												<option class="ah3">남동구</option>
+												<option class="ah3">동구</option>
+												<option class="ah3">부평구</option>
+												<option class="ah3">서구</option>
+												<option class="ah3">연수구</option>
+												<option class="ah3">옹진군</option>
+												<option class="ah3">중구</option>
+												<option class="ah3">미추홀구</option>
+												<!-- 1차 부산시 -->
+												<option class="ah4">강서구</option>
+												<option class="ah4">금정구</option>
+												<option class="ah4">기장군</option>
+												<option class="ah4">남구</option>
+												<option class="ah4">동구</option>
+												<option class="ah4">동래구</option>
+												<option class="ah4">부산진구</option>
+												<option class="ah4">북구</option>
+												<option class="ah4">사상구</option>
+												<option class="ah4">사하구</option>
+												<option class="ah4">서구</option>
+												<option class="ah4">수영구</option>
+												<option class="ah4">연제구</option>
+												<option class="ah4">영도구</option>
+												<option class="ah4">중구</option>
+												<option class="ah4">해운대구</option>
+												<!-- 1차 대전시 -->
+												<option class="ah5">대덕구</option>
+												<option class="ah5">동구</option>
+												<option class="ah5">서구</option>
+												<option class="ah5">유성구</option>
+												<option class="ah5">중구</option>
+												<!-- 1차 대구시 -->
+												<option class="ah6">남구</option>
+												<option class="ah6">달서구</option>
+												<option class="ah6">달성군</option>
+												<option class="ah6">동구</option>
+												<option class="ah6">북구</option>
+												<option class="ah6">서구</option>
+												<option class="ah6">수성구</option>
+												<option class="ah6">중구</option>
+												<!-- 1차 울산시 -->
+												<option class="ah7">남구</option>
+												<option class="ah7">동구</option>
+												<option class="ah7">북구</option>
+												<option class="ah7">울주군</option>
+												<option class="ah7">중구</option>
+												<!-- 1차 세종시 -->
+												<option class="ah8">가람동</option>
+												<option class="ah8">고운동</option>
+												<option class="ah8">금남면</option>
+												<option class="ah8">나성동</option>
+												<option class="ah8">다정동</option>
+												<option class="ah8">대평동</option>
+												<option class="ah8">도담동</option>
+												<option class="ah8">반곡동</option>
+												<option class="ah8">보람동</option>
+												<option class="ah8">부강면</option>
+												<option class="ah8">새롬동</option>
+												<option class="ah8">소담동</option>
+												<option class="ah8">소정면</option>
+												<option class="ah8">아름동</option>
+												<option class="ah8">어진동</option>
+												<option class="ah8">연기면</option>
+												<option class="ah8">연동면</option>
+												<option class="ah8">연서면</option>
+												<option class="ah8">장군면</option>
+												<option class="ah8">전동면</option>
+												<option class="ah8">전의면</option>
+												<option class="ah8">조치원읍</option>
+												<option class="ah8">종촌동</option>
+												<option class="ah8">한솔동</option>
+												<option class="ah8">한누리대로</option>
+												<!-- 1차 광주시 -->
+												<option class="ah9">광산구</option>
+												<option class="ah9">남구</option>
+												<option class="ah9">동구</option>
+												<option class="ah9">북구</option>
+												<option class="ah9">서구</option>
+												<!-- 1차 강원도 -->
+												<option class="ah10">강릉시</option>
+												<option class="ah10">고성군</option>
+												<option class="ah10">동해시</option>
+												<option class="ah10">삼척시</option>
+												<option class="ah10">속초시</option>
+												<option class="ah10">양구군</option>
+												<option class="ah10">양양군</option>
+												<option class="ah10">영월군</option>
+												<option class="ah10">원주시</option>
+												<option class="ah10">인제군</option>
+												<option class="ah10">정선군</option>
+												<option class="ah10">철원군</option>
+												<option class="ah10">춘천시</option>
+												<option class="ah10">태백시</option>
+												<option class="ah10">평창군</option>
+												<option class="ah10">홍천군</option>
+												<option class="ah10">화천군</option>
+												<option class="ah10">횡성군</option>
+												<!-- 1차 충청북도 -->
+												<option class="ah11">괴산군</option>
+												<option class="ah11">단양군</option>
+												<option class="ah11">보은군</option>
+												<option class="ah11">영동군</option>
+												<option class="ah11">옥천군</option>
+												<option class="ah11">음성군</option>
+												<option class="ah11">제천시</option>
+												<option class="ah11">증평군</option>
+												<option class="ah11">진천군</option>
+												<option class="ah11">청주시 상당구</option>
+												<option class="ah11">청주시 서원구</option>
+												<option class="ah11">청주시 청원구</option>
+												<option class="ah11">청주시 흥덕구</option>
+												<option class="ah11">충주시</option>
+												<!-- 1차 충청남도 -->
+												<option class="ah12">계룡시</option>
+												<option class="ah12">공주시</option>
+												<option class="ah12">금산군</option>
+												<option class="ah12">논산시</option>
+												<option class="ah12">당진시</option>
+												<option class="ah12">보령시</option>
+												<option class="ah12">부여군</option>
+												<option class="ah12">서산시</option>
+												<option class="ah12">서천군</option>
+												<option class="ah12">아산시</option>
+												<option class="ah12">예산군</option>
+												<option class="ah12">천안시 동남구</option>
+												<option class="ah12">천안시 서북구</option>
+												<option class="ah12">청양군</option>
+												<option class="ah12">태안군</option>
+												<option class="ah12">홍성군</option>
+												<!-- 1차 경상북도 -->
+												<option class="ah13">경산시</option>
+												<option class="ah13">경주시</option>
+												<option class="ah13">고령군</option>
+												<option class="ah13">구미시</option>
+												<option class="ah13">군위군</option>
+												<option class="ah13">김천시</option>
+												<option class="ah13">문경시</option>
+												<option class="ah13">봉화군</option>
+												<option class="ah13">상주시</option>
+												<option class="ah13">성주군</option>
+												<option class="ah13">안동시</option>
+												<option class="ah13">영덕군</option>
+												<option class="ah13">영양군</option>
+												<option class="ah13">영주시</option>
+												<option class="ah13">영천시</option>
+												<option class="ah13">예천군</option>
+												<option class="ah13">울릉군</option>
+												<option class="ah13">울진군</option>
+												<option class="ah13">의성군</option>
+												<option class="ah13">청도군</option>
+												<option class="ah13">청송군</option>
+												<option class="ah13">칠곡군</option>
+												<option class="ah13">포항시 남구</option>
+												<option class="ah13">포항시 북구</option>
+												<!-- 1차 경상남도 -->
+												<option class="ah14">거제시</option>
+												<option class="ah14">거창군</option>
+												<option class="ah14">고성군</option>
+												<option class="ah14">김해시</option>
+												<option class="ah14">남해군</option>
+												<option class="ah14">밀양시</option>
+												<option class="ah14">사천시</option>
+												<option class="ah14">산청군</option>
+												<option class="ah14">양산시</option>
+												<option class="ah14">의령군</option>
+												<option class="ah14">진주시</option>
+												<option class="ah14">창녕군</option>
+												<option class="ah14">창원시 마산합포구</option>
+												<option class="ah14">창원시 마산회원구</option>
+												<option class="ah14">창원시 성산구</option>
+												<option class="ah14">창원시 의창구</option>
+												<option class="ah14">창원시 진해구</option>
+												<option class="ah14">통영시</option>
+												<option class="ah14">하동군</option>
+												<option class="ah14">함안군</option>
+												<option class="ah14">함양군</option>
+												<option class="ah14">합천군</option>
+												<!-- 1차 전라북도 -->
+												<option class="ah15">고창군</option>
+												<option class="ah15">군산시</option>
+												<option class="ah15">김제시</option>
+												<option class="ah15">남원시</option>
+												<option class="ah15">무주군</option>
+												<option class="ah15">부안군</option>
+												<option class="ah15">순창군</option>
+												<option class="ah15">완주군</option>
+												<option class="ah15">익산시</option>
+												<option class="ah15">임실군</option>
+												<option class="ah15">장수군</option>
+												<option class="ah15">전주시 덕진구</option>
+												<option class="ah15">전주시 완산구</option>
+												<option class="ah15">정읍시</option>
+												<option class="ah15">진안군</option>
+												<!-- 1차 전라남도 -->
+												<option class="ah16">강진군</option>
+												<option class="ah16">고흥군</option>
+												<option class="ah16">곡성군</option>
+												<option class="ah16">광양시</option>
+												<option class="ah16">구례군</option>
+												<option class="ah16">나주시</option>
+												<option class="ah16">담양군</option>
+												<option class="ah16">목포시</option>
+												<option class="ah16">무안군</option>
+												<option class="ah16">보성군</option>
+												<option class="ah16">순천시</option>
+												<option class="ah16">신안군</option>
+												<option class="ah16">여수시</option>
+												<option class="ah16">영광군</option>
+												<option class="ah16">영암군</option>
+												<option class="ah16">완도군</option>
+												<option class="ah16">장성군</option>
+												<option class="ah16">장흥군</option>
+												<option class="ah16">진도군</option>
+												<option class="ah16">함평군</option>
+												<option class="ah16">해남군</option>
+												<option class="ah16">화순군</option>
+												<!-- 1차 제주도 -->
+												<option class="ah17">서귀포시</option>
+												<option class="ah17">제주시</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>상태</th>
 									<td>
 										<div class="col-md-4 w_auto">
 											<select class="form-control">
-												<option>진행중</option>
-												<option>입찰완료</option>
+												<option>전체</option>
+												<option>승인대기</option>
+												<option>비교견적중</option>
+												<option>견적완료</option>
 												<option>미선정</option>
-												<option>계약진행중</option>
-												<option>게약완료</option>
-												<option>계약실패</option>
+												<option>낙찰</option>
+												<option>상담중</option>
+												<option>계약완료</option>
+												<option>입금대기</option>
+												<option>결제완료</option>
 											</select>
+
 										</div>
 									</td>
-								</tr>
-								<tr>
-									<th>요청일자</th>
-									<td colspan="3">
-										<div class="col-md-6">
+									<th>견적일</th>
+									<td>
+										<div class="col-md-12">
 											<div class="input-daterange input-group" data-plugin-datepicker>
 												<span class="input-group-addon">
 													<i class="fa fa-calendar"></i>
@@ -417,39 +721,6 @@
 												<input type="text" class="form-control" name="start">
 												<span class="input-group-addon">to</span>
 												<input type="text" class="form-control" name="end">
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="btn-group">
-												<button type="button" class="btn btn-default">오늘</button>
-												<button type="button" class="btn btn-default">3일</button>
-												<button type="button" class="btn btn-default">7일</button>
-												<button type="button" class="btn btn-default">2주</button>
-												<button type="button" class="btn btn-default">1달</button>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th>완료일자</th>
-									<td colspan="3">
-										<div class="col-md-6">
-											<div class="input-daterange input-group" data-plugin-datepicker>
-												<span class="input-group-addon">
-													<i class="fa fa-calendar"></i>
-												</span>
-												<input type="text" class="form-control" name="start">
-												<span class="input-group-addon">to</span>
-												<input type="text" class="form-control" name="end">
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="btn-group">
-												<button type="button" class="btn btn-default">오늘</button>
-												<button type="button" class="btn btn-default">3일</button>
-												<button type="button" class="btn btn-default">7일</button>
-												<button type="button" class="btn btn-default">2주</button>
-												<button type="button" class="btn btn-default">1달</button>
 											</div>
 										</div>
 									</td>
@@ -458,155 +729,54 @@
 						</table>
 					</div>
 					<div class="btn_center_wrap">
-						<button type="button" class="btn btn-lg btn-primary w300">검색</button>
+						<button type="button" class="btn btn-lg btn-primary">조회</button>
 					</div>
 				</div>
 
 				<div class="panel-body">
-					<div class="table-responsive tbl_center">
-						<table class="table table-hover td_middle tbl_data">
+					<div class="tbl_center">
+						<table class="table table-hover tbl_data">
 							<thead>
 								<tr>
 									<th>번호</th>
-									<th>견적번호</th>
-									<th>요청일자</th>
-									<th>완료일자</th>
-									<th>요청자</th>
-									<th>지역</th>
-									<th>견적유형</th>
-									<th>진행상태</th>
-									<th>견적평균가</th>
-									<th>입찰세무사</th>
+									<th>견적코드</th>
+									<th>견적요청일</th>
+									<th>견적마감일</th>
+									<th>고객명</th>
+									<th>연락처</th>
+									<th>업무구분</th>
+									<th>입찰자수</th>
+									<th>상태</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>110</td>
+									<td>10</td>
 									<td><a href="estimate_detail.html">190220aa00008</a></td>
 									<td>2019-02-20</td>
 									<td>2019-02-23</td>
-									<td><a href="customer_detail.html" target="_blank">홍길동_01023452345</a></td>
-									<td>서울 강남구</td>
-									<td>기장 대행</td>
-									<td>진행중</td>
-									<td>65,350</td>
-									<td>
-										<p><a href="#" target="_blank">나무현_010254521455</a></p>
-										<p><a href="#" target="_blank">조조_01075875214</a></p>
-										<p><a href="#" target="_blank">유비_01045874521</a></p>
-										<p><a href="#" target="_blank">장비_021452145</a></p>
-									</td>
+									<td><a href="customer_detail.html" target="_blank">홍길동</a></td>
+									<td>010-2222-3333</td>
+									<td>기장/신고 대행</td>
+									<td>5명</td>
+									<td>승인대기</td>
 								</tr>
 								<tr>
-									<td>109</td>
+									<td>9</td>
 									<td><a href="estimate_detail.html">190220aa00008</a></td>
 									<td>2019-02-20</td>
 									<td>2019-02-23</td>
-									<td><a href="customer_detail.html" target="_blank">김민수_01023452345</a></td>
-									<td>서울 강남구</td>
-									<td>상속세</td>
-									<td>입찰완료</td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>108</td>
-									<td><a href="estimate_detail.html">190220aa00008</a></td>
-									<td>2019-02-20</td>
-									<td>2019-02-23</td>
-									<td><a href="customer_detail.html" target="_blank">김민수_01023452345</a></td>
-									<td>서울 강남구</td>
-									<td>부가가치세 신고대행</td>
-									<td>미선택</td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>107</td>
-									<td><a href="estimate_detail.html">190220aa00008</a></td>
-									<td>2019-02-20</td>
-									<td>2019-02-23</td>
-									<td><a href="customer_detail.html" target="_blank">김민수_01023452345</a></td>
-									<td>서울 강남구</td>
-									<td>증여세</td>
-									<td>계약실패</td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>106</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>계약완료</td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>105</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>104</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>103</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>102</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>101</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<td><a href="customer_detail.html" target="_blank">홍길동</a></td>
+									<td>010-2222-3333</td>
+									<td>기장/신고 대행</td>
+									<td>5명</td>
+									<td>비교견적중</td>
 								</tr>
 							</tbody>
 						</table>
+					</div>
+					<div class="btn_center_wrap">
+						<a href="estimate_write.html" class="btn btn-lg btn-primary">견적등록</a>
 					</div>
 				</div>
 				<!-- end: page -->

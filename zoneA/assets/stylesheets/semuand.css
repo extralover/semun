@@ -10,6 +10,10 @@ body {
 .w_auto {
     width: auto !important;
 }
+.w_auto2 {
+    width: auto !important;
+    padding: 0;
+}
 .w100 {
     width: 100px !important;
 }
@@ -18,6 +22,9 @@ body {
 }
 .w300 {
     width: 300px !important;
+}
+.w600c {
+    width: 600px; margin: 0 auto;
 }
 
 .pd0 {
@@ -32,6 +39,10 @@ body {
 
 .ml20 {
     margin-left: 20px !important;
+}
+
+.btn-lg {
+    min-width: 150px;
 }
 
 /* 공통 */
@@ -131,13 +142,12 @@ div.dataTables_paginate {
 
 .panel-heading .panel-title {
     float: left;
-    margin-top: 35px;
+    margin-top: 5px;
 }
 
 .panel-heading .panel-btn {
     float: left;
-    margin-left: 10px;
-    margin-top: 30px;
+    margin-left: 20px;
 }
 
 .panel-heading .panel-widget {
@@ -193,9 +203,9 @@ div.dataTables_paginate {
     margin-left: 30px;
 }
 
-.table-responsive {
+/* .table-responsive {
     overflow-x: hidden;
-}
+} */
 
 .select_tit_wrap {
     margin-bottom: 30px;
@@ -258,9 +268,14 @@ div.dataTables_paginate {
 .check_float {
     float: left;
 }
-
 .check_float.ml {
     margin-left: 10px;
+}
+.check_float2 {
+    float: right;
+}
+.check_float2.mr {
+    margin-right: 10px;
 }
 
 .padding_add {
@@ -601,7 +616,57 @@ html.dark .checkbox-primary label:before,
     font-size: 20px;
     color: #ccc;
 }
-
 .point button.fa-star.on {
     color: #ffbb00;
+}
+
+.box_payback {
+    float: right;
+    background-color: #fdfdfd;
+    padding: 15px;
+}
+.box_payback .summary-icon {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+.box_payback .info {
+    display: inline-block;
+    font-size: 20px;
+}
+.box_payback .info strong {
+    color: #000;
+}
+.postcode_wrap .form-control {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+.btn_openDetail {
+    border: none;
+    background: none;
+    color: #0088cc;
+}
+.btn_openDetail:hover {
+    text-decoration: underline;
+}
+.con_detail {
+    display: none;
+}
+.modal-block {
+    max-width: 1000px;
+}
+.mh200 img {
+    max-height: 200px;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.line1 {
+    display: inline-block;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

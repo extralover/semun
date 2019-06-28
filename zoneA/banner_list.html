@@ -57,7 +57,7 @@
 		<!-- start: header -->
 		<header class="header">
 			<div class="logo-container">
-				<a href="member1_list.html" class="logo">
+				<a href="index.html" class="logo">
 					<img src="assets/images/logo.png">
 				</a>
 				<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html"
@@ -138,7 +138,7 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fa fa-users"></i>
-										<span>회원관리</span>
+										<span>사용자 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -147,13 +147,13 @@
 											</a>
 										</li>
 										<li>
-											<a href="alliance_list.html">
-												제휴 관리
+											<a href="taxaccountant_list.html">
+												세무사 관리
 											</a>
 										</li>
 										<li>
-											<a href="taxaccountant_list.html">
-												세무사 관리
+											<a href="alliance_list.html">
+												제휴업체 관리
 											</a>
 										</li>
 									</ul>
@@ -161,17 +161,12 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-calculator"></i>
-										<span>견적관리</span>
+										<span>비교견적 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="estimate_list.html">
-												견적관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="estimate_set.html">
-												견적관리 기본설정
+												비교견적 요청현황
 											</a>
 										</li>
 									</ul>
@@ -179,53 +174,22 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-dollar-sign"></i>
-										<span>결제관리</span>
+										<span>정산 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="payment_list.html">
-												결제관리 목록
+												계약 관리
 											</a>
 										</li>
 										<li>
-											<a href="payment_set.html">
-												결제관리 기본설정
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-seedling"></i>
-										<span>마일리지 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="mileage_set.html">
-												마일리지 기본 설정
+											<a href="recommend_list.html">
+												페이백 관리
 											</a>
 										</li>
 										<li>
 											<a href="mileage_list.html">
-												마일리지 지급/차감
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-thumbs-up"></i>
-										<span>추천인 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="recommend_list.html">
-												추천인 관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="recommend_set.html">
-												추천인 기본 설정
+												포인트 관리
 											</a>
 										</li>
 									</ul>
@@ -233,7 +197,30 @@
 								<li class="nav-parent nav-expanded nav-active">
 									<a href="#">
 										<i class="fas fa-exclamation-circle"></i>
-										<span>게시판 관리</span>
+										<span>콘텐츠 관리</span>
+									</a>
+									<ul class="nav nav-children">
+										<li class="nav-active">
+											<a href="banner_list.html">
+												메인배너 관리
+											</a>
+										</li>
+										<li>
+											<a href="popup_list.html">
+												팝업 관리
+											</a>
+										</li>
+										<li>
+											<a href="reply_list.html">
+												후기 관리
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent">
+									<a href="#">
+										<i class="fas far fa-cogs"></i>
+										<span>고객센터</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -241,14 +228,9 @@
 												공지사항
 											</a>
 										</li>
-										<li class="nav-active">
-											<a href="faq_list.html">
-												자주하는 질문
-											</a>
-										</li>
 										<li>
-											<a href="reply_list.html">
-												사용자후기
+											<a href="inquiry_list.html">
+												제휴 문의
 											</a>
 										</li>
 									</ul>
@@ -256,7 +238,7 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas far fa-envelope"></i>
-										<span>SMS/카카오톡/이메일</span>
+										<span>서비스 설정</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -296,24 +278,6 @@
 										</li>
 									</ul>
 								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas far fa-cogs"></i>
-										<span>팝업/이벤트 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="popup_list.html">
-												팝업관리
-											</a>
-										</li>
-										<li>
-											<a href="event_list.html">
-												이벤트 관리
-											</a>
-										</li>
-									</ul>
-								</li>
 								<li>
 									<a href="statistics_list.html">
 										<i class="fas fa-bar-chart-o"></i>
@@ -331,214 +295,120 @@
 
 			<section role="main" class="content-body">
 				<header class="page-header">
-					<h2>자주하는 질문 목록</h2>
+					<h2>메인배너 관리</h2>
 					<div class="right-wrapper pull-right">
 						<ol class="breadcrumbs">
 							<li>
-								<a href="member1_list.html">
+								<a href="index.html">
 									<i class="fa fa-home"></i>
 								</a>
 							</li>
-							<li><span>게시판 관리</span></li>
-							<li><span>자주하는 질문 목록</span></li>
+							<li><span>콘텐츠 관리</span></li>
+							<li><span>메인배너 관리</span></li>
 						</ol>
 					</div>
 				</header>
 				<!-- start: page -->
 				<div class="panel-body">
-					<h4 class="cont_tit">자주하는 질문 검색</h4>
-					<div class="table-responsive">
-						<table class="table type2">
-							<colgroup>
-								<col width="90px">
-								<col width="">
-								<col width="90px">
-								<col width="">
-							</colgroup>
+					<div class="tbl_center">
+						<table class="table table-hover tbl_data td_middle">
+							<thead>
+								<tr>
+                                    <th>번호</th>
+									<th>노출순서</th>
+									<th>이미지</th>
+									<th>제목</th>
+									<th>노출</th>
+									<th>관리</th>
+								</tr>
+							</thead>
 							<tbody>
 								<tr>
-									<th>검색어</th>
+									<td>10</td>
 									<td>
-										<div class="col-md-4 w_auto">
-											<select class="form-control">
-												<option>제목</option>
-											</select>
-										</div>
-										<div class="col-md-4 w_auto">
-											<input type="text" class="form-control">
-										</div>
+                                        <div class="col-sm-6 w_auto">
+                                            <select class="form-control">
+                                                <option selected>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                            </select>
+                                        </div>
+                                    </td>
+									<td>
+									    <div class="mh200"><img src="assets/images/temp/project.jpg" alt=""></div>
 									</td>
+									<td>기장/신고대행 비교견적</td>
+									<td>
+                                        <div class="checkbox-custom checkbox-primary center">
+                                            <input type="checkbox" checked>
+                                            <label></label>
+                                        </div>
+                                    </td>
+									<td><a href="banner_write.html" class="btn btn-info">수정</a></td>
 								</tr>
 								<tr>
-									<th>작성일</th>
-									<td colspan="3">
-										<div class="col-md-6">
-											<div class="input-daterange input-group" data-plugin-datepicker>
-												<span class="input-group-addon">
-													<i class="fa fa-calendar"></i>
-												</span>
-												<input type="text" class="form-control" name="start">
-												<span class="input-group-addon">to</span>
-												<input type="text" class="form-control" name="end">
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="btn-group">
-												<button type="button" class="btn btn-default">오늘</button>
-												<button type="button" class="btn btn-default">3일</button>
-												<button type="button" class="btn btn-default">7일</button>
-												<button type="button" class="btn btn-default">2주</button>
-												<button type="button" class="btn btn-default">1달</button>
-											</div>
-										</div>
-									</td>
+								    <td>9</td>
+								    <td>
+                                        <div class="col-sm-6 w_auto">
+                                            <select class="form-control">
+                                                <option>1</option>
+                                                <option selected>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                            </select>
+                                        </div>
+                                    </td>
+								    <td>
+								        <div class="mh200"><img src="assets/images/temp/project.jpg" alt=""></div>
+								    </td>
+								    <td>추천인 이벤트 배너</td>
+								    <td>
+								        <div class="checkbox-custom checkbox-primary center">
+								            <input type="checkbox">
+								            <label></label>
+								        </div>
+								    </td>
+								    <td><a href="banner_write.html" class="btn btn-info">수정</a></td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 					<div class="btn_center_wrap">
-						<button type="button" class="btn btn-lg btn-primary w300">검색</button>
-					</div>
-				</div>
-				<div class="panel-body">
-					<div class="btn_right_wrap">
-						<a href="faq_write.html" class="btn btn-lg btn-primary">새글쓰기</a>
-					</div>
-					<div class="tbl_center">
-						<table class="table table-hover tbl_data_2">
-							<thead>
-								<tr>
-									<th>
-										<div class="checkbox-custom checkbox-primary center">
-											<input type="checkbox">
-											<label></label>
-										</div>
-									</th>
-									<th>번호</th>
-									<th>제목</th>
-									<th>작성일</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class="checkbox-custom checkbox-primary center">
-											<input type="checkbox">
-											<label></label>
-										</div>
-									</td>
-									<td>110</td>
-									<td><a href="faq_detail.html">회원가입이 필요한가요?</a></td>
-									<td>2019-02-20</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="checkbox-custom checkbox-primary center">
-											<input type="checkbox">
-											<label></label>
-										</div>
-									</td>
-									<td>109</td>
-									<td><a href="faq_detail.html">회원가입이 필요한가요?</a></td>
-									<td>2019-02-20</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="checkbox-custom checkbox-primary center">
-											<input type="checkbox">
-											<label></label>
-										</div>
-									</td>
-									<td>108</td>
-									<td><a href="faq_detail.html">회원가입이 필요한가요?</a></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="checkbox-custom checkbox-primary center">
-											<input type="checkbox">
-											<label></label>
-										</div>
-									</td>
-									<td>107</td>
-									<td><a href="faq_detail.html">회원가입이 필요한가요?</a></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="checkbox-custom checkbox-primary center">
-											<input type="checkbox">
-											<label></label>
-										</div>
-									</td>
-									<td>106</td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="checkbox-custom checkbox-primary center">
-											<input type="checkbox">
-											<label></label>
-										</div>
-									</td>
-									<td>105</td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="checkbox-custom checkbox-primary center">
-											<input type="checkbox">
-											<label></label>
-										</div>
-									</td>
-									<td>104</td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="checkbox-custom checkbox-primary center">
-											<input type="checkbox">
-											<label></label>
-										</div>
-									</td>
-									<td>103</td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="checkbox-custom checkbox-primary center">
-											<input type="checkbox">
-											<label></label>
-										</div>
-									</td>
-									<td>102</td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="checkbox-custom checkbox-primary center">
-											<input type="checkbox">
-											<label></label>
-										</div>
-									</td>
-									<td>101</td>
-									<td></td>
-									<td></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="col-md-12 txtbtn_wrap">
-						<div class="checkbox-custom checkbox-primary col-md-6 w_auto">
-							<input type="checkbox" checked="checked">
-							<label>선택한 글 삭제</label>
-						</div>
-						<button type="button" class="btn btn-primary ml20">삭제</button>
+                        <button class="btn btn-lg btn-primary check_float">노출순서 변경</button>
+						<a href="banner_write.html" class="btn btn-lg btn-primary ">배너 등록</a>
 					</div>
 				</div>
 				<!-- end: page -->
@@ -575,17 +445,7 @@
 
 	<!-- Examples -->
 	<script src="assets/javascripts/tables/examples.datatables.default.js"></script>
-	<script>
-		$("#notice2_admin_detail").on("click", function () {
-			var pop_width = $(window).width() - 20;
-			var pop_height = $(window).height() - 50;
-			var url = "./notice2_admin_detail.html";
-			var name = "";
-			var specs = "width=" + pop_width + ", height=" + pop_height + ", top=50, left=10, resizable=yes";
-			window.open(url, name, specs);
-			return false;
-		});
-	</script>
+	<script src="assets/javascripts/ui-elements/examples.modals.js"></script>
 </body>
 
 </html>

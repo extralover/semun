@@ -57,7 +57,7 @@
 		<!-- start: header -->
 		<header class="header">
 			<div class="logo-container">
-				<a href="member1_list.html" class="logo">
+				<a href="index.html" class="logo">
 					<img src="assets/images/logo.png">
 				</a>
 				<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html"
@@ -138,7 +138,7 @@
 								<li class="nav-parent nav-expanded nav-active">
 									<a href="#">
 										<i class="fa fa-users"></i>
-										<span>회원관리</span>
+										<span>사용자 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -146,14 +146,14 @@
 												고객 관리
 											</a>
 										</li>
-										<li class="nav-active">
-											<a href="alliance_list.html">
-												제휴 관리
-											</a>
-										</li>
 										<li>
 											<a href="taxaccountant_list.html">
 												세무사 관리
+											</a>
+										</li>
+										<li class="nav-active">
+											<a href="alliance_list.html">
+												제휴업체 관리
 											</a>
 										</li>
 									</ul>
@@ -161,17 +161,12 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-calculator"></i>
-										<span>견적관리</span>
+										<span>비교견적 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="estimate_list.html">
-												견적관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="estimate_set.html">
-												견적관리 기본설정
+												비교견적 요청현황
 											</a>
 										</li>
 									</ul>
@@ -179,53 +174,22 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-dollar-sign"></i>
-										<span>결제관리</span>
+										<span>정산 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="payment_list.html">
-												결제관리 목록
+												계약 관리
 											</a>
 										</li>
 										<li>
-											<a href="payment_set.html">
-												결제관리 기본설정
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-seedling"></i>
-										<span>마일리지 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="mileage_set.html">
-												마일리지 기본 설정
+											<a href="recommend_list.html">
+												페이백 관리
 											</a>
 										</li>
 										<li>
 											<a href="mileage_list.html">
-												마일리지 지급/차감
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-thumbs-up"></i>
-										<span>추천인 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="recommend_list.html">
-												추천인 관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="recommend_set.html">
-												추천인 기본 설정
+												포인트 관리
 											</a>
 										</li>
 									</ul>
@@ -233,7 +197,30 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-exclamation-circle"></i>
-										<span>게시판 관리</span>
+										<span>콘텐츠 관리</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="banner_list.html">
+												메인배너 관리
+											</a>
+										</li>
+										<li>
+											<a href="popup_list.html">
+												팝업 관리
+											</a>
+										</li>
+										<li>
+											<a href="reply_list.html">
+												후기 관리
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent">
+									<a href="#">
+										<i class="fas far fa-cogs"></i>
+										<span>고객센터</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -242,13 +229,8 @@
 											</a>
 										</li>
 										<li>
-											<a href="faq_list.html">
-												자주하는 질문
-											</a>
-										</li>
-										<li>
-											<a href="reply_list.html">
-												사용자후기
+											<a href="inquiry_list.html">
+												제휴 문의
 											</a>
 										</li>
 									</ul>
@@ -256,7 +238,7 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas far fa-envelope"></i>
-										<span>SMS/카카오톡/이메일</span>
+										<span>서비스 설정</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -296,24 +278,6 @@
 										</li>
 									</ul>
 								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas far fa-cogs"></i>
-										<span>팝업/이벤트 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="popup_list.html">
-												팝업관리
-											</a>
-										</li>
-										<li>
-											<a href="event_list.html">
-												이벤트 관리
-											</a>
-										</li>
-									</ul>
-								</li>
 								<li>
 									<a href="statistics_list.html">
 										<i class="fas fa-bar-chart-o"></i>
@@ -331,28 +295,27 @@
 
 			<section role="main" class="content-body">
 				<header class="page-header">
-					<h2>제휴 관리</h2>
+					<h2>제휴업체 관리</h2>
 					<div class="right-wrapper pull-right">
 						<ol class="breadcrumbs">
 							<li>
-								<a href="member1_list.html">
+								<a href="index.html">
 									<i class="fa fa-home"></i>
 								</a>
 							</li>
-							<li><span>회원관리</span></li>
-							<li><span>제휴관리</span></li>
+							<li><span>사용자 관리</span></li>
+							<li><span>제휴업체 관리</span></li>
 						</ol>
 					</div>
 				</header>
 				<!-- start: page -->
 				<div class="panel-body">
-					<h4 class="cont_tit">회원검색</h4>
 					<div class="table-responsive">
 						<table class="table type2">
 							<colgroup>
-								<col width="90px">
+								<col width="120px">
 								<col width="">
-								<col width="90px">
+								<col width="120px">
 								<col width="">
 							</colgroup>
 							<tbody>
@@ -361,47 +324,33 @@
 									<td>
 										<div class="col-md-4 w_auto">
 											<select class="form-control">
-												<option>이름</option>
-												<option>전화번호</option>
-												<option>지역</option>
+												<option>아이디</option>
+												<option>회사명</option>
+												<option>아이디</option>
 											</select>
 										</div>
-										<div class="col-md-6 form-group w_auto">
+										<div class="col-md-6 w_auto">
 											<input type="text" class="form-control">
 										</div>
 									</td>
-									<th>제휴형태</th>
+									<th>사용승인</th>
 									<td>
-										<div class="col-md-4 w_auto">
-											<select class="form-control">
-												<option>선택</option>
-												<option>세무사</option>
-												<option>협력사_제휴</option>
-												<option>협력사_광고</option>
-												<option>기타</option>
-											</select>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th>요청일자</th>
-									<td colspan="3">
-										<div class="col-md-6">
-											<div class="input-daterange input-group" data-plugin-datepicker>
-												<span class="input-group-addon">
-													<i class="fa fa-calendar"></i>
-												</span>
-												<input type="text" class="form-control" name="start">
-												<span class="input-group-addon">to</span>
-												<input type="text" class="form-control" name="end">
+										<div class="col-sm-3 w_auto">
+											<div class="radio-custom radio-primary">
+												<input type="radio" id="member3_list_radio1" name="radio_approve" checked>
+												<label for="member3_list_radio1">전체</label>
 											</div>
 										</div>
-										<div class="col-md-6">
-											<div class="btn-group">
-												<button type="button" class="btn btn-default">오늘</button>
-												<button type="button" class="btn btn-default">3일</button>
-												<button type="button" class="btn btn-default">7일</button>
-												<button type="button" class="btn btn-default">2주</button>
+										<div class="col-sm-3 w_auto">
+											<div class="radio-custom radio-primary">
+												<input type="radio" id="member3_list_radio2" name="radio_approve">
+												<label for="member3_list_radio2">승인</label>
+											</div>
+										</div>
+										<div class="col-sm-3 w_auto">
+											<div class="radio-custom radio-primary">
+												<input type="radio" id="member3_list_radio3" name="radio_approve">
+												<label for="member3_list_radio3">미승인</label>
 											</div>
 										</div>
 									</td>
@@ -410,108 +359,50 @@
 						</table>
 					</div>
 					<div class="btn_center_wrap">
-						<button type="button" class="btn btn-lg btn-primary w300">검색</button>
+						<button type="button" class="btn btn-lg btn-primary">조회</button>
 					</div>
 				</div>
 				<div class="panel-body">
-					<div class="btn_right_wrap">
-						<button type="button" id="member2_affiliates_add" class="btn btn-primary">제휴업체 추가</button>
-					</div>
-					<div class="table-responsive tbl_center">
+					<div class="tbl_center">
 						<table class="table table-hover tbl_data">
 							<thead>
 								<tr>
 									<th>번호</th>
-									<th>요청일자</th>
-									<th>요청자</th>
-									<th>전화번호</th>
-									<th>지역</th>
-									<th>업체형태</th>
+									<th>회사명(상호)</th>
+									<th>아이디</th>
+									<th>연락처</th>
+									<th>누적추천건수</th>
+									<th>누적정산금</th>
+									<th>사용승인</th>
+									<th>등록요청일</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>110</td>
-									<td>2019-02-20</td>
-									<td><a href="alliance_detail.html">김민수</a></td>
+									<td>10</td>
+									<td><a href="alliance_detail.html">ABC주식회사</a></td>
+									<td>cmdje@naver.com</td>
 									<td>010-1234-1234</td>
-									<td>서울시 강남구</td>
-									<td>-</td>
+									<td>0</td>
+									<td>0</td>
+									<td>미승인</td>
+									<td>2019-02-20</td>
 								</tr>
 								<tr>
-									<td>109</td>
-									<td>2019-02-20</td>
-									<td><a href="alliance_detail.html">김민수</a></td>
+									<td>9</td>
+									<td><a href="alliance_detail.html">ABC주식회사</a></td>
+									<td>cmdje@naver.com</td>
 									<td>010-1234-1234</td>
-									<td>서울시 강남구</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td>108</td>
+									<td>2</td>
+									<td>265,000</td>
+									<td>승인</td>
 									<td>2019-02-20</td>
-									<td><a href="alliance_detail.html">김민수</a></td>
-									<td>010-1234-1234</td>
-									<td>서울시 강남구</td>
-									<td>세무사</td>
-								</tr>
-								<tr>
-									<td>107</td>
-									<td>2019-02-20</td>
-									<td><a href="alliance_detail.html">김민수</a></td>
-									<td>02-1234-1234</td>
-									<td>서울시 강남구</td>
-									<td>협력사</td>
-								</tr>
-								<tr>
-									<td>106</td>
-									<td>2019-02-20</td>
-									<td><a href="alliance_detail.html">김민수</a></td>
-									<td>010-1234-1234</td>
-									<td>서울시 강남구</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td>105</td>
-									<td>2019-02-20</td>
-									<td><a href="alliance_detail.html">김민수</a></td>
-									<td>010-1234-1234</td>
-									<td>서울시 강남구</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td>104</td>
-									<td>2019-02-20</td>
-									<td><a href="alliance_detail.html">김민수</a></td>
-									<td>010-1234-1234</td>
-									<td>서울시 강남구</td>
-									<td>세무사</td>
-								</tr>
-								<tr>
-									<td>103</td>
-									<td>2019-02-20</td>
-									<td><a href="alliance_detail.html">김민수</a></td>
-									<td>02-1234-1234</td>
-									<td>서울시 강남구</td>
-									<td>협력사</td>
-								</tr>
-								<tr>
-									<td>102</td>
-									<td>2019-02-20</td>
-									<td><a href="alliance_detail.html">김민수</a></td>
-									<td>010-1234-1234</td>
-									<td>서울시 강남구</td>
-									<td>세무사</td>
-								</tr>
-								<tr>
-									<td>101</td>
-									<td>2019-02-20</td>
-									<td><a href="alliance_detail.html">김민수</a></td>
-									<td>02-1234-1234</td>
-									<td>서울시 강남구</td>
-									<td>협력사</td>
 								</tr>
 							</tbody>
 						</table>
+					</div>
+					<div class="btn_center_wrap">
+						<a href="alliance_write.html" class="btn btn-lg btn-primary">제휴업체 등록</a>
 					</div>
 				</div>
 				<!-- end: page -->

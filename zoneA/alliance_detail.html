@@ -57,7 +57,7 @@
 		<!-- start: header -->
 		<header class="header">
 			<div class="logo-container">
-				<a href="member1_list.html" class="logo">
+				<a href="index.html" class="logo">
 					<img src="assets/images/logo.png">
 				</a>
 				<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html"
@@ -137,7 +137,7 @@
 								<li class="nav-parent nav-expanded nav-active">
 									<a href="#">
 										<i class="fa fa-users"></i>
-										<span>회원관리</span>
+										<span>사용자 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -145,14 +145,14 @@
 												고객 관리
 											</a>
 										</li>
-										<li class="nav-active">
-											<a href="alliance_list.html">
-												제휴 관리
-											</a>
-										</li>
 										<li>
 											<a href="taxaccountant_list.html">
 												세무사 관리
+											</a>
+										</li>
+										<li class="nav-active">
+											<a href="alliance_list.html">
+												제휴업체 관리
 											</a>
 										</li>
 									</ul>
@@ -160,17 +160,12 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-calculator"></i>
-										<span>견적관리</span>
+										<span>비교견적 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="estimate_list.html">
-												견적관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="estimate_set.html">
-												견적관리 기본설정
+												비교견적 요청현황
 											</a>
 										</li>
 									</ul>
@@ -178,53 +173,22 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-dollar-sign"></i>
-										<span>결제관리</span>
+										<span>정산 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="payment_list.html">
-												결제관리 목록
+												계약 관리
 											</a>
 										</li>
 										<li>
-											<a href="payment_set.html">
-												결제관리 기본설정
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-seedling"></i>
-										<span>마일리지 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="mileage_set.html">
-												마일리지 기본 설정
+											<a href="recommend_list.html">
+												페이백 관리
 											</a>
 										</li>
 										<li>
 											<a href="mileage_list.html">
-												마일리지 지급/차감
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-thumbs-up"></i>
-										<span>추천인 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="recommend_list.html">
-												추천인 관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="recommend_set.html">
-												추천인 기본 설정
+												포인트 관리
 											</a>
 										</li>
 									</ul>
@@ -232,7 +196,30 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-exclamation-circle"></i>
-										<span>게시판 관리</span>
+										<span>콘텐츠 관리</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="banner_list.html">
+												메인배너 관리
+											</a>
+										</li>
+										<li>
+											<a href="popup_list.html">
+												팝업 관리
+											</a>
+										</li>
+										<li>
+											<a href="reply_list.html">
+												후기 관리
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent">
+									<a href="#">
+										<i class="fas far fa-cogs"></i>
+										<span>고객센터</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -241,13 +228,8 @@
 											</a>
 										</li>
 										<li>
-											<a href="faq_list.html">
-												자주하는 질문
-											</a>
-										</li>
-										<li>
-											<a href="reply_list.html">
-												사용자후기
+											<a href="inquiry_list.html">
+												제휴 문의
 											</a>
 										</li>
 									</ul>
@@ -255,7 +237,7 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas far fa-envelope"></i>
-										<span>SMS/카카오톡/이메일</span>
+										<span>서비스 설정</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -295,24 +277,6 @@
 										</li>
 									</ul>
 								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas far fa-cogs"></i>
-										<span>팝업/이벤트 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="popup_list.html">
-												팝업관리
-											</a>
-										</li>
-										<li>
-											<a href="event_list.html">
-												이벤트 관리
-											</a>
-										</li>
-									</ul>
-								</li>
 								<li>
 									<a href="statistics_list.html">
 										<i class="fas fa-bar-chart-o"></i>
@@ -330,22 +294,22 @@
 
 			<section role="main" class="content-body">
 				<header class="page-header">
-					<h2>제휴 관리</h2>
+					<h2>제휴업체 관리</h2>
 					<div class="right-wrapper pull-right">
 						<ol class="breadcrumbs">
 							<li>
-								<a href="member1_list.html">
+								<a href="index.html">
 									<i class="fa fa-home"></i>
 								</a>
 							</li>
-							<li><span>회원관리</span></li>
+							<li><span>사용자 관리</span></li>
 							<li><span>제휴관리</span></li>
 						</ol>
 					</div>
 				</header>
 				<!-- start: page -->
 				<header class="panel-heading">
-					<h2 class="panel-title">정문수(제휴회원)</h2>
+					<h2 class="panel-title">정문수(제휴업체)</h2>
 					<div class="panel-btn">
 						<button class="btn btn-info"><i class="fa fa-envelope"></i></button>
 						<button class="btn btn-info"><i class="fa fa-comment"></i></button>
@@ -354,16 +318,15 @@
 				<div class="tabs tabs-primary mt30">
 					<ul class="nav nav-tabs nav-justified">
 						<li class="active">
-							<a href="#member2_summary" data-toggle="tab">기본정보</a>
+							<a href="#member2_summary" data-toggle="tab">사업자정보</a>
 						</li>
 						<li>
-							<a href="#member2_recommender" data-toggle="tab">추천정보</a>
+							<a href="#member2_calculate" data-toggle="tab">정산내역</a>
 						</li>
 					</ul>
 					<div class="tab-content">
 						<div id="member2_summary" class="tab-pane active">
 							<div class="panel-body">
-								<h4 class="cont_tit">제휴회원 정보</h4>
 								<div class="table-responsive">
 									<table class="table type2">
 										<colgroup>
@@ -374,182 +337,351 @@
 										</colgroup>
 										<tr>
 											<th>요청일자</th>
-											<td>2019-02-20</td>
-											<th>업체형태</th>
 											<td>
-												<div class="col-md-4 w_auto">
-													<select class="form-control">
-														<option>세무사</option>
-														<option>조세불복</option>
-														<option>기타</option>
-														<option>프리미엄</option>
-														<option>세무조사</option>
-													</select>
+												<div class="col-md-6 w_auto">2019-02-20</div>
+											</td>
+											<th>승인상태</th>
+											<td>
+												<div class="col-sm-3 w_auto">
+													<div class="radio-custom radio-primary">
+														<input type="radio" id="radio_ok1" name="radio_ok" checked="checked">
+														<label for="radio_ok1">승인</label>
+													</div>
+												</div>
+												<div class="col-sm-3 w_auto">
+													<div class="radio-custom radio-primary">
+														<input type="radio" id="radio_ok2" name="radio_ok">
+														<label for="radio_ok2">미승인</label>
+													</div>
 												</div>
 											</td>
 										</tr>
 										<tr>
-											<th>이름</th>
-											<td>정문수</td>
+											<th>아이디</th>
+											<td>
+												<div class="col-md-12">ddmuser12@naver.com</div>
+											</td>
+											<th>제휴 코드</th>
+											<td>
+												<div class="col-md-12">con0012345</div>
+											</td>
+										</tr>
+										<tr>
+											<th>회사명(상호)</th>
+											<td>
+												<div class="col-md-12">
+													<input type="text" class="form-control" value="가나다컴퍼니">
+												</div>
+											</td>
+											<th>사업자 등록번호</th>
+											<td>
+												<div class="col-md-12">
+													<input type="text" class="form-control" value="123-34-67890">
+												</div>
+											</td>
+										</tr>
+										<tr>
 											<th>전화번호</th>
-											<td>010-1245-1245</td>
-										</tr>
-										<tr>
-											<th>회사명</th>
-											<td>
-												<div class="col-md-12">
-													<input type="text" class="form-control">
-												</div>
-											</td>
-											<th>회사 전화번호</th>
-											<td>
-												<div class="col-md-12">
-													<input type="text" class="form-control">
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th>이메일</th>
-											<td>
-												<div class="col-md-12">
-													<input type="text" class="form-control">
-												</div>
-											</td>
-											<th>제휴코드</th>
-											<td>
-												<div class="col-md-12">
-													<input type="text" class="form-control">
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th>홈페이지</th>
-											<td>
-												<div class="col-md-12">
-													<input type="text" class="form-control">
-												</div>
-											</td>
-											<th>배너</th>
 											<td>
 												<div class="col-md-4 w_auto">
 													<select class="form-control">
-														<option>없음</option>
+														<option value="010">010</option>
+														<option value="011">011</option>
+														<option value="016">016</option>
+														<option value="017">017</option>
+														<option value="019">019</option>
 													</select>
+												</div>
+												<div class="col-md-6 w_auto">
+													<input type="text" class="form-control" placeholder="숫자만 입력" value="22223333">
+												</div>
+											</td>
+											<th>사업장 전화번호</th>
+											<td>
+												<div class="col-md-4 w_auto">
+													<select class="form-control">
+														<option value="선택">선택</option>
+														<option value="010">010</option>
+														<option value="02">02</option>
+														<option value="0303">0303</option>
+														<option value="031">031</option>
+														<option value="032">032</option>
+														<option value="033">033</option>
+														<option value="041">041</option>
+														<option value="042">042</option>
+														<option value="043">043</option>
+														<option value="044">044</option>
+														<option value="049">049</option>
+														<option value="0502">0502</option>
+														<option value="0503">0503</option>
+														<option value="0504">0504</option>
+														<option value="0505">0505</option>
+														<option value="0506">0506</option>
+														<option value="0507">0507</option>
+														<option value="0508">0508</option>
+														<option value="051">051</option>
+														<option value="052">052</option>
+														<option value="053">053</option>
+														<option value="054">054</option>
+														<option value="055">055</option>
+														<option value="061">061</option>
+														<option value="062">062</option>
+														<option value="063">063</option>
+														<option value="064">064</option>
+														<option value="070">070</option>
+														<option value="080">080</option>
+														<option value="1522">1522</option>
+														<option value="1544">1544</option>
+														<option value="1566">1566</option>
+														<option value="1577">1577</option>
+														<option value="1588">1588</option>
+														<option value="1599">1599</option>
+														<option value="1600">1600</option>
+														<option value="1644">1644</option>
+														<option value="1661">1661</option>
+														<option value="1666">1666</option>
+														<option value="1670">1670</option>
+														<option value="1688">1688</option>
+														<option value="1800">1800</option>
+														<option value="1833">1833</option>
+														<option value="1855">1855</option>
+														<option value="1877">1877</option>
+														<option value="1899">1899</option>
+													</select>
+												</div>
+												<div class="col-md-6 w_auto">
+													<input type="text" class="form-control" placeholder="숫자만 입력" value="44445555">
 												</div>
 											</td>
 										</tr>
 										<tr>
-											<th rowspan="3">주소</th>
+											<th>주소</th>
 											<td colspan="3">
-												12123
-												<button type="button" class="btn btn-info ml_btn">우편번호</button>
+												<div class="col-md-12 postcode_wrap">
+													<input type="text" class="form-control" id="postcode" placeholder="우편번호" value="12345">
+													<button onclick="execDaumPostcode()"
+														class="btn btn-info ml_btn btn_postcode">주소검색</button>
+												</div>
+												<div class="col-md-12 mt5">
+													<input type="text" class="form-control" id="address" placeholder="주소" value="서울시 성북구 솔샘로1길 55">
+												</div>
+												<div class="col-md-12 mt5">
+													<input type="text" class="form-control" id="detailAddress" placeholder="상세주소" value="장미아파트 300호">
+												</div>
+												<div class="col-md-12 mt5">
+													<input type="text" class="form-control" id="extraAddress" placeholder="참고항목" value="정릉3동">
+												</div>
 											</td>
 										</tr>
 										<tr>
-											<td colspan="3">서울시 강남구 반포동 220</td>
-										</tr>
-										<tr>
-											<td colspan="3">가나아델리움 205호</td>
-										</tr>
-										<tr>
-											<th>문의사항</th>
-											<td colspan="3">제휴 세무사 신청합니다.</td>
+											<th>사업자 등록증</th>
+											<td>
+												<div class="col-md-12">
+													<img src="assets/images/temp/project.jpg" alt="">
+													<p>project.jpg</p>
+												</div>
+												<div class="col-md-12">
+													<div class="fileupload fileupload-new" data-provides="fileupload">
+														<div class="input-append">
+															<div class="uneditable-input">
+																<i class="fa fa-file fileupload-exists"></i>
+																<span class="fileupload-preview"></span>
+															</div>
+															<span class="btn btn-info btn-file">
+																<span class="fileupload-exists">바꾸기</span>
+																<span class="fileupload-new">찾아보기</span>
+																<input type="file" />
+															</span>
+															<a href="#" class="btn btn-info fileupload-exists"
+																data-dismiss="fileupload">삭제</a>
+														</div>
+													</div>
+												</div>
+											</td>
+											<th>통장사본</th>
+											<td>
+												<div class="col-md-12">
+													<img src="assets/images/temp/project.jpg" alt="">
+													<p>project.jpg</p>
+												</div>
+												<div class="col-md-12">
+													<div class="fileupload fileupload-new" data-provides="fileupload">
+														<div class="input-append">
+															<div class="uneditable-input">
+																<i class="fa fa-file fileupload-exists"></i>
+																<span class="fileupload-preview"></span>
+															</div>
+															<span class="btn btn-info btn-file">
+																<span class="fileupload-exists">바꾸기</span>
+																<span class="fileupload-new">찾아보기</span>
+																<input type="file" />
+															</span>
+															<a href="#" class="btn btn-info fileupload-exists"
+																data-dismiss="fileupload">삭제</a>
+														</div>
+													</div>
+												</div>
+											</td>
 										</tr>
 										<tr>
 											<th>메모</th>
 											<td colspan="3">
 												<div class="col-md-12">
-													<textarea class="form-control" rows="3" id="textareaDefault"></textarea>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th>통화 상태</th>
-											<td colspan="3">
-												<div class="col-md-4 w_auto">
-													<select class="form-control">
-														<option>미통화</option>
-														<option>통화완료</option>
-														<option>협력승인대기</option>
-														<option>협력승인</option>
-														<option>협력불가</option>
-													</select>
+													<textarea class="form-control" rows="3"></textarea>
 												</div>
 											</td>
 										</tr>
 									</table>
 								</div>
-								<div class="btn_center_wrap">
-									<button type="button" class="btn btn-lg btn-primary w300">저장</button>
-								</div>
+							</div>
+							<div class="btn_center_wrap mt30">
+								<a href="alliance_list.html" class="btn btn-lg btn-default">목록</a>
+								<a href="#" class="btn btn-lg btn-primary">저장</a>
+								<a href="#" class="btn btn-lg btn-primary check_float2 mr">비밀번호 재설정</a>
 							</div>
 						</div>
 						<!-- #member2_summary end -->
-						<div id="member2_recommender" class="tab-pane">
+						<div id="member2_calculate" class="tab-pane">
 							<div id="recommender" class="tab-pane">
-								<div class="panel-body">
-									<h4 class="cont_tit">추천정보</h4>
-									<div class="btn_right_wrap">
-										<button type="button" id="member1_recommend_detail" class="btn btn-primary">추천 추가/삭제</button>
+								<div class="con_list">
+									<div class="panel-body">
+										<div class="tbl_center">
+											<table class="table table-hover tbl_data">
+												<thead>
+													<tr>
+														<th>번호</th>
+														<th>견적코드</th>
+														<th>회사명(상호)</th>
+														<th>계약일</th>
+														<th>계약금액</th>
+														<th>정산(예정)일</th>
+														<th>계약상태</th>
+														<th>계산서 발핼일</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>10</td>
+														<td><button class="btn_openDetail">190220aa01111</button></td>
+														<td>ABC주식회사</td>
+														<td>2019-02-20</td>
+														<td>54,000원</td>
+														<td>2019-02-20</td>
+														<td>완료</td>
+														<td>2019-04-30</td>
+													</tr>
+													<tr>
+														<td>9</td>
+														<td><button class="btn_openDetail">190220aa01111</button></td>
+														<td>(주)씨비디</td>
+														<td>2019-02-20</td>
+														<td>54,000원</td>
+														<td>2019-02-20</td>
+														<td>예정</td>
+														<td>2019-04-30</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
-									<div class="table-responsive tbl_center">
-										<table class="table table-hover tbl_data td_middle">
-											<thead>
+								</div>
+
+								<div class="con_detail">
+									<div class="panel-body">
+										<h4 class="cont_tit">기본정보</h4>
+										<div class="table-responsive">
+											<table class="table type2">
+												<colgroup>
+													<col width="15%">
+													<col width="35%">
+													<col width="15%">
+													<col width="35%">
+												</colgroup>
 												<tr>
-													<th>번호</th>
-													<th>추천일자</th>
-													<th>추천인 정보</th>
-													<th>계약일자</th>
 													<th>견적코드</th>
-													<th>추천인 계약여부</th>
-													<th>발생 페이백</th>
-													<th>페이백 처리일자</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>3</td>
-													<td>2019-02-20</td>
-													<td><a href="customer_detail.html">김누호_01075981254</a></td>
-													<td>-</td>
-													<td><a href="estimate_detail.html">19020aa01111</a></td>
-													<td>계약실패</td>
-													<td>0</td>
-													<td class="inB">
-														<input type="text" id="inputReadOnly" class="form-control w_auto" value="-">
-														<button type="button" class="btn btn-default">수정</button>
+													<td>19020aa01111</td>
+													<th>견적승인</th>
+													<td>
+														<div class="col-sm-3 w_auto">
+															<div class="radio-custom radio-primary">
+																<input type="radio" id="radio_oka1" name="radio_oka" checked="checked">
+																<label for="radio_oka1">승인</label>
+															</div>
+														</div>
+														<div class="col-sm-3 w_auto">
+															<div class="radio-custom radio-primary">
+																<input type="radio" id="radio_oka2" name="radio_oka">
+																<label for="radio_oka2">미승인</label>
+															</div>
+														</div>
 													</td>
 												</tr>
 												<tr>
-													<td>2</td>
-													<td>2019-02-20</td>
-													<td><a href="customer_detail.html">김정호_01012341234</a></td>
-													<td>-</td>
-													<td><a href="estimate_detail.html">19020aa01119</a></td>
-													<td>진행중</td>
-													<td>0</td>
-													<td class="inB">
-														<input type="text" class="form-control w_auto" value="-">
-														<button type="button" class="btn btn-default">수정</button>
-													</td>
+													<th>상태</th>
+													<td>비교견적중</td>
+													<th>지역</th>
+													<td>서울시 강남구</td>
 												</tr>
 												<tr>
-													<td>1</td>
-													<td>2019-02-20</td>
-													<td><a href="customer_detail.html">김문호_01023654125</a></td>
-													<td>2019-02-23</td>
-													<td><a href="estimate_detail.html">19020aa01123</a></td>
-													<td>계약성공</td>
-													<td>50,000</td>
-													<td class="inB">
-														<input type="text" class="form-control w_auto"
-															value="2019-02-23">
-														<button type="button" class="btn btn-default">수정</button>
-													</td>
+													<th>고객명</th>
+													<td>홍길동</td>
+													<th>연락처</th>
+													<td>010-1245-1245</td>
 												</tr>
-											</tbody>
-										</table>
+												<tr>
+													<th>견적요청일</th>
+													<td>2019-06-16 AM 01:01</td>
+													<th>견적완료일</th>
+													<td>2019-06-16 PM 03: 05</td>
+												</tr>
+											</table>
+										</div>
 									</div>
+									<div class="panel-body">
+										<h4 class="cont_tit">정산 내역</h4>
+										<div class="table-responsive">
+											<table class="table type2">
+												<colgroup>
+													<col width="15%">
+													<col width="35%">
+													<col width="15%">
+													<col width="35%">
+												</colgroup>
+												<tr>
+													<th>계약일</th>
+													<td>2019-06-16</td>
+													<th>계약금액</th>
+													<td>1,150,000원 (부가세 포함)</td>
+												</tr>
+												<tr>
+													<th>정산금액</th>
+													<td>150,000원</td>
+													<th>정산일</th>
+													<td>2019-06-16</td>
+												</tr>
+												<tr>
+													<th>환급계좌</th>
+													<td>기업 1234-256-12345</td>
+													<th>예금주</th>
+													<td>정문수</td>
+												</tr>
+												<tr>
+													<th>계산서 발행일</th>
+													<td>2019-04-30</td>
+													<th>계산서 발행번호</th>
+													<td>19020aa01111</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div class="panel-body">
+										<div class="btn_center_wrap">
+											<button class="btn btn-lg btn-primary btn_openList">정산내역 목록</button>
+										</div>
+									</div>
+								</div>
+								<div class="btn_center_wrap mt30">
+									<a href="alliance_list.html" class="btn btn-lg btn-default">목록</a>
 								</div>
 							</div>
 						</div>
@@ -591,14 +723,13 @@
 	<!-- Examples -->
 	<script src="assets/javascripts/tables/examples.datatables.default.js"></script>
 	<script>
-		$("#member2_affiliates_add").on("click", function () {
-			var pop_width = $(window).width() - 20;
-			var pop_height = $(window).height() - 50;
-			var url = "./member2_affiliates_add.html";
-			var name = "";
-			var specs = "width=" + pop_width + ", height=" + pop_height + ", top=50, left=10, resizable=yes";
-			window.open(url, name, specs);
-			return false;
+		$(".btn_openDetail").on("click", function () {
+			$(this).parents(".con_list").hide();
+			$(this).parents().siblings(".con_detail").show();
+		});
+		$(".btn_openList").on("click", function () {
+			$(this).parents(".con_detail").hide();
+			$(this).parents().siblings(".con_list").show();
 		});
 	</script>
 </body>

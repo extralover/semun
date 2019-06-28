@@ -57,7 +57,7 @@
 		<!-- start: header -->
 		<header class="header">
 			<div class="logo-container">
-				<a href="member1_list.html" class="logo">
+				<a href="index.html" class="logo">
 					<img src="assets/images/logo.png">
 				</a>
 				<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html"
@@ -138,7 +138,7 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fa fa-users"></i>
-										<span>회원관리</span>
+										<span>사용자 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -147,13 +147,13 @@
 											</a>
 										</li>
 										<li>
-											<a href="alliance_list.html">
-												제휴 관리
+											<a href="taxaccountant_list.html">
+												세무사 관리
 											</a>
 										</li>
 										<li>
-											<a href="taxaccountant_list.html">
-												세무사 관리
+											<a href="alliance_list.html">
+												제휴업체 관리
 											</a>
 										</li>
 									</ul>
@@ -161,17 +161,12 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-calculator"></i>
-										<span>견적관리</span>
+										<span>비교견적 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="estimate_list.html">
-												견적관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="estimate_set.html">
-												견적관리 기본설정
+												비교견적 요청현황
 											</a>
 										</li>
 									</ul>
@@ -179,61 +174,53 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-dollar-sign"></i>
-										<span>결제관리</span>
+										<span>정산 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="payment_list.html">
-												결제관리 목록
+												계약 관리
 											</a>
 										</li>
 										<li>
-											<a href="payment_set.html">
-												결제관리 기본설정
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-seedling"></i>
-										<span>마일리지 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="mileage_set.html">
-												마일리지 기본 설정
+											<a href="recommend_list.html">
+												페이백 관리
 											</a>
 										</li>
 										<li>
 											<a href="mileage_list.html">
-												마일리지 지급/차감
+												포인트 관리
 											</a>
 										</li>
 									</ul>
 								</li>
-								<li class="nav-parent">
+								<li class="nav-parent nav-expanded nav-active">
 									<a href="#">
-										<i class="fas fa-thumbs-up"></i>
-										<span>추천인 관리</span>
+										<i class="fas fa-exclamation-circle"></i>
+										<span>콘텐츠 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
-											<a href="recommend_list.html">
-												추천인 관리 목록
+											<a href="banner_list.html">
+												메인배너 관리
+											</a>
+										</li>
+										<li class="nav-active">
+											<a href="popup_list.html">
+												팝업 관리
 											</a>
 										</li>
 										<li>
-											<a href="recommend_set.html">
-												추천인 기본 설정
+											<a href="reply_list.html">
+												후기 관리
 											</a>
 										</li>
 									</ul>
 								</li>
 								<li class="nav-parent">
 									<a href="#">
-										<i class="fas fa-exclamation-circle"></i>
-										<span>게시판 관리</span>
+										<i class="fas far fa-cogs"></i>
+										<span>고객센터</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -242,13 +229,8 @@
 											</a>
 										</li>
 										<li>
-											<a href="faq_list.html">
-												자주하는 질문
-											</a>
-										</li>
-										<li>
-											<a href="reply_list.html">
-												사용자후기
+											<a href="inquiry_list.html">
+												제휴 문의
 											</a>
 										</li>
 									</ul>
@@ -256,7 +238,7 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas far fa-envelope"></i>
-										<span>SMS/카카오톡/이메일</span>
+										<span>서비스 설정</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -296,24 +278,6 @@
 										</li>
 									</ul>
 								</li>
-								<li class="nav-parent nav-expanded nav-active">
-									<a href="#">
-										<i class="fas far fa-cogs"></i>
-										<span>팝업/이벤트 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li class="nav-active">
-											<a href="popup_list.html">
-												팝업관리
-											</a>
-										</li>
-										<li>
-											<a href="event_list.html">
-												이벤트 관리
-											</a>
-										</li>
-									</ul>
-								</li>
 								<li>
 									<a href="statistics_list.html">
 										<i class="fas fa-bar-chart-o"></i>
@@ -331,16 +295,16 @@
 
 			<section role="main" class="content-body">
 				<header class="page-header">
-					<h2>팝업 등록</h2>
+					<h2>팝업 관리</h2>
 					<div class="right-wrapper pull-right">
 						<ol class="breadcrumbs">
 							<li>
-								<a href="member1_list.html">
+								<a href="index.html">
 									<i class="fa fa-home"></i>
 								</a>
 							</li>
-							<li><span>팝업/이벤트 관리</span></li>
-							<li><span>팝업 등록</span></li>
+							<li><span>콘텐츠 관리</span></li>
+							<li><span>팝업 관리</span></li>
 						</ol>
 					</div>
 				</header>
@@ -354,62 +318,67 @@
 							</colgroup>
 							<tbody>
 								<tr>
-									<th>팝업 제목</th>
+									<th>제목</th>
 									<td>
-										<input type="text" class="form-control">
+										<div class="col-sm-12">
+											<input type="text" class="form-control">
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<th>노출여부</th>
+									<th>적용대상</th>
 									<td>
 										<div class="col-sm-3 w_auto">
 											<div class="radio-custom radio-primary">
 												<input type="radio" name="popup1_radio" id="popup1_radio1" checked="checked">
-												<label for="popup1_radio1">노출</label>
+												<label for="popup1_radio1">PC + Mobile</label>
 											</div>
 										</div>
 										<div class="col-sm-3 w_auto">
 											<div class="radio-custom radio-primary">
 												<input type="radio" name="popup1_radio" id="popup1_radio2">
-												<label for="popup1_radio2">미노출</label>
+												<label for="popup1_radio2">PC</label>
+											</div>
+										</div>
+										<div class="col-sm-3 w_auto">
+											<div class="radio-custom radio-primary">
+												<input type="radio" name="popup1_radio" id="popup1_radio3">
+												<label for="popup1_radio3">Mobile</label>
 											</div>
 										</div>
 									</td>
 								</tr>
 								<tr>
-									<th>오늘하루 보이지 않은 기능</th>
+									<th>창닫기 방법</th>
 									<td>
-										<div class="tbl_space">
-											<div class="col-sm-6 w_auto">
-												<div class="checkbox-custom checkbox-primary">
-													<input type="checkbox" name="popup2_checkbox" id="popup2_checkbox1">
-													<label for="popup2_checkbox1">'오늘 하루 보이지 않음' 기능 사용</label>
-												</div>
+										<div class="col-sm-3 w_auto">
+											<div class="radio-custom radio-primary">
+												<input type="radio" name="popup2_radio" id="popup2_radio1" checked="checked">
+												<label for="popup2_radio1">일반 닫기만 적용</label>
+											</div>
+										</div>
+										<div class="col-sm-3 w_auto">
+											<div class="radio-custom radio-primary">
+												<input type="radio" name="popup2_radio" id="popup2_radio2">
+												<label for="popup2_radio2">오늘 하루 열지 않음</label>
+											</div>
+										</div>
+										<div class="col-sm-3 w_auto">
+											<div class="radio-custom radio-primary">
+												<input type="radio" name="popup2_radio" id="popup2_radio3">
+												<label for="popup2_radio3">다시 열지 않음</label>
 											</div>
 										</div>
 									</td>
 								</tr>
 								<tr>
-									<th>관련 페이지 URL</th>
+									<th>팝업 크기</th>
 									<td>
-										<div class="tbl_space">
-											<div class="col-sm-12">
-												<div class="radio-custom radio-primary">
-													<input type="radio" name="popup3_radio" id="popup3_radio1" checked="checked">
-													<label for="popup3_radio1">견적요청 페이지 이동</label>
-												</div>
-											</div>
+										<div class="col-sm-3 w_auto">
+											<input type="text" class="form-control" placeholder="가로 픽셀">
 										</div>
-										<div class="tbl_space">
-											<div class="col-sm-6 w_auto">
-												<div class="radio-custom radio-primary">
-													<input type="radio" name="popup3_radio" id="popup3_radio2">
-													<label for="popup3_radio2">그 외 페이지</label>
-												</div>
-											</div>
-											<div class="col-sm-6 w_auto">
-												<input type="text" class="form-control">
-											</div>
+										<div class="col-sm-3 w_auto">
+											<input type="text" class="form-control" placeholder="세로 픽셀">
 										</div>
 									</td>
 								</tr>
@@ -427,12 +396,41 @@
 										</form>
 									</td>
 								</tr>
+								<tr>
+									<th>노출기간</th>
+									<td>
+										<div class="col-md-6">
+											<div class="input-daterange input-group" data-plugin-datepicker>
+												<span class="input-group-addon">
+													<i class="fa fa-calendar"></i>
+												</span>
+												<input type="text" class="form-control" name="start">
+												<span class="input-group-addon">to</span>
+												<input type="text" class="form-control" name="end">
+											</div>
+										</div>
+										<div class="col-sm-3 w_auto">
+											<div class="checkbox-custom checkbox-primary">
+												<input type="checkbox" name="popup3_check" id="popup3_check3">
+												<label for="popup3_check3">종료</label>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>경로</th>
+									<td>
+										<div class="col-sm-12">
+											<input type="text" class="form-control">
+										</div>
+									</td>
+								</tr>
 							</tbody>
 						</table>
 					</div>
 					<div class="btn_center_wrap">
-						<a href="popup_list.html" class="btn btn-lg btn-default w150">목록</a>
-						<button type="button" class="btn btn-lg btn-primary w150">등록</button>
+						<a href="popup_list.html" class="btn btn-lg btn-default ">취소</a>
+						<button type="button" class="btn btn-lg btn-primary ">등록</button>
 					</div>
 				</div>
 				<!-- end: page -->

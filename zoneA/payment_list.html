@@ -57,7 +57,7 @@
 		<!-- start: header -->
 		<header class="header">
 			<div class="logo-container">
-				<a href="member1_list.html" class="logo">
+				<a href="index.html" class="logo">
 					<img src="assets/images/logo.png">
 				</a>
 				<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html"
@@ -138,7 +138,7 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fa fa-users"></i>
-										<span>회원관리</span>
+										<span>사용자 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -147,13 +147,13 @@
 											</a>
 										</li>
 										<li>
-											<a href="alliance_list.html">
-												제휴 관리
+											<a href="taxaccountant_list.html">
+												세무사 관리
 											</a>
 										</li>
 										<li>
-											<a href="taxaccountant_list.html">
-												세무사 관리
+											<a href="alliance_list.html">
+												제휴업체 관리
 											</a>
 										</li>
 									</ul>
@@ -161,17 +161,12 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-calculator"></i>
-										<span>견적관리</span>
+										<span>비교견적 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="estimate_list.html">
-												견적관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="estimate_set.html">
-												견적관리 기본설정
+												비교견적 요청현황
 											</a>
 										</li>
 									</ul>
@@ -179,53 +174,22 @@
 								<li class="nav-parent nav-expanded nav-active">
 									<a href="#">
 										<i class="fas fa-dollar-sign"></i>
-										<span>결제관리</span>
+										<span>정산 관리</span>
 									</a>
 									<ul class="nav nav-children">
 										<li class="nav-active">
 											<a href="payment_list.html">
-												결제관리 목록
+												계약 관리
 											</a>
 										</li>
 										<li>
-											<a href="payment_set.html">
-												결제관리 기본설정
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-seedling"></i>
-										<span>마일리지 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="mileage_set.html">
-												마일리지 기본 설정
+											<a href="recommend_list.html">
+												페이백 관리
 											</a>
 										</li>
 										<li>
 											<a href="mileage_list.html">
-												마일리지 지급/차감
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas fa-thumbs-up"></i>
-										<span>추천인 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="recommend_list.html">
-												추천인 관리 목록
-											</a>
-										</li>
-										<li>
-											<a href="recommend_set.html">
-												추천인 기본 설정
+												포인트 관리
 											</a>
 										</li>
 									</ul>
@@ -233,7 +197,30 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas fa-exclamation-circle"></i>
-										<span>게시판 관리</span>
+										<span>콘텐츠 관리</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="banner_list.html">
+												메인배너 관리
+											</a>
+										</li>
+										<li>
+											<a href="popup_list.html">
+												팝업 관리
+											</a>
+										</li>
+										<li>
+											<a href="reply_list.html">
+												후기 관리
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent">
+									<a href="#">
+										<i class="fas far fa-cogs"></i>
+										<span>고객센터</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -242,13 +229,8 @@
 											</a>
 										</li>
 										<li>
-											<a href="faq_list.html">
-												자주하는 질문
-											</a>
-										</li>
-										<li>
-											<a href="reply_list.html">
-												사용자후기
+											<a href="inquiry_list.html">
+												제휴 문의
 											</a>
 										</li>
 									</ul>
@@ -256,7 +238,7 @@
 								<li class="nav-parent">
 									<a href="#">
 										<i class="fas far fa-envelope"></i>
-										<span>SMS/카카오톡/이메일</span>
+										<span>서비스 설정</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -296,24 +278,6 @@
 										</li>
 									</ul>
 								</li>
-								<li class="nav-parent">
-									<a href="#">
-										<i class="fas far fa-cogs"></i>
-										<span>팝업/이벤트 관리</span>
-									</a>
-									<ul class="nav nav-children">
-										<li>
-											<a href="popup_list.html">
-												팝업관리
-											</a>
-										</li>
-										<li>
-											<a href="event_list.html">
-												이벤트 관리
-											</a>
-										</li>
-									</ul>
-								</li>
 								<li>
 									<a href="statistics_list.html">
 										<i class="fas fa-bar-chart-o"></i>
@@ -331,104 +295,88 @@
 
 			<section role="main" class="content-body">
 				<header class="page-header">
-					<h2>결제 관리</h2>
+					<h2>계약 관리</h2>
 					<div class="right-wrapper pull-right">
 						<ol class="breadcrumbs">
 							<li>
-								<a href="member1_list.html">
+								<a href="index.html">
 									<i class="fa fa-home"></i>
 								</a>
 							</li>
-							<li><span>결제관리</span></li>
-							<li><span>결제관리 목록</span></li>
+							<li><span>정산 관리</span></li>
+							<li><span>계약 관리</span></li>
 						</ol>
 					</div>
 				</header>
 				<!-- start: page -->
 				<div class="panel-body">
-					<h4 class="cont_tit">결제 정보 검색</h4>
 					<div class="table-responsive">
 						<table class="table type2">
 							<colgroup>
-								<col width="90px">
+								<col width="120px">
 								<col width="">
-								<col width="90px">
+								<col width="120px">
 								<col width="">
 							</colgroup>
 							<tbody>
 								<tr>
-									<th>검색어</th>
+									<th>세무사명</th>
 									<td>
-										<div class="col-md-4 w_auto">
-											<select class="form-control">
-												<option>이름</option>
-												<option>전화번호</option>
-												<option>견적코드</option>
-											</select>
-										</div>
-										<div class="col-md-6 form-group">
+										<div class="col-md-6 w_auto">
 											<input type="text" class="form-control">
 										</div>
 									</td>
-									<th>견적번호</th>
-									<td>
-										<div class="col-md-6 form-group">
-											<input type="text" class="form-control">
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th>견적유형</th>
+									<th>상태</th>
 									<td>
 										<div class="col-md-4 w_auto">
 											<select class="form-control">
-												<option>기장/신고대행</option>
-												<option>기장 대행</option>
-												<option>부가가치세 신고대행</option>
-												<option>프리랜서 신고대행</option>
-												<option>상속세</option>
-												<option>소득세</option>
-												<option>증여세</option>
-											</select>
-										</div>
-									</td>
-									<th>결제상태</th>
-									<td>
-										<div class="col-md-4 w_auto">
-											<select class="form-control">
+												<option>전체</option>
 												<option>결제대기</option>
+												<option>입금대기</option>
+												<option>게약완료</option>
 											</select>
 										</div>
 									</td>
 								</tr>
 								<tr>
-									<th>계약일자</th>
-									<td colspan="3">
-										<div class="col-md-6">
-											<div class="input-daterange input-group" data-plugin-datepicker>
-												<span class="input-group-addon">
-													<i class="fa fa-calendar"></i>
-												</span>
-												<input type="text" class="form-control" name="start">
-												<span class="input-group-addon">to</span>
-												<input type="text" class="form-control" name="end">
-											</div>
+									<th>업무구분</th>
+									<td>
+										<div class="col-md-6 w_auto">
+											<select class="form-control select_rr">
+												<option>1차 선택</option>
+												<option class="rh1">기장/신고 대행</option>
+												<option class="rh2">양도/상속/증여</option>
+												<option class="rh3">세무조사</option>
+												<option class="rh4">회계감사</option>
+											</select>
 										</div>
-										<div class="col-md-6">
-											<div class="btn-group">
-												<button type="button" class="btn btn-default">오늘</button>
-												<button type="button" class="btn btn-default">3일</button>
-												<button type="button" class="btn btn-default">7일</button>
-												<button type="button" class="btn btn-default">2주</button>
-												<button type="button" class="btn btn-default">1달</button>
-											</div>
+										<div class="col-md-6 w_auto">
+											<select class="form-control select_ss">
+												<option>2차 선택</option>
+												<!-- 1차 선택 기장/신고 대행 시 -->
+												<option class="sh1">기장/신고 대행</option>
+												<option class="sh2">부가가치세 신고 대행</option>
+												<option class="sh3">종합소득세 신고 대행</option>
+												<option class="sh4">프리랜서 신고 대행</option>
+												<!-- 1차 양도/상속/증여 시 -->
+												<option class="sh5">양도 소득세 신고</option>
+												<option class="sh6">상속세 신고</option>
+												<option class="sh7">증여세 신고</option>
+												<option class="sh8">자문 기타</option>
+												<!-- 1차 세무조사 시 -->
+												<option class="sh9">세무조사</option>
+												<option class="sh10">조세불복</option>
+												<!-- 1차 회계감사 시 -->
+												<option class="sh11">회계감사</option>
+												<option class="sh12">아파트감사</option>
+												<option class="sh13">기타자문</option>
+												<option class="sh0">전화 상담</option>
+											</select>
 										</div>
 									</td>
-								</tr>
-								<tr>
-									<th>결제일자</th>
-									<td colspan="3">
-										<div class="col-md-6">
+									<th>계약일자</th>
+									<td>
+										<div class="col-md-12">
 											<div class="input-daterange input-group" data-plugin-datepicker>
 												<span class="input-group-addon">
 													<i class="fa fa-calendar"></i>
@@ -436,15 +384,6 @@
 												<input type="text" class="form-control" name="start">
 												<span class="input-group-addon">to</span>
 												<input type="text" class="form-control" name="end">
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="btn-group">
-												<button type="button" class="btn btn-default">오늘</button>
-												<button type="button" class="btn btn-default">3일</button>
-												<button type="button" class="btn btn-default">7일</button>
-												<button type="button" class="btn btn-default">2주</button>
-												<button type="button" class="btn btn-default">1달</button>
 											</div>
 										</div>
 									</td>
@@ -453,157 +392,50 @@
 						</table>
 					</div>
 					<div class="btn_center_wrap">
-						<button type="button" class="btn btn-lg btn-primary w300">검색</button>
+						<button type="button" class="btn btn-lg btn-primary">조회</button>
 					</div>
 				</div>
 				<div class="panel-body">
-					<div class="table-responsive tbl_center">
+					<div class="tbl_center">
 						<table class="table table-hover td_middle tbl_data">
 							<thead>
 								<tr>
 									<th>번호</th>
 									<th>견적코드</th>
-									<th>계약일자</th>
-									<th>결제일자</th>
-									<th>견적 유형</th>
-									<th>이름</th>
-									<th>전화번호</th>
+									<th>세무사명</th>
+									<th>연락처</th>
+									<th>업무구분</th>
+									<th>고객명</th>
+									<th>계약일</th>
 									<th>견적금액</th>
-									<th>결제예정금액</th>
-									<th>결제완료금액</th>
-									<th>결제상태</th>
+									<th>수수료</th>
+									<th>상태</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>10</td>
 									<td><a href="payment_detail.html">190211aa01111</a></td>
-									<td>2019-02-23</td>
-									<td>-</td>
-									<td>기장 대행</td>
-									<td><a href="customer_detail.html" target="_blank">김관우</a></td>
+									<td><a href="taxaccountant_detail.html" target="_blank">이종근</a></td>
 									<td>010-2334-1545</td>
-									<td>66,000</td>
-									<td>660,000</td>
-									<td>-</td>
+									<td>기장/신고 대행</td>
+									<td><a href="customer_detail.html" target="_blank">김관우</a></td>
+									<td>2019-02-23</td>
+									<td>66,000원/월</td>
+									<td>900,000원</td>
 									<td>결제대기</td>
 								</tr>
 								<tr>
 									<td>9</td>
 									<td><a href="payment_detail.html">190211aa01111</a></td>
-									<td>2019-02-23</td>
-									<td>2019-03-23</td>
-									<td>기장 대행</td>
-									<td><a href="customer_detail.html" target="_blank">이장비</a></td>
+									<td><a href="taxaccountant_detail.html" target="_blank">이종근</a></td>
 									<td>010-2334-1545</td>
-									<td>66,000</td>
-									<td>-</td>
-									<td>660,000</td>
-									<td>결제완료</td>
-								</tr>
-								<tr>
-									<td>8</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>7</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>6</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>5</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>4</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<td>기장/신고 대행</td>
+									<td><a href="customer_detail.html" target="_blank">김관우</a></td>
+									<td>2019-02-23</td>
+									<td>66,000원/월</td>
+									<td>900,000원</td>
+									<td>결제완료<br>(2019-04-05)</td>
 								</tr>
 							</tbody>
 						</table>

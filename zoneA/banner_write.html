@@ -1,0 +1,550 @@
+<!doctype html>
+<html class="fixed">
+
+<head>
+	<!-- Basic -->
+	<meta charset="UTF-8">
+	<link rel="icon" href="../resources/images/favicon.ico">
+	<title>세무앤 관리자</title>
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<!-- Web Fonts  -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light"
+		rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet" type="text/css">
+
+	<!-- Vendor CSS -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
+	<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+	<link rel="stylesheet" href="assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.css" />
+	<link rel="stylesheet" href="assets/vendor/summernote/summernote.css" />
+	<link rel="stylesheet" href="assets/vendor/summernote/summernote-bs3.css" />
+
+	<!-- Specific Page Vendor CSS -->
+	<link rel="stylesheet" href="assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css" />
+	<link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
+	<link rel="stylesheet" href="assets/vendor/morris/morris.css" />
+
+	<link rel="stylesheet" href="assets/vendor/select2/select2.css" />
+	<link rel="stylesheet" href="assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="assets/stylesheets/theme.css" />
+
+	<!-- Skin CSS -->
+	<link rel="stylesheet" href="assets/stylesheets/skins/default.css" />
+
+	<!-- Theme Custom CSS -->
+	<link rel="stylesheet" href="assets/stylesheets/theme-custom.css">
+
+	<!-- Semuand CSS-->
+	<link rel="stylesheet" href="assets/stylesheets/semuand.css">
+
+	<!-- Head Libs -->
+	<script src="assets/vendor/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+	<section class="body">
+
+		<!-- start: header -->
+		<header class="header">
+			<div class="logo-container">
+				<a href="index.html" class="logo">
+					<img src="assets/images/logo.png">
+				</a>
+				<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html"
+					data-fire-event="sidebar-left-opened">
+					<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+				</div>
+			</div>
+
+			<!-- start: search & user box -->
+			<div class="header-right">
+
+				<span>
+					<script>
+						var today = new Date();
+						var dd = today.getDate();
+						var mm = today.getMonth() + 1; //January is 0!
+						var yyyy = today.getFullYear();
+
+						if (dd < 10) {
+							dd = '0' + dd
+						}
+						if (mm < 10) {
+							mm = '0' + mm
+						}
+						today = yyyy + '-' + mm + '-' + dd;
+						document.write(today);
+					</script>
+				</span>
+
+				<span class="separator"></span>
+
+				<div id="userbox" class="userbox">
+					<a href="#" data-toggle="dropdown">
+						<figure class="profile-picture">
+							<img src="assets/images/!logged-user.jpg" alt="" class="img-circle" />
+						</figure>
+						<div class="profile-info">
+							<span class="name">이종근</span>
+							<span class="role">administrator</span>
+						</div>
+
+						<i class="fa custom-caret"></i>
+					</a>
+
+					<div class="dropdown-menu">
+						<ul class="list-unstyled">
+							<li class="divider"></li>
+							<li>
+								<a role="menuitem" tabindex="-1" href="admin_profile.html"><i class="fa fa-user"></i> My
+									Profile</a>
+							</li>
+							<li>
+								<a role="menuitem" tabindex="-1" href="index.html"><i class="fa fa-power-off"></i>
+									Logout</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end: search & user box -->
+		</header>
+		<!-- end: header -->
+
+		<div class="inner-wrapper">
+			<!-- start: sidebar -->
+			<aside id="sidebar-left page-header" class="sidebar-left">
+				<div class="sidebar-header">
+					<div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html"
+						data-fire-event="sidebar-left-toggle">
+						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+					</div>
+				</div>
+
+				<div class="nano">
+					<div class="nano-content">
+						<nav id="menu" class="nav-main" role="navigation">
+							<ul class="nav nav-main">
+								<li class="nav-parent">
+									<a href="#">
+										<i class="fa fa-users"></i>
+										<span>사용자 관리</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="customer_list.html">
+												고객 관리
+											</a>
+										</li>
+										<li>
+											<a href="taxaccountant_list.html">
+												세무사 관리
+											</a>
+										</li>
+										<li>
+											<a href="alliance_list.html">
+												제휴업체 관리
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent">
+									<a href="#">
+										<i class="fas fa-calculator"></i>
+										<span>비교견적 관리</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="estimate_list.html">
+												비교견적 요청현황
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent">
+								    <a href="#">
+								        <i class="fas fa-dollar-sign"></i>
+								        <span>정산 관리</span>
+								    </a>
+								    <ul class="nav nav-children">
+								        <li>
+								            <a href="payment_list.html">
+								                계약 관리
+								            </a>
+								        </li>
+								        <li>
+								            <a href="recommend_list.html">
+								                페이백 관리
+								            </a>
+								        </li>
+								        <li>
+								            <a href="mileage_list.html">
+								                포인트 관리
+								            </a>
+								        </li>
+								    </ul>
+								</li>
+								<li class="nav-parent nav-expanded nav-active">
+								    <a href="#">
+								        <i class="fas fa-exclamation-circle"></i>
+								        <span>콘텐츠 관리</span>
+								    </a>
+								    <ul class="nav nav-children">
+								        <li class="nav-active">
+								            <a href="banner_list.html">
+								                메인배너 관리
+								            </a>
+								        </li>
+								        <li>
+								            <a href="popup_list.html">
+								                팝업 관리
+								            </a>
+								        </li>
+								        <li>
+								            <a href="reply_list.html">
+								                후기 관리
+								            </a>
+								        </li>
+								    </ul>
+								</li>
+								<li class="nav-parent">
+									<a href="#">
+										<i class="fas far fa-cogs"></i>
+										<span>고객센터</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="notice_list.html">
+												공지사항
+											</a>
+										</li>
+										<li>
+											<a href="inquiry_list.html">
+												제휴 문의
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent">
+									<a href="#">
+										<i class="fas far fa-envelope"></i>
+										<span>서비스 설정</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="sms_list.html">
+												SMS 발송내역
+											</a>
+										</li>
+										<li>
+											<a href="sms_set.html">
+												자동 SMS 설정 관리
+											</a>
+										</li>
+										<li>
+											<a href="sms_send.html">
+												개별/전체 SMS 발송
+											</a>
+										</li>
+										<li>
+											<a href="kakaotalk_list.html">
+												카카오톡 발송내역
+											</a>
+										</li>
+										<li>
+											<a href="kakaotalk_set.html">
+												카카오톡 알림톡 설정 관리
+											</a>
+										</li>
+										<li>
+											<a href="email_list.html">
+												이메일 발송내역
+											</a>
+										</li>
+										<li>
+											<a href="email_send.html">
+												개별/전체메일발송
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="statistics_list.html">
+										<i class="fas fa-bar-chart-o"></i>
+										<span>통계관리</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+
+						<hr class="separator" />
+					</div>
+				</div>
+			</aside>
+			<!-- end: sidebar -->
+
+			<section role="main" class="content-body">
+				<header class="page-header">
+				    <h2>메인배너 관리</h2>
+				    <div class="right-wrapper pull-right">
+				        <ol class="breadcrumbs">
+				            <li>
+				                <a href="index.html">
+				                    <i class="fa fa-home"></i>
+				                </a>
+				            </li>
+				            <li><span>콘텐츠 관리</span></li>
+				            <li><span>메인배너 관리</span></li>
+				        </ol>
+				    </div>
+				</header>
+                <!-- start: page -->
+                <div class="tabs tabs-primary mt30">
+                    <ul class="nav nav-tabs nav-justified">
+                        <li class="active">
+                            <a href="#banner_text" data-toggle="tab">매뉴얼 모드</a>
+                        </li>
+                        <li>
+                            <a href="#banner_code" data-toggle="tab">코드 모드</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="banner_text" class="tab-pane active">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table type2">
+                                        <colgroup>
+                                            <col width="20%">
+                                            <col width="*">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>제목</th>
+                                                <td>
+                                                    <div class="col-sm-12">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>내용</th>
+                                                <td>
+                                                    <div class="col-sm-12">
+                                                        <textarea class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>이미지</th>
+                                                <td>
+                                                    <div class="col-md-12">
+                                                        <img src="assets/images/temp/project.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-md-12 mt5">
+                                                        <div class="fileupload fileupload-new"
+                                                            data-provides="fileupload">
+                                                            <div class="input-append">
+                                                                <div class="uneditable-input">
+                                                                    <i class="fa fa-file fileupload-exists"></i>
+                                                                    <span class="fileupload-preview"></span>
+                                                                </div>
+                                                                <span class="btn btn-info btn-file">
+                                                                    <span class="fileupload-exists">바꾸기</span>
+                                                                    <span class="fileupload-new">찾아보기</span>
+                                                                    <input type="file" />
+                                                                </span>
+                                                                <a href="#" class="btn btn-info fileupload-exists"
+                                                                    data-dismiss="fileupload">삭제</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>링크 URL</th>
+                                                <td>
+                                                    <div class="col-sm-12">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>BG 컬러코드</th>
+                                                <td>
+                                                    <div class="col-sm-6 w_auto">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>버튼명</th>
+                                                <td>
+                                                    <div class="col-sm-6 w_auto">
+                                                        <input type="text" class="form-control" value="바로가기">
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        * 기본값은 "바로가기"로 표시
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="banner_code" class="tab-pane">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table type2">
+                                        <colgroup>
+                                            <col width="20%">
+                                            <col width="*">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>코드로 입력</th>
+                                                <td>
+                                                    <form class="form-horizontal form-bordered">
+                                                        <div class="form-group">
+                                                            <div class="col-md-12">
+                                                                <div class="summernote" data-plugin-summernote
+                                                                    data-plugin-options='{ "height": 180, "codemirror": { "theme": "ambiance" } }'>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table type2">
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="*">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>노출순서</th>
+                                        <td>
+                                            <div class="col-sm-6 w_auto">
+                                                <select class="form-control">
+                                                    <option>선택</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>노출여부</th>
+                                        <td>
+                                            <div class="col-sm-3 w_auto">
+                                                <div class="radio-custom radio-primary">
+                                                    <input type="radio" name="event1_radio" id="event1_radio1"
+                                                        checked="checked">
+                                                    <label for="event1_radio1">노출</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 w_auto">
+                                                <div class="radio-custom radio-primary">
+                                                    <input type="radio" name="event1_radio" id="event1_radio2">
+                                                    <label for="event1_radio2">미노출</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="btn_center_wrap mt30">
+                            <a href="banner_list.html" class="btn btn-lg btn-primary  check_float">목록</a>
+                            <button class="btn btn-lg btn-default ">삭제</button>
+                            <button class="btn btn-lg btn-primary ">등록</button>
+                        </div>
+                    </div>
+                </div>
+				<!-- end: page -->
+			</section>
+		</div>
+
+	</section>
+
+	<!-- Vendor -->
+	<script src="assets/vendor/jquery/jquery.js"></script>
+	<script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+	<script src="assets/vendor/nanoscroller/nanoscroller.js"></script>
+	<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
+	<script src="assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+
+	<!-- Specific Page Vendor -->
+	<script src="assets/vendor/jquery-autosize/jquery.autosize.js"></script>
+	<script src="assets/vendor/select2/select2.js"></script>
+	<script src="assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+	<script src="assets/vendor/jquery-datatables/extras/TableTools/js/dataTables.tableTools.min.js"></script>
+	<script src="assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
+    <script src="assets/vendor/summernote/summernote.js"></script>
+    <script src="assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+
+	<!-- Theme Base, Components and Settings -->
+	<script src="assets/javascripts/theme.js"></script>
+
+	<!-- Theme Custom -->
+	<script src="assets/javascripts/theme.custom.js"></script>
+
+	<!-- Theme Initialization Files -->
+	<script src="assets/javascripts/theme.init.js"></script>
+
+	<!-- Examples -->
+	<script src="assets/javascripts/tables/examples.datatables.default.js"></script>
+	<script>
+		$("#tbl_member tbody tr").on("click", function () {
+			var pop_width = $(window).width() - 20;
+			var pop_height = $(window).height() - 50;
+			var url = "./payment_admin_bidding.html";
+			var name = "";
+			var specs = "width=" + pop_width + ", height=" + pop_height + ", top=50, left=10, resizable=yes";
+			window.open(url, name, specs);
+			return false;
+		});
+	</script>
+</body>
+
+</html>

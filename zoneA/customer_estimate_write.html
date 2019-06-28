@@ -1,0 +1,862 @@
+<!doctype html>
+<html class="fixed">
+
+<head>
+	<!-- Basic -->
+	<meta charset="UTF-8">
+	<link rel="icon" href="../resources/images/favicon.ico">
+	<title>세무앤 관리자</title>
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<!-- Web Fonts  -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light"
+		rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet" type="text/css">
+
+	<!-- Vendor CSS -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
+	<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+	<link rel="stylesheet" href="assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.css" />
+	<link rel="stylesheet" href="assets/vendor/summernote/summernote.css" />
+	<link rel="stylesheet" href="assets/vendor/summernote/summernote-bs3.css" />
+
+	<!-- Specific Page Vendor CSS -->
+	<link rel="stylesheet" href="assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css" />
+	<link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
+	<link rel="stylesheet" href="assets/vendor/morris/morris.css" />
+
+	<link rel="stylesheet" href="assets/vendor/select2/select2.css" />
+	<link rel="stylesheet" href="assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="assets/stylesheets/theme.css" />
+
+	<!-- Skin CSS -->
+	<link rel="stylesheet" href="assets/stylesheets/skins/default.css" />
+
+	<!-- Theme Custom CSS -->
+	<link rel="stylesheet" href="assets/stylesheets/theme-custom.css">
+
+	<!-- Semuand CSS-->
+	<link rel="stylesheet" href="assets/stylesheets/semuand.css">
+
+	<!-- Head Libs -->
+	<script src="assets/vendor/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+	<section class="body">
+
+		<!-- start: header -->
+		<header class="header">
+			<div class="logo-container">
+				<a href="index.html" class="logo">
+					<img src="assets/images/logo.png">
+				</a>
+				<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html"
+					data-fire-event="sidebar-left-opened">
+					<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+				</div>
+			</div>
+
+			<!-- start: search & user box -->
+			<div class="header-right">
+
+				<span>
+					<script>
+						var today = new Date();
+						var dd = today.getDate();
+						var mm = today.getMonth() + 1; //January is 0!
+						var yyyy = today.getFullYear();
+
+						if (dd < 10) {
+							dd = '0' + dd
+						}
+						if (mm < 10) {
+							mm = '0' + mm
+						}
+						today = yyyy + '-' + mm + '-' + dd;
+						document.write(today);
+					</script>
+				</span>
+
+				<span class="separator"></span>
+
+				<div id="userbox" class="userbox">
+					<a href="#" data-toggle="dropdown">
+						<figure class="profile-picture">
+							<img src="assets/images/!logged-user.jpg" alt="" class="img-circle" />
+						</figure>
+						<div class="profile-info">
+							<span class="name">이종근</span>
+							<span class="role">administrator</span>
+						</div>
+
+						<i class="fa custom-caret"></i>
+					</a>
+
+					<div class="dropdown-menu">
+						<ul class="list-unstyled">
+							<li class="divider"></li>
+							<li>
+								<a role="menuitem" tabindex="-1" href="admin_profile.html"><i class="fa fa-user"></i> My Profile</a>
+							</li>
+							<li>
+								<a role="menuitem" tabindex="-1" href="index.html"><i class="fa fa-power-off"></i>
+									Logout</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end: search & user box -->
+		</header>
+		<!-- end: header -->
+
+		<div class="inner-wrapper">
+			<!-- start: sidebar -->
+			<aside id="sidebar-left page-header" class="sidebar-left">
+				<div class="sidebar-header">
+					<div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html"
+						data-fire-event="sidebar-left-toggle">
+						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+					</div>
+				</div>
+
+				<div class="nano">
+					<div class="nano-content">
+						<nav id="menu" class="nav-main" role="navigation">
+							<ul class="nav nav-main">
+								<li class="nav-parent nav-expanded nav-active">
+									<a href="#">
+										<i class="fa fa-users"></i>
+										<span>사용자 관리</span>
+									</a>
+									<ul class="nav nav-children">
+										<li class="nav-active">
+											<a href="customer_list.html">
+												고객 관리
+											</a>
+										</li>
+										<li>
+											<a href="taxaccountant_list.html">
+												세무사 관리
+											</a>
+										</li>
+										<li>
+											<a href="alliance_list.html">
+												제휴업체 관리
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent">
+									<a href="#">
+										<i class="fas fa-calculator"></i>
+										<span>비교견적 관리</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="estimate_list.html">
+												비교견적 요청현황
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent">
+									<a href="#">
+										<i class="fas fa-dollar-sign"></i>
+										<span>정산 관리</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="payment_list.html">
+												계약 관리
+											</a>
+										</li>
+										<li>
+											<a href="recommend_list.html">
+												페이백 관리
+											</a>
+										</li>
+										<li>
+											<a href="mileage_list.html">
+												포인트 관리
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent">
+									<a href="#">
+										<i class="fas fa-exclamation-circle"></i>
+										<span>콘텐츠 관리</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="banner_list.html">
+												메인배너 관리
+											</a>
+										</li>
+										<li>
+											<a href="popup_list.html">
+												팝업 관리
+											</a>
+										</li>
+										<li>
+											<a href="reply_list.html">
+												후기 관리
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent">
+									<a href="#">
+										<i class="fas far fa-cogs"></i>
+										<span>고객센터</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="notice_list.html">
+												공지사항
+											</a>
+										</li>
+										<li>
+											<a href="inquiry_list.html">
+												제휴 문의
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-parent">
+									<a href="#">
+										<i class="fas far fa-envelope"></i>
+										<span>서비스 설정</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="sms_list.html">
+												SMS 발송내역
+											</a>
+										</li>
+										<li>
+											<a href="sms_set.html">
+												자동 SMS 설정 관리
+											</a>
+										</li>
+										<li>
+											<a href="sms_send.html">
+												개별/전체 SMS 발송
+											</a>
+										</li>
+										<li>
+											<a href="kakaotalk_list.html">
+												카카오톡 발송내역
+											</a>
+										</li>
+										<li>
+											<a href="kakaotalk_set.html">
+												카카오톡 알림톡 설정 관리
+											</a>
+										</li>
+										<li>
+											<a href="email_list.html">
+												이메일 발송내역
+											</a>
+										</li>
+										<li>
+											<a href="email_send.html">
+												개별/전체메일발송
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="statistics_list.html">
+										<i class="fas fa-bar-chart-o"></i>
+										<span>통계관리</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+
+						<hr class="separator" />
+					</div>
+				</div>
+			</aside>
+			<!-- end: sidebar -->
+
+			<section role="main" class="content-body">
+				<header class="page-header">
+					<h2>고객 관리</h2>
+					<div class="right-wrapper pull-right">
+						<ol class="breadcrumbs">
+							<li>
+								<a href="index.html">
+									<i class="fa fa-home"></i>
+								</a>
+							</li>
+							<li><span>사용자 관리</span></li>
+							<li><span>고객관리</span></li>
+						</ol>
+					</div>
+				</header>
+				<!-- start: page -->
+				<header class="panel-heading">
+					<h2 class="panel-title">홍길동</h2>
+					<div class="panel-btn">
+						<button class="btn btn-info"><i class="fa fa-envelope"></i></button>
+						<button class="btn btn-info"><i class="fa fa-comment"></i></button>
+					</div>
+				</header>
+
+				<div class="panel-body">
+				    <h4 class="cont_tit">기본정보</h4>
+				    <div class="table-responsive">
+				        <table class="table type2">
+				            <colgroup>
+				                <col width="15%">
+				                <col width="35%">
+				                <col width="15%">
+				                <col width="35%">
+				            </colgroup>
+				            <tr>
+				                <th>견적코드</th>
+				                <td>
+				                    <div class="col-sm-12">
+				                        19020aa01111
+				                    </div>
+				                </td>
+				                <th>견적승인</th>
+				                <td>
+				                    <div class="col-sm-3 w_auto">
+				                        <div class="radio-custom radio-primary">
+				                            <input type="radio" id="radio_ok1" name="radio_ok" checked="checked">
+				                            <label for="radio_ok1">승인</label>
+				                        </div>
+				                    </div>
+				                    <div class="col-sm-3 w_auto">
+				                        <div class="radio-custom radio-primary">
+				                            <input type="radio" id="radio_ok2" name="radio_ok">
+				                            <label for="radio_ok2">미승인</label>
+				                        </div>
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <th>상태</th>
+				                <td colspan="3">
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control">
+				                            <option>선택</option>
+				                            <option>승인대기</option>
+				                            <option>비교견적</option>
+				                            <option>상담중</option>
+				                            <option>계약완료</option>
+				                        </select>
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <th>고객명</th>
+				                <td>
+				                    <div class="col-sm-12">
+				                        홍길동
+				                    </div>
+				                </td>
+				                <th>연락처</th>
+				                <td>
+				                    <div class="col-sm-12">
+				                        010-2222-3333
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <th>견적요청일</th>
+				                <td>
+                                    <div class="col-sm-12">
+                                        2019-06-16 (AM 01:01)
+                                    </div>
+                                </td>
+				                <th>견적완료일</th>
+				                <td>
+                                    <div class="col-sm-12">
+                                        2019-06-16 (PM 03:58)
+                                    </div>
+                                </td>
+				            </tr>
+				        </table>
+				    </div>
+				</div>
+				<div class="panel-body">
+				    <h4 class="cont_tit">견적 의뢰 내역</h4>
+				    <div class="table-responsive">
+				        <table class="table type2">
+				            <colgroup>
+				                <col width="15%">
+				                <col width="35%">
+				                <col width="15%">
+				                <col width="35%">
+				            </colgroup>
+				            <tr>
+				                <th>업무구분</th>
+				                <td colspan="3">
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control select_rr">
+				                            <option>1차 선택</option>
+				                            <option class="rh1">기장/신고 대행</option>
+				                            <option class="rh2">양도/상속/증여</option>
+				                            <option class="rh3">세무조사</option>
+				                            <option class="rh4">회계감사</option>
+				                        </select>
+				                    </div>
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control select_ss">
+				                            <option>2차 선택</option>
+				                            <!-- 1차 선택 기장/신고 대행 시 -->
+				                            <option class="sh1">기장/신고 대행</option>
+				                            <option class="sh2">부가가치세 신고 대행</option>
+				                            <option class="sh3">종합소득세 신고 대행</option>
+				                            <option class="sh4">프리랜서 신고 대행</option>
+				                            <!-- 1차 양도/상속/증여 시 -->
+				                            <option class="sh5">양도 소득세 신고</option>
+				                            <option class="sh6">상속세 신고</option>
+				                            <option class="sh7">증여세 신고</option>
+				                            <option class="sh8">자문 기타</option>
+				                            <!-- 1차 세무조사 시 -->
+				                            <option class="sh9">세무조사</option>
+				                            <option class="sh10">조세불복</option>
+				                            <!-- 1차 회계감사 시 -->
+				                            <option class="sh11">회계감사</option>
+				                            <option class="sh12">아파트감사</option>
+				                            <option class="sh13">기타자문</option>
+				                            <option class="sh0">전화 상담</option>
+				                        </select>
+				                    </div>
+				                </td>
+				            </tr>
+				        </table>
+				        <table class="table type2 chs">
+				            <caption>기간/신고대행</caption>
+				            <colgroup>
+				                <col width="15%">
+				                <col width="35%">
+				                <col width="15%">
+				                <col width="35%">
+				            </colgroup>
+				            <tr>
+				                <th>사업장 지역</th>
+				                <td>
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control ch11 select_ar1">
+				                            <option>시/도</option>
+				                            <option class="ah1">서울시</option>
+				                            <option class="ah2">경기도</option>
+				                            <option class="ah3">인천시</option>
+				                            <option class="ah4">부산시</option>
+				                            <option class="ah5">대전시</option>
+				                            <option class="ah6">대구시</option>
+				                            <option class="ah7">울산시</option>
+				                            <option class="ah8">세종시</option>
+				                            <option class="ah9">광주시</option>
+				                            <option class="ah10">강원도</option>
+				                            <option class="ah11">충청북도</option>
+				                            <option class="ah12">충청남도</option>
+				                            <option class="ah13">경상북도</option>
+				                            <option class="ah14">경상남도</option>
+				                            <option class="ah15">전라북도</option>
+				                            <option class="ah16">전라남도</option>
+				                            <option class="ah17">제주도</option>
+				                        </select>
+				                    </div>
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control ch11 select_ar2">
+				                            <!-- reference : /zoneC/compare_s3.html 650~1562 line -->
+				                            <option>구/군</option>
+				                            <!-- 1차 서울시 -->
+				                            <option class="ah1">강남구</option>
+				                            <option class="ah1">중랑구</option>
+				                            <!-- 1차 경기도 -->
+				                            <option class="ah2">가평군</option>
+				                            <option class="ah2">화성시</option>
+				                            <!-- 1차 인천시 -->
+				                            <option class="ah3">강화군</option>
+				                            <option class="ah3">미추홀구</option>
+				                            <!-- 1차 부산시 -->
+				                            <option class="ah4">강서구</option>
+				                            <option class="ah4">해운대구</option>
+				                            <!-- 1차 대전시 -->
+				                            <option class="ah5">대덕구</option>
+				                            <option class="ah5">중구</option>
+				                            <!-- 1차 대구시 -->
+				                            <option class="ah6">남구</option>
+				                            <option class="ah6">중구</option>
+				                            <!-- 1차 울산시 -->
+				                            <option class="ah7">남구</option>
+				                            <option class="ah7">중구</option>
+				                            <!-- 1차 세종시 -->
+				                            <option class="ah8">가람동</option>
+				                            <option class="ah8">한누리대로</option>
+				                            <!-- 1차 광주시 -->
+				                            <option class="ah9">광산구</option>
+				                            <option class="ah9">서구</option>
+				                            <!-- 1차 강원도 -->
+				                            <option class="ah10">강릉시</option>
+				                            <option class="ah10">횡성군</option>
+				                            <!-- 1차 충청북도 -->
+				                            <option class="ah11">괴산군</option>
+				                            <option class="ah11">충주시</option>
+				                            <!-- 1차 충청남도 -->
+				                            <option class="ah12">계룡시</option>
+				                            <option class="ah12">홍성군</option>
+				                            <!-- 1차 경상북도 -->
+				                            <option class="ah13">경산시</option>
+				                            <option class="ah13">포항시 북구</option>
+				                            <!-- 1차 경상남도 -->
+				                            <option class="ah14">거제시</option>
+				                            <option class="ah14">합천군</option>
+				                            <!-- 1차 전라북도 -->
+				                            <option class="ah15">고창군</option>
+				                            <option class="ah15">진안군</option>
+				                            <!-- 1차 전라남도 -->
+				                            <option class="ah16">강진군</option>
+				                            <option class="ah16">화순군</option>
+				                            <!-- 1차 제주도 -->
+				                            <option class="ah17">서귀포시</option>
+				                            <option class="ah17">제주시</option>
+				                        </select>
+				                    </div>
+				                </td>
+				                <th>사업자유형</th>
+				                <td>
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control ch12">
+				                            <option>선택</option>
+				                            <option>개인 사업자</option>
+				                            <option>법인 사업자</option>
+				                            <option>개인</option>
+				                            <option>기타</option>
+				                        </select>
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <th>과세유형</th>
+				                <td>
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control ch13">
+				                            <option>선택</option>
+				                            <option>일반</option>
+				                            <option>간이</option>
+				                            <option>면세 등 기타</option>
+				                        </select>
+				                    </div>
+				                </td>
+				                <th>업종</th>
+				                <td>
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control ch14">
+				                            <option>선택</option>
+				                            <option>음식점</option>
+				                            <option>도소매(쇼핑몰)</option>
+				                            <option>서비스</option>
+				                            <option>학원</option>
+				                            <option>제조업</option>
+				                            <option>병원</option>
+				                            <option>IT/기술</option>
+				                            <option>임대업</option>
+				                            <option>기타</option>
+				                            <option>선택안함</option>
+				                        </select>
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <th>(예상)매출액</th>
+				                <td>
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control ch15">
+				                            <option>선택</option>
+				                            <option>7천5백만원 미만</option>
+				                            <option>7천5백만원~1억5천만원</option>
+				                            <option>1억5천만원~3억원</option>
+				                            <option>3억원~6억원</option>
+				                            <option>6억원~10억원</option>
+				                            <option>10억원 이상</option>
+				                            <option>선택안함</option>
+				                        </select>
+				                    </div>
+				                </td>
+				                <th>4대보험 가입 직원수</th>
+				                <td>
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control ch16">
+				                            <option>선택</option>
+				                            <option>없음</option>
+				                            <option>1명</option>
+				                            <option>2명</option>
+				                            <option>3명</option>
+				                            <option>4명</option>
+				                            <option>5명</option>
+				                            <option>6명 이상</option>
+				                            <option>선택안함</option>
+				                        </select>
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <th>기간유형</th>
+				                <td colspan="3">
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control ch17">
+				                            <option>선택</option>
+				                            <option>정기신고</option>
+				                            <option>기간 후 신고</option>
+				                            <option>선택안함</option>
+				                        </select>
+				                    </div>
+				                </td>
+				            </tr>
+				        </table>
+				        <table class="table type2 chs">
+				            <caption>양도/상속/증여</caption>
+				            <colgroup>
+				                <col width="15%">
+				                <col width="35%">
+				                <col width="15%">
+				                <col width="35%">
+				            </colgroup>
+				            <tr>
+				                <th>물건종류</th>
+				                <td>
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control ch21">
+				                            <option>선택</option>
+				                            <option>아파트</option>
+				                            <option>단독주택(다가구)</option>
+				                            <option>다세대(빌라)</option>
+				                            <option>겸용주택상가</option>
+				                            <option>오피스텔</option>
+				                            <option>토지</option>
+				                            <option>재건축아파트</option>
+				                            <option>분양권</option>
+				                            <option>기타</option>
+				                        </select>
+				                    </div>
+				                </td>
+				                <th>매도(예정)일</th>
+				                <td>
+				                    <div class="col-sm-12">
+				                        <input type="text" class="form-control ch22">
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <th>물건지 주소</th>
+				                <td colspan="3">
+				                    <div class="col-md-12 postcode_wrap">
+				                        <input type="text" class="form-control ch23" id="postcode" placeholder="우편번호">
+				                        <button onclick="execDaumPostcode()" class="btn btn-info ml_btn btn_postcode">주소검색</button>
+				                    </div>
+				                    <div class="col-md-12 mt5">
+				                        <input type="text" class="form-control ch23" id="address" placeholder="주소">
+				                    </div>
+				                    <div class="col-md-12 mt5">
+				                        <input type="text" class="form-control ch23" id="detailAddress" placeholder="상세주소">
+				                    </div>
+				                    <div class="col-md-12 mt5">
+				                        <input type="text" class="form-control ch23" id="extraAddress" placeholder="참고항목">
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <th>매도가액</th>
+				                <td>
+				                    <div class="col-sm-12">
+				                        <input type="text" class="form-control ch24">
+				                    </div>
+				                </td>
+				                <th>취득가액</th>
+				                <td>
+				                    <div class="col-sm-12">
+				                        <input type="text" class="form-control ch25">
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <th>총 상속 재산가액</th>
+				                <td>
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control ch31">
+				                            <option>선택</option>
+				                            <option>모르겠음</option>
+				                            <option>1억원 이하</option>
+				                            <option>1억원~5억원</option>
+				                            <option>5억원~10억원</option>
+				                            <option>10억원~30억원</option>
+				                            <option>30억원 초과</option>
+				                        </select>
+				                    </div>
+				                </td>
+				                <th>피상속일(고인) 작고일</th>
+				                <td>
+				                    <div class="col-sm-12">
+				                        <input type="text" class="form-control ch32">
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <th>지역 (상속세)</th>
+				                <td colspan="3">
+				                    <div class="col-md-12 postcode_wrap">
+				                        <input type="text" class="form-control ch33" id="postcode2" placeholder="우편번호">
+				                        <button onclick="execDaumPostcode2()" class="btn btn-info ml_btn btn_postcode">주소검색</button>
+				                    </div>
+				                    <div class="col-md-12 mt5">
+				                        <input type="text" class="form-control ch33" id="address2" placeholder="주소">
+				                    </div>
+				                    <div class="col-md-12 mt5">
+				                        <input type="text" class="form-control ch33" id="detailAddress2" placeholder="상세주소">
+				                    </div>
+				                    <div class="col-md-12 mt5">
+				                        <input type="text" class="form-control ch33" id="extraAddress2" placeholder="참고항목">
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <th>증여재산 종류</th>
+				                <td>
+				                    <div class="col-sm-12">
+				                        <input type="text" class="form-control ch41">
+				                    </div>
+				                </td>
+				                <th>추정 증여재산가액</th>
+				                <td>
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control ch42">
+				                            <option>선택</option>
+				                            <option>모르겠음</option>
+				                            <option>1억원 이하</option>
+				                            <option>1억원~5억원</option>
+				                            <option>5억원~10억원</option>
+				                            <option>10억원~30억원</option>
+				                            <option>30억원 초과</option>
+				                        </select>
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <th>증여 받으실 분</th>
+				                <td>
+				                    <div class="col-sm-12">
+				                        <input type="text" class="form-control ch43">
+				                    </div>
+				                </td>
+				                <th></th>
+				                <td></td>
+				            </tr>
+				        </table>
+				        <table class="table type2">
+				            <caption>공통</caption>
+				            <colgroup>
+				                <col width="15%">
+				                <col width="35%">
+				                <col width="15%">
+				                <col width="35%">
+				            </colgroup>
+				            <tr>
+				                <th>세무사 선호 조건</th>
+				                <td colspan="3">
+				                    <div class="col-md-6 w_auto">
+				                        <select class="form-control">
+				                            <option>선택</option>
+				                            <option>위치(가까운 거리)</option>
+				                            <option>금액(저렴한 비용)</option>
+				                            <option>전문성</option>
+				                            <option>선택안함</option>
+				                        </select>
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <th>추가 문의사항</th>
+				                <td colspan="3">
+				                    <div class="col-md-12">
+				                        <textarea class="form-control" rows="3"></textarea>
+				                    </div>
+				                </td>
+				            </tr>
+				        </table>
+				    </div>
+				</div>
+				<div class="panel-body">
+				    <h4 class="cont_tit">고객 확인사항</h4>
+				    <div class="table-responsive">
+				        <table class="table type2">
+				            <colgroup>
+				                <col width="15%">
+				                <col width="35%">
+				                <col width="15%">
+				                <col width="35%">
+				            </colgroup>
+				            <tr>
+				                <th>고객 확인사항</th>
+				                <td colspan="3">
+				                    <div class="col-md-12">
+				                        <textarea class="form-control" rows="3"></textarea>
+				                    </div>
+				                </td>
+				            </tr>
+				        </table>
+				    </div>
+				</div>
+				<div class="panel-body">
+				    <div class="btn_center_wrap mt30">
+				        <a href="customer_detail.html" class="btn btn-lg btn-default">취소</a>
+				        <a href="#" class="btn btn-lg btn-primary">저장</a>
+				    </div>
+				</div>
+				<!-- end: page -->
+			</section>
+		</div>
+
+	</section>
+
+	<!-- Vendor -->
+	<script src="assets/vendor/jquery/jquery.js"></script>
+	<script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+	<script src="assets/vendor/nanoscroller/nanoscroller.js"></script>
+	<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
+	<script src="assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+
+	<!-- Specific Page Vendor -->
+	<script src="assets/vendor/jquery-autosize/jquery.autosize.js"></script>
+	<script src="assets/vendor/select2/select2.js"></script>
+	<script src="assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+	<script src="assets/vendor/jquery-datatables/extras/TableTools/js/dataTables.tableTools.min.js"></script>
+	<script src="assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
+	<script src="assets/vendor/summernote/summernote.js"></script>
+
+	<!-- Theme Base, Components and Settings -->
+	<script src="assets/javascripts/theme.js"></script>
+
+	<!-- Theme Custom -->
+	<script src="assets/javascripts/theme.custom.js"></script>
+
+	<!-- Theme Initialization Files -->
+	<script src="assets/javascripts/theme.init.js"></script>
+
+	<!-- Examples -->
+    <script src="assets/javascripts/tables/examples.datatables.default.js"></script>
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+</body>
+
+</html>
