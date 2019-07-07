@@ -13,7 +13,7 @@
 	<meta property="og:description" content="세무앤, 좋은 세무사를 만나는 공식">
 	<meta property="og:image" content="http://www.semuand.com/resources/images/ad_icon.png">
 	<link rel="icon" href="../resources/images/favicon.ico">
-	<title>세무앤 파트너 : 내 정보 관리-사업자 정보</title>
+	<title>세무앤 파트너 : 내 정보 관리-추천자 현황</title>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto" rel="stylesheet">
 	<link href="./css/jquery-ui.min.css" rel="stylesheet">
 	<link href="./css/sub2.css" rel="stylesheet">
@@ -39,9 +39,6 @@
 		<nav class="gnb">
 			<div class="inner">
 				<ul class="g1">
-					<li><a href="estimate.html">견적요청현황</a></li>
-					<li><a href="bidding.html">내입찰현황</a></li>
-					<li><a href="contract.html">계약관리</a></li>
 					<li><a href="mypage.html" class="on">내정보관리</a></li>
 				</ul>
 				<ul class="g2">
@@ -60,166 +57,125 @@
 		<section class="b2">
 			<div class="inner t2">
 				<ul class="cate_btns col2">
-					<li><a href="mepage.html" class="on">사업자정보</a></li>
-					<li><a href="mepage2.html">추천자현황</a></li>
+					<li><a href="mepage.html" class="on">추천자현황</a></li>
+					<li><a href="mepage2.html">사업자정보</a></li>
 				</ul>
-			</div>
-			<div class="inner">
-				<h3>기본 정보</h3>
-				<ul class="n_list">
-					<li>
-						<div class="col1">
-							<p class="tit">아이디</p>
-							<div class="exp">
-								kyeshullee@sumun.com
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="col1">
-							<p class="tit">비밀번호</p>
-							<div class="exp">
-								<input type="password" placeholder="8~20자리 영문, 숫자 조합">
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="col1">
-							<p class="tit">비밀번호 확인</p>
-							<div class="exp">
-								<input type="password" placeholder="8~20자리 영문, 숫자 조합">
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="col1">
-							<p class="tit">이름</p>
-							<div class="exp">
-								<input type="text">
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="col1">
-							<p class="tit">연락처</p>
-							<div class="exp">
-								<div class="tel_wrap3">
-									<span>010-2222-3333</span> <button class="btn_r btn_tel">수정</button>
-								</div>
-								<div class="tel_hide">
-									<p class="subtit">변경할 연락처</p>
-									<div class="tel_wrap">
-										<select>
-											<option>010</option>
-											<option>011</option>
-											<option>016</option>
-											<option>017</option>
-											<option>019</option>
-										</select>
-										<input type="tel" placeholder="숫자만 입력" class="required">
-										<button class="btn_r">인증번호</button>
-									</div>
-									<div class="tel_wrap2">
-										<input type="tel" placeholder="인증번호를 입력해주세요" class="required"> <button class="btn_r">연락처 변경</button>
-										<span class="txt_tel">인증번호 유효시간 3:00</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="inner">
-				<h3>회사 정보</h3>
-				<ul class="n_list">
-					<li>
-						<div class="col1">
-							<p class="tit">회사명(상호)</p>
-							<div class="exp">
-								<input type="text">
-							</div>
-						</div>
+            </div>
+            <div class="inner t2">
+                <ul class="total">
+                    <li>
+                        <dl>
+                            <dt>정산예정건수</dt>
+                            <dd><strong>5</strong>건</dd>
+                        </dl>
                     </li>
                     <li>
-                        <div class="col1">
-                            <p class="tit">대표자</p>
-                            <div class="exp">
-                                <input type="text">
-                            </div>
-                        </div>
+                        <dl>
+                            <dt>정산예정금액</dt>
+                            <dd><strong>546,000</strong>원</dd>
+                        </dl>
                     </li>
-                    <li>
-                        <div class="col1">
-                            <p class="tit">사업자등록번호</p>
-                            <div class="exp">
-                                <input type="text">
-                            </div>
-                        </div>
-                    </li>
-					<li>
-						<div class="col1">
-							<p class="tit">사업자 주소</p>
-							<div class="exp">
-								<div class="add_wrap1">
-									<input type="text" readonly> <button class="btn_r">우편번호</button>
-								</div>
-								<div class="add_wrap2">
-									<input type="text">
-								</div>
-								<div class="add_wrap3">
-									<input type="text">
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="col1">
-							<p class="tit">사업장 전화번호</p>
-							<div class="exp">
-								<input type="text">
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="col1">
-							<p class="tit">사업자 등록증</p>
-							<div class="exp">
-								<div class="filebox preview-image">
-									<div class="file_wrap">
-										<input class="upload-name" value="파일선택" disabled="disabled">
-										<label for="input_file2">사진등록</label>
-										<input type="file" id="input_file2" class="upload-hidden">
-									</div>
-								</div>
-								<ul class="info">
-									<li>jpg, png, gif 확장자의 이미지 파일만 업로드 가능합니다.</li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="col1">
-							<p class="tit">통장 사본</p>
-							<div class="exp">
-								<div class="filebox preview-image">
-									<div class="file_wrap">
-										<input class="upload-name" value="파일선택" disabled="disabled">
-										<label for="input_file3">사진등록</label>
-										<input type="file" id="input_file3" class="upload-hidden">
-									</div>
-								</div>
-								<ul class="info">
-									<li>jpg, png, gif 확장자의 이미지 파일만 업로드 가능합니다.</li>
-								</ul>
-							</div>
-						</div>
-					</li>
-				</ul>
+                </ul>
+            </div>
+            <div class="inner t2">
+                <div class="search_wrap">
+                    <div class="search1">
+                        <select>
+                            <option>계약상태</option>
+                            <option>완료</option>
+                            <option>예정</option>
+                            <option>해당없음</option>
+                        </select>
+                    </div>
+                    <div class="search2">
+                        <p><input type="datetime" id="from" name="from"><i></i></p>
+                        <span>~</span>
+                        <p><input type="datetime" id="to" name="to"><i></i></p>
+                    </div>
+                    <div class="search3">
+                        <p><input type="search"><i></i></p>
+                        <button>검색</button>
+                    </div>
+                </div>
+            </div>
+			<div class="inner">
+			    <ul class="n_list">
+			        <li>
+			            <div class="pr2">
+			                <p class="tit t2">2019-05-31<br class="m_hide"> 정산완료</p>
+			                <p class="info p_tac">ABC 주식회사/<b>010-2233-4455</b></p>
+			                <p class="exp">
+			                    <span>계약일 : <b>2019.02.28</b></span>
+			                    <em>발생수익금 <strong>1,000,000,000</strong>원</em>
+			                </p>
+			                <p class="state_r s4">계약완료</p>
+			            </div>
+			        </li>
+			        <li>
+			            <div class="pr2">
+			                <p class="tit t2">2019-05-31<br class="m_hide"> 정산완료</p>
+			                <p class="info p_tac">(주)씨비디/<b>010-2233-4455</b></p>
+			                <p class="exp">
+			                    <span>계약일 : <b>2019.02.28</b></span>
+			                    <em>발생수익금 <strong>165,000</strong>원</em>
+			                </p>
+			                <p class="state_r s4">계약완료</p>
+			            </div>
+			        </li>
+			        <li>
+			            <div class="pr2">
+			                <p class="tit t2">2019-05-31<br class="m_hide"> 정산예정</p>
+			                <p class="info p_tac">베리굿/<b>010-2233-4455</b></p>
+			                <p class="exp">
+			                    <span>계약일 : <b>2019.02.28</b></span>
+			                    <em>발생수익금 <strong>165,000</strong>원</em>
+			                </p>
+			                <p class="state_r s4">계약완료</p>
+			            </div>
+			        </li>
+			        <li>
+			            <div class="pr2">
+			                <p class="tit t2">해당없음</p>
+			                <p class="info p_tac">이종근/<b>010-2233-4455</b></p>
+			                <p class="exp">
+			                    <span>계약일 : <b>2019.02.28</b></span>
+			                    <em>발생수익금 <strong>165,000</strong>원</em>
+			                </p>
+			                <p class="state_r s1">미성사</p>
+			            </div>
+			        </li>
+			        <li>
+			            <div class="pr2">
+			                <p class="tit t2">2019-05-31<br class="m_hide"> 정산예정</p>
+			                <p class="info p_tac">가나다 회사/<b>010-2233-4455</b></p>
+			                <p class="exp">
+			                    <span>계약일 : <b>2019.02.28</b></span>
+			                    <em>발생수익금 <strong>165,000</strong>원</em>
+			                </p>
+			                <p class="state_r s4">계약완료</p>
+			            </div>
+			        </li>
+			    </ul>
 			</div>
-			<div class="btns">
-				<a href="#" class="btn_l">취소</a>
-				<a href="#" class="btn_r">저장</a>
-			</div>
+			<div class="inner t2">
+			    <div class="paging">
+			        <button class="go_first" title="첫 페이지로"></button>
+			        <button class="go_prev" title="이전 페이지로"></button>
+			        <span>1/100</span>
+			        <button class="go_next" title="다음 페이지로"></button>
+			        <button class="go_last" title="마지막 페이지로"></button>
+			    </div>
+            </div>
+            <div class="inner t2">
+                <div class="notice">
+                    <p class="tit">수입금 정산 안내</p>
+                    <ul class="exp">
+                        <li>계약이 완료된 해당월 1일~말일까지의 누적 금액이 3개월 후 말일에 정산지급됩니다.</li>
+						<li>정산을 위해 내정보관리 메뉴에서 통장사본을 등록해 주세요.</li>
+						<li>기장/신고 대행의 계약에만 수익금이 발생됩니다.</li>
+                    </ul>
+                </div>
+            </div>
 		</section>
 	</main>
 

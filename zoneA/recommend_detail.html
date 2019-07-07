@@ -341,8 +341,21 @@
 							<tr>
 								<th>상태</th>
 								<td>결제완료</td>
-								<th>지역</th>
-								<td>서울시 강남구</td>
+								<th>매칭서비스</th>
+								<td>
+									<div class="col-sm-3 w_auto">
+										<div class="radio-custom radio-primary">
+											<input type="radio" id="radio_match1" name="radio_match">
+											<label for="radio_match1">매칭</label>
+										</div>
+									</div>
+									<div class="col-sm-3 w_auto">
+										<div class="radio-custom radio-primary">
+											<input type="radio" id="radio_match2" name="radio_match" checked="checked">
+											<label for="radio_match2">일반</label>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<th>고객명</th>
@@ -385,9 +398,7 @@
 							</tr>
 							<tr>
 								<th>정산금액</th>
-								<td>200,000원</td>
-								<th></th>
-								<td></td>
+								<td colspan="3">200,000원</td>
 							</tr>
 							<tr>
 								<th>환급계좌</th>
@@ -395,18 +406,12 @@
 								<th>예금주</th>
 								<td>간동궁</td>
 							</tr>
-							<tr>
-								<th>계산서 발행일자</th>
-								<td>2019-06-16</td>
-								<th>계산서 발행번호</th>
-								<td>123456789</td>
-							</tr>
 						</table>
 					</div>
 				</div>
 				<div class="panel-body">
 					<div class="btn_center_wrap mt30">
-						<a href="payment_list.html" class="btn btn-lg btn-primary">목록</a>
+						<a href="recommend_list.html" class="btn btn-lg btn-primary">목록</a>
 					</div>
 				</div>
 				<!-- end: page -->

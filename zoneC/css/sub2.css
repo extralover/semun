@@ -1153,6 +1153,7 @@ h2 {
   font-weight: bold;
   font-size: 14px;
   color: #000;
+  min-width: 2.5em;
 }
 
 .b2 .n_list > li .col2 .exp {
@@ -2119,6 +2120,42 @@ h2 {
   color: #555;
 }
 
+.b2_pop .n_reply_pop {
+  border-top: #53647c solid 3px;
+}
+
+.b2_pop .n_reply_pop > li {
+  padding-top: 10px;
+}
+
+.b2_pop .n_reply_pop > li.point_wrap strong {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.b2_pop .n_reply_pop > li.input_wrap textarea {
+  width: 100%;
+  height: 4.5em;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.b2_pop .n_reply_pop > li.btn_wrap button,
+.b2_pop .n_reply_pop > li.btn_wrap a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #333;
+  font-size: 19px;
+  background-color: #ffde00;
+}
+
 .b2_pop .d_btm_pop {
   margin-top: 30px;
   margin-bottom: 110px;
@@ -2140,6 +2177,10 @@ h2 {
 
 .b2_pop .d_btm_pop h4 em {
   color: #eb3700;
+}
+
+.b2_pop .d_btm_pop h4.mt {
+  margin-top: 30px;
 }
 
 .b2_pop .d_btm_pop .pt {
@@ -2165,6 +2206,24 @@ h2 {
 }
 
 .b2_pop .d_btm_pop .point i.on {
+  color: #eb3700;
+}
+
+.b2_pop .d_btm_pop .point button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #dbdbdb;
+  font-siZe: 40px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.b2_pop .d_btm_pop .point button::after {
+  content: "\f005";
+}
+
+.b2_pop .d_btm_pop .point button.on {
   color: #eb3700;
 }
 

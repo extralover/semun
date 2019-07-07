@@ -352,6 +352,46 @@
 			</div>
 		</div>
 	</footer>
+
+	<section class="popup" id="popup1">
+		<!-- PC -->
+		<article class="pop_in m_hide" style="width: 500px; height: 550px;">
+			<div class="pop_header">
+				<h2>팝업 타이틀</h2>
+			</div>
+			<div class="pop_main">
+				팝업내용
+			</div>
+			<div class="pop_footer">
+				<p class="check_today" style="display: none;">
+					<input type="checkbox" id="check_today1"> <label for="check_today1">오늘 하루 창을 열지 않음</label>
+				</p>
+				<p class="check_allday">
+					<input type="checkbox" id="check_allday1"> <label for="check_allday1">다시 열지 않음</label>
+				</p>
+				<button class="btn_close" onclick="closeWin(1);">닫기</button>
+			</div>
+		</article>
+
+		<!-- Mobile -->
+		<article class="pop_in p_hide">
+			<div class="pop_header">
+				<h2>팝업 타이틀</h2>
+			</div>
+			<div class="pop_main">
+				팝업내용
+			</div>
+			<div class="pop_footer">
+				<p class="check_today">
+					<input type="checkbox" id="check_today2"> <label for="check_today2">오늘 하루 창을 열지 않음</label>
+				</p>
+				<p class="check_allday" style="display: none;">
+					<input type="checkbox" id="check_allday2"> <label for="check_allday2">다시 열지 않음</label>
+				</p>
+				<button class="btn_close" onclick="closeWin(1);">닫기</button>
+			</div>
+		</article>
+	</section>
 </body>
 
 </html>

@@ -340,7 +340,22 @@
 							</tr>
 							<tr>
 								<th>상태</th>
-								<td colspan="3">상담중</td>
+								<td>상담중</td>
+								<th>매칭서비스</th>
+								<td>
+									<div class="col-sm-3 w_auto">
+										<div class="radio-custom radio-primary">
+											<input type="radio" id="radio_match1" name="radio_match">
+											<label for="radio_match1">매칭</label>
+										</div>
+									</div>
+									<div class="col-sm-3 w_auto">
+										<div class="radio-custom radio-primary">
+											<input type="radio" id="radio_match2" name="radio_match" checked="checked">
+											<label for="radio_match2">일반</label>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<th>고객명</th>
@@ -351,7 +366,7 @@
 							<tr>
 								<th>견적요청일</th>
 								<td>2019-06-16 (AM 01:01)</td>
-								<th>견적완료일</th>
+								<th>견적마감일</th>
 								<td>2019-06-16 (PM 03:58)</td>
 							</tr>
 						</table>
@@ -567,90 +582,7 @@
 				<div class="panel-body">
 					<div class="btn_center_wrap mt30">
 						<a href="estimate_list.html" class="btn btn-lg btn-default">목록</a>
-						<a href="#modalTaxaccount" class="btn btn-lg btn-primary modal-basic">세무사 입찰</a>
 					</div>
-				</div>
-
-				<div id="modalTaxaccount" class="modal-block modal-block-info mfp-hide">
-					<section class="panel">
-						<header class="panel-heading">
-							<h2 class="panel-title">세무사 목록</h2>
-						</header>
-						<div class="panel-body">
-							<h4 class="cont_tit">세무사 검색</h4>
-							<div class="table-responsive">
-								<table class="table type2">
-									<colgroup>
-										<col width="20%">
-										<col width="*">
-									</colgroup>
-									<tbody>
-										<tr>
-											<th>검색어</th>
-											<td>
-												<div class="col-md-4 w_auto">
-													<select class="form-control">
-														<option>전체</option>
-														<option>세무사명</option>
-														<option>아이디</option>
-													</select>
-												</div>
-												<div class="col-md-6 w_auto">
-													<input type="text" class="form-control">
-												</div>
-												<button type="button" class="btn btn-info ml_btn">검색</button>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="tbl_center">
-								<table class="table table-hover">
-									<thead>
-										<tr>
-											<th>번호</th>
-											<th>세무사명</th>
-											<th>아이디</th>
-											<th>연락처</th>
-											<th>계약건수</th>
-											<th>등록일</th>
-											<th>상태</th>
-											<th>선택</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>10</td>
-											<td>김세무사</td>
-											<td>cnjde@naver.com</td>
-											<td>010-2222-3333</td>
-											<td>8</td>
-											<td>2019-03-20</td>
-											<td>승인</td>
-											<td><button type="button" class="btn btn-info">선택</button></td>
-										</tr>
-										<tr>
-											<td>9</td>
-											<td>김세무사</td>
-											<td>cnjde@naver.com</td>
-											<td>010-2222-3333</td>
-											<td>8</td>
-											<td>2019-03-20</td>
-											<td>승인</td>
-											<td><button type="button" class="btn btn-info">선택</button></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-						<footer class="panel-footer">
-							<div class="row">
-								<div class="col-md-12 text-right">
-									<button class="btn btn-info modal-dismiss">닫기</button>
-								</div>
-							</div>
-						</footer>
-					</section>
 				</div>
 				<!-- end: page -->
 			</section>

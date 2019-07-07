@@ -321,16 +321,15 @@
 							<a href="#member1_summary" data-toggle="tab">기본정보</a>
 						</li>
 						<li>
-							<a href="#member1_estimate" data-toggle="tab">견적내역</a>
+							<a href="#member1_estimate" data-toggle="tab">견적요청내역</a>
 						</li>
 						<li>
-							<a href="#member1_recommender" data-toggle="tab">추천정보</a>
+							<a href="#member1_recommender" data-toggle="tab">추천자</a>
 						</li>
 					</ul>
 					<div class="tab-content">
 						<div id="member1_summary" class="tab-pane active">
 							<div class="panel-body">
-								<h4 class="cont_tit">기본 정보</h4>
 								<div class="table-responsive">
 									<table class="table type2">
 										<colgroup>
@@ -367,7 +366,6 @@
 						<div id="member1_estimate" class="tab-pane">
 							<div class="con_list">
 								<div class="panel-body">
-									<h4 class="cont_tit">견적요청내역</h4>
 									<div class="tbl_center">
 										<table class="table table-hover tbl_data">
 											<thead>
@@ -446,7 +444,22 @@
 											</tr>
 											<tr>
 												<th>상태</th>
-												<td colspan="3">비교견적중</td>
+												<td>비교견적중</td>
+												<th>매칭서비스</th>
+												<td>
+													<div class="col-sm-3 w_auto">
+														<div class="radio-custom radio-primary">
+															<input type="radio" id="radio_match1" name="radio_match">
+															<label for="radio_match1">매칭</label>
+														</div>
+													</div>
+													<div class="col-sm-3 w_auto">
+														<div class="radio-custom radio-primary">
+															<input type="radio" id="radio_match2" name="radio_match" checked="checked">
+															<label for="radio_match2">일반</label>
+														</div>
+													</div>
+												</td>
 											</tr>
 											<tr>
 												<th>고객명</th>
@@ -457,8 +470,8 @@
 											<tr>
 												<th>견적요청일</th>
 												<td>2019-06-16 (AM 01:01)</td>
-												<th>견적완료일</th>
-												<td>2019-06-16 (PM 03:58)</td>
+												<th></th>
+												<td></td>
 											</tr>
 										</table>
 									</div>
@@ -608,7 +621,6 @@
 						<!-- #member1_estimate end -->
 						<div id="member1_recommender" class="tab-pane">
 							<div class="panel-body">
-								<h4 class="cont_tit">추천자</h4>
 								<div class="tbl_center">
 									<table class="table table-hover tbl_data">
 										<thead>
@@ -620,7 +632,7 @@
 												<th>견적요청일</th>
 												<th>계약일자</th>
 												<th>진행상태</th>
-												<th>포인트</th>
+												<th>발생수익금</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -642,7 +654,7 @@
 												<td>2019-02-20</td>
 												<td>2019-02-20</td>
 												<td>결제완료</td>
-												<td>33,000P</td>
+												<td>33,000원</td>
 											</tr>
 										</tbody>
 									</table>

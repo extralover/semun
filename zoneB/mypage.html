@@ -20,6 +20,7 @@
 
 	<script src="./js/jquery-3.3.1.min.js"></script>
 	<script src="./js/jquery-ui.min.js"></script>
+	<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 	<script src="./js/common.js"></script>
 </head>
 
@@ -191,13 +192,17 @@
 							<p class="tit">사업자 주소</p>
 							<div class="exp">
 								<div class="add_wrap1">
-									<input type="text" readonly> <button class="btn_r">우편번호</button>
+									<input type="text" id="postcode" placeholder="우편번호" readonly>
+									<button onclick="execDaumPostcode()" class="btn_r">우편번호</button>
 								</div>
 								<div class="add_wrap2">
-									<input type="text">
+									<input type="text" id="address" placeholder="주소">
 								</div>
 								<div class="add_wrap3">
-									<input type="text">
+									<input type="text" id="detailAddress" placeholder="상세주소">
+								</div>
+								<div class="add_wrap2">
+									<input type="text" id="extraAddress" placeholder="참고항목">
 								</div>
 							</div>
 						</div>
@@ -206,7 +211,58 @@
 						<div class="col1">
 							<p class="tit">사업장 전화번호</p>
 							<div class="exp">
-								<input type="text">
+								<div class="tel_wrap pr0">
+									<select>
+										<option value="선택">선택</option>
+										<option value="010">010</option>
+										<option value="02">02</option>
+										<option value="0303">0303</option>
+										<option value="031">031</option>
+										<option value="032">032</option>
+										<option value="033">033</option>
+										<option value="041">041</option>
+										<option value="042">042</option>
+										<option value="043">043</option>
+										<option value="044">044</option>
+										<option value="049">049</option>
+										<option value="0502">0502</option>
+										<option value="0503">0503</option>
+										<option value="0504">0504</option>
+										<option value="0505">0505</option>
+										<option value="0506">0506</option>
+										<option value="0507">0507</option>
+										<option value="0508">0508</option>
+										<option value="051">051</option>
+										<option value="052">052</option>
+										<option value="053">053</option>
+										<option value="054">054</option>
+										<option value="055">055</option>
+										<option value="061">061</option>
+										<option value="062">062</option>
+										<option value="063">063</option>
+										<option value="064">064</option>
+										<option value="070">070</option>
+										<option value="080">080</option>
+										<option value="1522">1522</option>
+										<option value="1544">1544</option>
+										<option value="1566">1566</option>
+										<option value="1577">1577</option>
+										<option value="1588">1588</option>
+										<option value="1599">1599</option>
+										<option value="1600">1600</option>
+										<option value="1644">1644</option>
+										<option value="1661">1661</option>
+										<option value="1666">1666</option>
+										<option value="1670">1670</option>
+										<option value="1688">1688</option>
+										<option value="1800">1800</option>
+										<option value="1833">1833</option>
+										<option value="1855">1855</option>
+										<option value="1877">1877</option>
+										<option value="1899">1899</option>
+									</select>
+									<input type="tel" placeholder="숫자만 입력">
+								</div>
 							</div>
 						</div>
 					</li>

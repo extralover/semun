@@ -224,6 +224,7 @@ $(document).ready(function () {
 			"overflow": "hidden"
 		});
 		$(".b2_pop").show();
+		$(".b2_pop .btn_goto").show();
 	});
 
 	// 팝업 닫기
@@ -244,7 +245,89 @@ $(document).ready(function () {
 			$(this).parent().parent(".pr3").addClass("on");
 		}
 	});
+
+	// 후기 작성
+	$(".b2_pop .btn_goto").on("click", function () {
+		// var replyTop = $(".b2_pop .pop_in .n_reply_pop").position().top;
+		// var curTop = $(".b2_pop .pop_in").scrollTop();
+		// $(".b2_pop .pop_in").scrollTop(curTop + replyTop);
+		$(".b2_pop .pop_in").scrollTop($(document).height());
+		$(this).hide();
+	});
+
+	$(".b2_pop .pop_in").scroll(function(){ 
+		var replyTop = $(".b2_pop .pop_in .n_reply_pop").position().top;
+		var curTop = $(".b2_pop .pop_in").scrollTop();
+
+		if (curTop > replyTop) {
+			$(".b2_pop .btn_goto").hide();
+		} else {
+			$(".b2_pop .btn_goto").show();
+		}
+	});
+
+	$(".n_reply_pop .point button").on("click", function () {
+		$(this).parent().children('button').removeClass('on');
+		$(this).addClass('on').prevAll('button').addClass('on');
+		return false;
+	});
+
+	$(".n_reply_pop .input_wrap textarea").on("focus", function () {
+		$(".b2_pop .pop_in").scrollTop($(document).height());
+	});
+
+	// 팝업
+	// $(".popup .btn_close").on("click", function () {
+	// 	if ($(".check_today input").is(":checked")) {
+	// 		console.log("not open today");
+	// 	} else if ($(".check_allday input").is(":checked")) {
+	// 		console.log("not open allday");
+	// 	}
+	// 	$(".popup").hide();
+	// });
+ });
+
+/* 팝업 // */
+//쿠키설정	
+function setCookie(name, value, expiredays) {
+	var todayDate = new Date();
+	todayDate.setDate(todayDate.getDate() + expiredays);
+	document.cookie = name + '=' + escape(value) + '; path=/; expires=' + todayDate.toGMTString() + ';'
+}
+//쿠키 불러오기
+function getCookie(name) {
+	var obj = name + "=";
+	var x = 0;
+	while (x <= document.cookie.length) {
+		var y = (x + obj.length);
+		if (document.cookie.substring(x, y) == obj) {
+			if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)
+				endOfCookie = document.cookie.length;
+			return unescape(document.cookie.substring(y, endOfCookie));
+		}
+		x = document.cookie.indexOf(" ", x) + 1;
+		if (x == 0)
+			break;
+	}
+	return "";
+}
+//닫기 버튼 클릭시
+function closeWin(key) {
+	if ($(".check_today input").is(":checked")) {
+		console.log("not open today");
+		setCookie('popup' + key, 'Y', 1);
+	} else if ($(".check_allday input").is(":checked")) {
+		console.log("not open allday");
+		setCookie('popup' + key, 'Y', 30);
+	}
+	$("#popup" + key + "").hide();
+}
+$(function () {
+	if (getCookie("popup1") != "Y") {
+		$("#popup1").show();
+	}
 });
+/* // 팝업 */
 
 // 주소 입력
 function execDaumPostcode() {

@@ -13,11 +13,13 @@
 	<meta property="og:description" content="세무앤, 좋은 세무사를 만나는 공식">
 	<meta property="og:image" content="http://www.semuand.com/resources/images/ad_icon.png">
 	<link rel="icon" href="../resources/images/favicon.ico">
-	<title>세무앤 파트너 : 내 입찰 현황</title>
+	<title>세무앤 파트너 : 계약관리-포인트내역</title>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto" rel="stylesheet">
+	<link href="./css/jquery-ui.min.css" rel="stylesheet">
 	<link href="./css/sub2.css" rel="stylesheet">
 
 	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
 	<script src="./js/common.js"></script>
 </head>
 
@@ -38,8 +40,8 @@
 			<div class="inner">
 				<ul class="g1">
 					<li><a href="estimate.html">견적요청현황</a></li>
-					<li><a href="bidding.html" class="on">내입찰현황</a></li>
-					<li><a href="contract.html">계약관리</a></li>
+					<li><a href="bidding.html">내입찰현황</a></li>
+					<li><a href="contract.html" class="on">계약관리</a></li>
 					<li><a href="mypage.html">내정보관리</a></li>
 				</ul>
 				<ul class="g2">
@@ -53,84 +55,98 @@
 
 	<main>
 		<h2 class="tit_sub">
-			내 입찰 현황
+			계약관리
 		</h2>
 		<section class="b2">
 			<div class="inner t2">
-				<ul class="cate_btns col5">
-					<li class="w100"><button class="cate0 on">전체</button></li>
-					<li><button class="cate1">비교견적중</button></li>
-					<!-- <li><button class="cate2">마감</button></li> -->
-					<li><button class="cate2">입찰</button></li>
-					<li><button class="cate3">낙찰</button></li>
-					<li><button class="cate4">미선정</button></li>
+				<ul class="cate_btns col4">
+					<li><a href="contract.html">계약현황</a></li>
+					<li><a href="contract2.html">수수료관리</a></li>
+					<li><a href="contract3.html">결제내역</a></li>
+					<li><a href="contract4.html" class="on">포인트내역</a></li>
 				</ul>
 			</div>
+			<div class="inner t2">
+				<ul class="total">
+					<li class="w100">
+						<dl>
+							<dt>현재 ○○세무사님이 수수료 결제시 사용가능한 포인트</dt>
+							<dd><strong>123,000</strong>P</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="inner t2">
+				<div class="search_wrap">
+					<div class="search1">
+						<select>
+							<option>전체</option>
+							<option>사용</option>
+							<option>차감</option>
+						</select>
+					</div>
+					<div class="search2">
+						<p><input type="datetime" id="from" name="from"><i></i></p>
+						<span>~</span>
+						<p><input type="datetime" id="to" name="to"><i></i></p>
+					</div>
+					<div class="search3">
+						<p><input type="search"><i></i></p>
+						<button>검색</button>
+					</div>
+				</div>
+			</div>
 			<div class="inner">
-				<ul class="n_list cate_list">
-					<li class="cate1">
-						<a href="bidding_d.html" class="pr">
-							<p class="tit"><i>1:1매칭</i> 기장/신고 대행</p>
-							<p class="info">홍*동 / 개인사업자 / 일반과세 / 3억~6억 / 서울 강동구</p>
+				<ul class="n_list">
+					<li>
+						<div class="pr3">
+							<p class="tit">발생일자 : 2019.03.20</p>
+							<p class="info p_tac">[낙찰] 입찰성공 축하</p>
 							<p class="exp">
-								<span><b>2019.02.28</b> (<strong>마감45일전</strong>)</span>
-								<br class="p_hide">
-								<em>입찰가 <strong>150,000</strong>원/월</em> 
-								<em>입찰 <strong>999</strong>명</em>
+								<span>포인트 : <b>1,000</b>P</span>
+								<em>누계 <strong>213,000</strong>P</em>
 							</p>
-							<p class="state_r s2">비교견적중</p>
-						</a>
+						</div>
 					</li>
-					<li class="cate2">
-						<a href="bidding_d.html" class="pr">
-							<p class="tit">상속세 신고</p>
-							<p class="info">홍*동/개인사업자/일반과세/3억~6억/서울 강동구</p>
+					<li>
+						<div class="pr3">
+							<p class="tit">발생일자 : 2019.03.20</p>
+							<p class="info p_tac">[고객상담] 입찰성공 축하</p>
 							<p class="exp">
-								<span><b>2019.02.28</b> (<strong>마감5일전</strong>)</span>
-								<br class="p_hide">
-								<em>입찰가 <strong>150,000</strong>원</em> 
-								<em>입찰 <strong>0</strong>명</em></p>
-							<p class="state_r s3">입찰</p>
-						</a>
-					</li>
-					<li class="cate2">
-						<a href="bidding_d.html" class="pr">
-							<p class="tit">세무조사</p>
-							<p class="info">홍*동 / 개인사업자 / 일반과세 / 3억~6억 / 서울 강동구</p>
-							<p class="exp">
-								<span><b>2019.02.28</b> (<strong>마감</strong>)</span>
-								<br class="p_hide">
-								<em>입찰가 <strong>150,000</strong>원</em> 
-								<em>입찰 <strong>0</strong>명</em>
+								<span>포인트 : <b>1,000</b>P</span>
+								<em>누계 <strong>212,000</strong>P</em>
 							</p>
-							<p class="state_r s3">마감</p>
-						</a>
+						</div>
 					</li>
-					<li class="cate4">
-						<a href="bidding_d.html" class="pr">
-							<p class="tit">양도소득세 신고</p>
-							<p class="info">홍*동 / 개인사업자 / 일반과세 / 3억~6억 / 서울 강동구</p>
+					<li>
+						<div class="pr3">
+							<p class="tit">발생일자 : 2019.03.20</p>
+							<p class="info p_tac">[포인트 환불] 결제취소</p>
 							<p class="exp">
-								<span><b>2019.02.28</b> (<strong>마감</strong>)</span>
-								<br class="p_hide">
-								<em>입찰가 <strong>150,000</strong>원</em> 
-								<em>입찰 <strong>0</strong>명</em>
+								<span>포인트 : <b>100,000</b>P</span>
+								<em>누계 <strong>211,000</strong>P</em>
 							</p>
-							<p class="state_r s1">미선정</p>
-						</a>
+						</div>
 					</li>
-					<li class="cate3">
-						<a href="bidding_d.html" class="pr">
-							<p class="tit">상속세 신고</p>
-							<p class="info">홍*동/개인사업자/일반과세/3억~6억/서울 강동구</p>
+					<li>
+						<div class="pr3">
+							<p class="tit">발생일자 : 2019.03.20</p>
+							<p class="info p_tac">[포인트 차감] 수수료 결제</p>
 							<p class="exp">
-								<span><b>2019.02.28</b> (<strong>마감</strong>)</span>
-								<br class="p_hide">
-								<em>입찰가 <strong>150,000</strong>원</em> 
-								<em>입찰 <strong>0</strong>명</em>
+								<span>포인트 : <b>-100,000</b>P</span>
+								<em>누계 <strong>111,000</strong>P</em>
 							</p>
-							<p class="state_r s4">낙찰</p>
-						</a>
+						</div>
+					</li>
+					<li>
+						<div class="pr3">
+							<p class="tit">발생일자 : 2019.03.20</p>
+							<p class="info p_tac">[입찰] 비교견적 입찰</p>
+							<p class="exp">
+								<span>포인트 : <b>1,000</b>P</span>
+								<em>누계 <strong>211,000</strong>P</em>
+							</p>
+						</div>
 					</li>
 				</ul>
 			</div>

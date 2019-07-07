@@ -340,9 +340,22 @@
 							</tr>
 							<tr>
 								<th>상태</th>
-								<td>비교견적중</td>
-								<th>지역</th>
-								<td>서울시 강남구</td>
+								<td>입금대기</td>
+								<th>매칭서비스</th>
+								<td>
+									<div class="col-sm-3 w_auto">
+										<div class="radio-custom radio-primary">
+											<input type="radio" id="radio_match1" name="radio_match">
+											<label for="radio_match1">매칭</label>
+										</div>
+									</div>
+									<div class="col-sm-3 w_auto">
+										<div class="radio-custom radio-primary">
+											<input type="radio" id="radio_match2" name="radio_match" checked="checked">
+											<label for="radio_match2">일반</label>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<th>고객명</th>
@@ -371,7 +384,7 @@
 							</colgroup>
 							<tr>
 								<th>결제상태</th>
-								<td>미결제</td>
+								<td>입금대기 <button type="button" class="btn btn-info ml_btn">결제완료</button></td>
 								<th>결제일</th>
 								<td>2019-06-16</td>
 							</tr>
@@ -383,8 +396,12 @@
 							</tr>
 							<tr>
 								<th>결제금액</th>
-								<td colspan="3">
+								<td>
 									신용카드 : 800,000원, 포인트 : 100,000P
+								</td>
+								<th>결제번호</th>
+								<td>
+									201907070001
 								</td>
 							</tr>
 						</table>
@@ -410,7 +427,7 @@
 								<th>발행일</th>
 								<td>2019-04-30</td>
 								<th>발행번호</th>
-								<td>19020aa01111 <button type="button" class="btn btn-info ml_btn">계산서 발행</button></td>
+								<td>19020aa01111</td>
 							</tr>
 						</table>
 					</div>
