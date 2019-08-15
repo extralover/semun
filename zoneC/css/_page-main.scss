@@ -674,9 +674,40 @@
 				strong {
 					color: #000;
 					font-size: 18px;
+					float: left;
+					display: block;
+				}
+				.point {
+					float: right;
+					display: block;
+					i {
+						display: inline-block;
+						width: 15px;
+						height: 15px;
+						color: #dbdbdb;
+						font-siZe: 15px;
+						@include fas;
+
+						&::after {
+							content: "\f005";
+						}
+
+						&.on {
+							color: #eb3700;
+						}
+					}
+
+					@include respond-to('large-over') {
+						i {
+							width: 20px;
+							height: 20px;
+							font-siZe: 20px;
+						}
+					}
 				}
 
 				p {
+					clear: both;
 					color: #555;
 					font-size: 14px;
 					display: block;

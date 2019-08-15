@@ -758,7 +758,9 @@ footer .inner .sns {
   margin-top: 30px;
 }
 
-footer .inner .sns button {
+footer .inner .sns button,
+footer .inner .sns a {
+  display: inline-block;
   width: 45px;
   height: 45px;
   background-image: url("../images/icon_sns.png");
@@ -767,23 +769,28 @@ footer .inner .sns button {
   margin-right: 10px;
 }
 
-footer .inner .sns button.kakao {
+footer .inner .sns button.kakao,
+footer .inner .sns a.kakao {
   background-position: 0 0;
 }
 
-footer .inner .sns button.facebook {
+footer .inner .sns button.facebook,
+footer .inner .sns a.facebook {
   background-position: -55px 0;
 }
 
-footer .inner .sns button.instagram {
+footer .inner .sns button.instagram,
+footer .inner .sns a.instagram {
   background-position: -110px 0;
 }
 
-footer .inner .sns button.youtube {
+footer .inner .sns button.youtube,
+footer .inner .sns a.youtube {
   background-position: -165px 0;
 }
 
-footer .inner .sns button.naver {
+footer .inner .sns button.naver,
+footer .inner .sns a.naver {
   background-position: -220px 0;
 }
 
@@ -1582,9 +1589,43 @@ h2 {
 .m5 .slider2 li .exp strong {
   color: #000;
   font-size: 18px;
+  float: left;
+  display: block;
+}
+
+.m5 .slider2 li .exp .point {
+  float: right;
+  display: block;
+}
+
+.m5 .slider2 li .exp .point i {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  color: #dbdbdb;
+  font-siZe: 15px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.m5 .slider2 li .exp .point i::after {
+  content: "\f005";
+}
+
+.m5 .slider2 li .exp .point i.on {
+  color: #eb3700;
+}
+
+@media only screen and (min-width: 1280px) {
+  .m5 .slider2 li .exp .point i {
+    width: 20px;
+    height: 20px;
+    font-siZe: 20px;
+  }
 }
 
 .m5 .slider2 li .exp p {
+  clear: both;
   color: #555;
   font-size: 14px;
   display: block;

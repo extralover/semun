@@ -335,7 +335,7 @@
 													<tr>
 														<th>번호</th>
 														<th>견적코드</th>
-														<th>회사명(상호)</th>
+														<th>고객명</th> <!-- 190721 -->
 														<th>계약일</th>
 														<th>계약금액</th>
 														<th>정산(예정)일</th>
@@ -346,7 +346,7 @@
 													<tr>
 														<td>10</td>
 														<td><button class="btn_openDetail">190220aa01111</button></td>
-														<td>ABC주식회사</td>
+														<td>이종근</td>
 														<td>2019-02-20</td>
 														<td>54,000원</td>
 														<td>2019-02-20</td>
@@ -355,7 +355,7 @@
 													<tr>
 														<td>9</td>
 														<td><button class="btn_openDetail">190220aa01111</button></td>
-														<td>(주)씨비디</td>
+														<td>김형태</td>
 														<td>2019-02-20</td>
 														<td>54,000원</td>
 														<td>2019-02-20</td>
@@ -515,22 +515,17 @@
 												<div class="col-md-12">con0012345</div>
 											</td>
 										</tr>
+										<!-- 190721_change item position // -->
 										<tr>
-											<th>회사명(상호)</th>
+											<!-- 190721_add item // -->
+											<th>담당자명</th>
 											<td>
 												<div class="col-md-12">
-													<input type="text" class="form-control" value="가나다컴퍼니">
+													<input type="text" class="form-control" value="이담당">
 												</div>
 											</td>
-											<th>사업자 등록번호</th>
-											<td>
-												<div class="col-md-12">
-													<input type="text" class="form-control" value="123-34-67890">
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th>전화번호</th>
+											<!-- // 190721_add item -->
+											<th>연락처</th>
 											<td>
 												<div class="col-md-4 w_auto">
 													<select class="form-control">
@@ -545,6 +540,31 @@
 													<input type="text" class="form-control" placeholder="숫자만 입력" value="22223333">
 												</div>
 											</td>
+										</tr>
+										<tr>
+											<th>회사명(상호)</th>
+											<td>
+												<div class="col-md-12">
+													<input type="text" class="form-control" value="가나다컴퍼니">
+												</div>
+											</td>
+											<!-- 190721_add item // -->
+											<th>대표자명</th>
+											<td>
+												<div class="col-md-12">
+													<input type="text" class="form-control" value="김대표">
+												</div>
+											</td>
+											<!-- // 190721_add item -->
+										</tr>
+										<tr>
+											<th>사업자 등록번호</th>
+											<td>
+												<div class="col-md-12">
+													<input type="text" class="form-control" value="123-34-67890">
+												</div>
+											</td>
+										<!--  // 190721_change item position -->
 											<th>사업장 전화번호</th>
 											<td>
 												<div class="col-md-4 w_auto">

@@ -758,7 +758,9 @@ footer .inner .sns {
   margin-top: 30px;
 }
 
-footer .inner .sns button {
+footer .inner .sns button,
+footer .inner .sns a {
+  display: inline-block;
   width: 45px;
   height: 45px;
   background-image: url("../images/icon_sns.png");
@@ -767,23 +769,28 @@ footer .inner .sns button {
   margin-right: 10px;
 }
 
-footer .inner .sns button.kakao {
+footer .inner .sns button.kakao,
+footer .inner .sns a.kakao {
   background-position: 0 0;
 }
 
-footer .inner .sns button.facebook {
+footer .inner .sns button.facebook,
+footer .inner .sns a.facebook {
   background-position: -55px 0;
 }
 
-footer .inner .sns button.instagram {
+footer .inner .sns button.instagram,
+footer .inner .sns a.instagram {
   background-position: -110px 0;
 }
 
-footer .inner .sns button.youtube {
+footer .inner .sns button.youtube,
+footer .inner .sns a.youtube {
   background-position: -165px 0;
 }
 
-footer .inner .sns button.naver {
+footer .inner .sns button.naver,
+footer .inner .sns a.naver {
   background-position: -220px 0;
 }
 
@@ -1975,6 +1982,17 @@ h2 {
   }
 }
 
+.b2 .map_wrap {
+  width: 100%;
+  height: 250px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .b2 .map_wrap {
+    height: 400px;
+  }
+}
+
 .b2_pop {
   display: none;
   position: fixed;
@@ -2056,6 +2074,7 @@ h2 {
   height: calc(100% - 60px);
   overflow: auto;
   background-color: #fff;
+  z-index: 50;
 }
 
 .b2_pop .pic_pop {

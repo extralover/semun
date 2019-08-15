@@ -551,7 +551,9 @@ footer {
 		.sns {
 			margin-top: 30px;
 
-			button {
+			button,
+			a {
+				display: inline-block;
 				width: 45px;
 				height: 45px;
 				background-image: url('../images/icon_sns.png');

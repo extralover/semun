@@ -582,9 +582,6 @@
         &>li {
             padding: 12px 0;
             border-bottom: #e5e5e5 solid 1px;
-            &:hover {
-                background-color: rgba(255,222,0,0.1);
-            }
 
             a {
                 display: block;
@@ -1216,6 +1213,10 @@
                     border-bottom: none;
                 }
 
+                &:hover {
+                    background-color: rgba(255,222,0,0.1);
+                }
+
                 input[type="text"],
                 input[type="tel"],
                 input[type="email"],
@@ -1777,7 +1778,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                opacity: 0;
+                visibility: hidden;
             }
 
             label {
@@ -1835,10 +1836,10 @@
             margin-top: 10px;
 
             input[type="checkbox"] {
-                position: absolute;
+                position:absolute;
                 top: 0;
                 left: 0;
-                opacity: 0;
+                visibility: hidden;
             }
 
             label {

@@ -1331,10 +1331,6 @@ h2 {
   border-bottom: #e5e5e5 solid 1px;
 }
 
-.b2 .n_list > li:hover {
-  background-color: rgba(255, 222, 0, 0.1);
-}
-
 .b2 .n_list > li a {
   display: block;
 }
@@ -1945,6 +1941,9 @@ h2 {
   .b2 .n_list > li:last-child {
     border-bottom: none;
   }
+  .b2 .n_list > li:hover {
+    background-color: rgba(255, 222, 0, 0.1);
+  }
   .b2 .n_list > li input[type="text"],
   .b2 .n_list > li input[type="tel"],
   .b2 .n_list > li input[type="email"],
@@ -2520,7 +2519,7 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
+  visibility: hidden;
 }
 
 .b2 .radio_list > li label {
@@ -2583,7 +2582,7 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
+  visibility: hidden;
 }
 
 .b2 .checkbox_list > li label {
