@@ -13,9 +13,9 @@
 	<meta property="og:description" content="세무앤, 좋은 세무사를 만나는 공식">
 	<meta property="og:image" content="http://www.semuand.com/resources/images/ad_icon.png">
 	<link rel="icon" href="../resources/images/favicon.ico">
-	<title>세무앤 : 추천인 보기</title>
+	<title>세무앤 : 비교견적 신청</title>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto" rel="stylesheet">
-	<link href="./css/sub2.css" rel="stylesheet">
+	<link href="./css/sub1.css" rel="stylesheet">
 
 	<script src="./js/jquery-3.3.1.min.js"></script>
 	<script src="./js/common.js"></script>
@@ -50,9 +50,9 @@
 					<li><a href="info.html">이용안내<i></i></a></li>
 					<li><a href="company.html">회사소개<i></i></a></li>
 					<li><a href="cowith.html">제휴문의<i></i></a></li>
-					<li><a href="announce.html">공지사항<i></i></a></li>
+					<li><a href="notice2.html">공지사항<i></i></a></li>
 					<li><a href="cs.html">고객센터<i></i></a></li>
-					<li><a href="https://blog.naver.com/semuand" target="_blank">세무 이야기<i></i></a></li> <!-- 190721 -->
+					<li class="imp"><a href="story.html">세무 이야기<i></i></a></li>
 					<li class="m_hide"><a href="recommend.html">추천인 보기<i></i></a></li>
 					<li class="notice m_hide"><a href="notice.html">알림<i>3</i></a></li>
 				</ul>
@@ -62,91 +62,57 @@
 
 	<main>
 		<h2 class="tit_sub t1">
-			추천인 보기
+			전화상담 신청
 		</h2>
-		<section class="b2">
+		<section class="c2">
 			<div class="inner">
-				<div class="d_top t2">
-					<h3 class="tit">나를 추천한 사람(00명)</h3>
-				</div>
-				<ul class="n_list">
-                    <!-- <li>
-						<div class="col2">
-							<p class="tit">추천받은 내역이 없습니다.</p>
+				<ul class="text_list">
+					<li>
+						<label for="p1_1">이름</label>
+						<input type="text" name="p1" id="p1_1" class="required">
+					</li>
+					<li>
+						<label for="p1_2">휴대전화 번호</label>
+						<div class="tel_wrap">
+							<select>
+								<option>010</option>
+								<option>011</option>
+								<option>016</option>
+								<option>017</option>
+								<option>019</option>
+							</select>
+							<input type="tel" name="p1" id="p1_2" placeholder="숫자만 입력" class="required">
+							<button class="btn_tel">인증번호</button>
 						</div>
-					</li> -->
+						<div>
+							<input type="tel" name="p1" id="p1_3" placeholder="인증번호 입력" class="required">
+							<span class="txt_tel">인증번호 유효시간 3:00</span>
+						</div>
+                    </li>
 					<li>
-						<a href="recommend_d.html" class="col2">
-							<p class="tit">김*태</p>
-							<p class="tit">010-****-3333</p>
-							<p class="exp">견적요청</p>
-						</a>
+                        <label for="p1_5">문의내용 (선택사항)</label>
+                        <textarea id="p1_5" placeholder="예) 기장대행 신청, 프리랜서 소득신고 등"></textarea>
+                    </li>
+                    <li>
+                        <label for="p1_6">연락받기 원하시는 때 (선택사항)</label>
+                        <input type="text" name="p1" id="p1_6" placeholder="예) 아무때나, 가능한 빨리, 오후 1~3사이 등">
+                    </li>
+                    <li>
+                        <label for="p1_4">추천인 (선택사항)</label>
+                        <input type="text" name="p1" id="p1_4" placeholder="추천인이 있으면 적어주세요">
+                    </li>
+				</ul>
+				<ul class="terms_list">
+					<li>
+						<input type="checkbox" name="p2" id="p2_1" class="required"> <label for="p2_1" class="terms1">(필수)<strong>서비스	이용약관</strong> 및 <strong>개인정보 취급방침</strong>에 동의합니다.</label>
 					</li>
 					<li>
-						<a href="recommend_d.html" class="col2">
-							<p class="tit">이*설</p>
-							<p class="tit">010-****-3333</p>
-							<p class="exp">상담중</p>
-						</a>
+						<input type="checkbox" name="p2" id="p2_2"> <label for="p2_2" class="terms2">(선택)절세 등 세무정보 및 마케팅 수신정보 동의합니다.</label>
 					</li>
-					<li>
-						<a href="recommend_d.html" class="col2">
-							<p class="tit">김*태</p>
-							<p class="tit">010-****-3333</p>
-							<p class="exp">계약완료</p>
-						</a>
-					</li>
-					<li>
-						<a href="recommend_d.html" class="col2">
-							<p class="tit">이*설</p>
-							<p class="tit">010-****-3333</p>
-							<p class="exp">상담중</p>
-						</a>
-					</li>
-					<li>
-						<a href="recommend_d.html" class="col2">
-							<p class="tit">김*태</p>
-							<p class="tit">010-****-3333</p>
-							<p class="exp">견적요청</p>
-						</a>
-                    </li>
-                    <li>
-                        <a href="recommend_d.html" class="col2">
-                            <p class="tit">김*태</p>
-                            <p class="tit">010-****-3333</p>
-                            <p class="exp">견적요청</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="recommend_d.html" class="col2">
-                            <p class="tit">이*설</p>
-                            <p class="tit">010-****-3333</p>
-                            <p class="exp">상담중</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="recommend_d.html" class="col2">
-                            <p class="tit">김*태</p>
-                            <p class="tit">010-****-3333</p>
-                            <p class="exp">계약완료</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="recommend_d.html" class="col2">
-                            <p class="tit">이*설</p>
-                            <p class="tit">010-****-3333</p>
-                            <p class="exp">상담중</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="recommend_d.html" class="col2">
-                            <p class="tit">김*태</p>
-                            <p class="tit">010-****-3333</p>
-                            <p class="exp">견적요청</p>
-                        </a>
-                    </li>
-                </ul>
-                <button class="btn_more">더보기</button>
+				</ul>
+				<div class="btns">
+					<a href="compare_s5.html" class="btn_next">전화상담 신청</a>
+				</div>
 			</div>
 		</section>
 	</main>
