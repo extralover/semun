@@ -213,8 +213,9 @@ $(document).ready(function () {
 		} else {
 			$(".btn_next").removeClass("on");
 		}
-		var thisTop = $(this).siblings("label").position().top;
-		$(window).scrollTop(thisTop);
+		// 아래 삭제
+		// var thisTop = $(this).siblings("label").position().top;
+		// $(window).scrollTop(thisTop);
 	});
 
 	// 세무사 정보
@@ -324,7 +325,7 @@ function closeWin(key) {
 }
 $(function () {
 	if (getCookie("popup1") != "Y") {
-		$("#popup1").show();
+		// $("#popup1").show();
 	}
 });
 /* // 팝업 */

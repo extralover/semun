@@ -1990,7 +1990,7 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
+  visibility: hidden;
 }
 
 .m11 .input_list > li label.terms {
