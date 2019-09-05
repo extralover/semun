@@ -512,6 +512,10 @@ main {
 			}
 		}
 	}
+
+	@include respond-to('large-over') {
+		min-height: calc(100vh - 450px)
+	}
 }
 
 footer {

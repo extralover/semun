@@ -1934,6 +1934,78 @@ h2 {
   color: #555;
 }
 
+.b2 .n_list.reply_list .pt {
+  padding-top: 5px;
+}
+
+.b2 .n_list.reply_list .point {
+  display: inline-block;
+}
+
+.b2 .n_list.reply_list .point i {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  color: #dbdbdb;
+  font-siZe: 15px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.b2 .n_list.reply_list .point i::after {
+  content: "\f005";
+}
+
+.b2 .n_list.reply_list .point i.on {
+  color: #eb3700;
+}
+
+.b2 .n_list.reply_list .point button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #dbdbdb;
+  font-siZe: 40px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.b2 .n_list.reply_list .point button::after {
+  content: "\f005";
+}
+
+.b2 .n_list.reply_list .point button.on {
+  color: #eb3700;
+}
+
+.b2 .n_list.reply_list .cate {
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.b2 .n_list.reply_list .name {
+  font-size: 13px;
+  color: #777;
+}
+
+.b2 .n_list.reply_list .date {
+  font-size: 14px;
+  color: #777;
+  font-family: 'Roboto';
+}
+
+.b2 .n_list.reply_list .date::before {
+  content: '|';
+  display: inline-block;
+  padding-right: 10px;
+  margin-left: 10px;
+  font-size: 10px;
+  color: #cfcfcf;
+  vertical-align: 2px;
+}
+
 @media only screen and (min-width: 1280px) {
   .b2 .n_list > li {
     padding: 20px 0;
@@ -2186,6 +2258,20 @@ h2 {
     text-align: left;
     font-size: 20px;
     min-height: 1.5em;
+  }
+  .b2 .n_list.reply_list .point i {
+    width: 20px;
+    height: 20px;
+    font-siZe: 20px;
+  }
+  .b2 .n_list.reply_list .cate {
+    font-size: 18px;
+  }
+  .b2 .n_list.reply_list .name {
+    font-size: 18px;
+  }
+  .b2 .n_list.reply_list .date {
+    font-size: 18px;
   }
 }
 

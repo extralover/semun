@@ -598,6 +598,7 @@ html.dark .checkbox-primary label:before,
     background: #ffbb00;
     border-color: #a38248;
 }
+.ta_l {text-align: left !important;}
 .ta_r {text-align: right !important;}
 
 .point i.fa-star {
