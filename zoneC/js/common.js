@@ -267,10 +267,20 @@ $(document).ready(function () {
 		}
 	});
 
-	$(".n_reply_pop .point button").on("click", function () {
+	$(".n_reply_pop .point button, .reply_modify .point button").on("click", function () {
 		$(this).parent().children('button').removeClass('on');
 		$(this).addClass('on').prevAll('button').addClass('on');
 		return false;
+	});
+
+	// 190901
+	$(".reply_read .btn_s .btn_modify").on("click", function () {
+		$(this).parent().parent(".reply_read").hide();
+		$(this).parent().parent().siblings(".reply_modify").show();
+	});
+	$(".reply_modify .btn_wrap .btn_cancel").on("click", function () {
+		$(this).parent().parent(".reply_modify").hide();
+		$(this).parent().parent().siblings(".reply_read").show();
 	});
 
 	$(".n_reply_pop .input_wrap textarea").on("focus", function () {

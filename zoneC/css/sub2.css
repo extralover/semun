@@ -713,6 +713,12 @@ main .notice .list .btn_more {
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  main {
+    min-height: calc(100vh - 450px);
+  }
+}
+
 footer {
   background-color: #545045;
   color: #fff;
@@ -2124,6 +2130,7 @@ h2 {
 }
 
 .b2_pop .n_list_pop > li {
+  position: relative;
   border-bottom: #e5e5e5 solid 1px;
   padding: 15px 5px;
 }
@@ -2137,6 +2144,67 @@ h2 {
 .b2_pop .n_list_pop > li .exp {
   font-size: 14px;
   color: #555;
+}
+
+.b2_pop .n_list_pop > li .btn_s {
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+.b2_pop .n_list_pop > li .btn_s button {
+  border: #b2b2b2 solid 1px;
+  background-color: #fff;
+  padding: 2px 10px;
+  margin: 0 5px;
+}
+
+.b2_pop .n_list_pop > li .reply_modify {
+  display: none;
+}
+
+.b2_pop .n_list_pop > li .reply_modify .point_wrap strong {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.b2_pop .n_list_pop > li .reply_modify .input_wrap textarea {
+  width: 100%;
+  height: 4.5em;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.b2_pop .n_list_pop > li .reply_modify .btn_wrap {
+  overflow: hidden;
+}
+
+.b2_pop .n_list_pop > li .reply_modify .btn_wrap button,
+.b2_pop .n_list_pop > li .reply_modify .btn_wrap a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 48%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #333;
+  font-size: 19px;
+}
+
+.b2_pop .n_list_pop > li .reply_modify .btn_wrap button.btn_cancel,
+.b2_pop .n_list_pop > li .reply_modify .btn_wrap a.btn_cancel {
+  float: left;
+  border: #b2b2b2 solid 1px;
+  background-color: #fff;
+}
+
+.b2_pop .n_list_pop > li .reply_modify .btn_wrap button.btn_modify,
+.b2_pop .n_list_pop > li .reply_modify .btn_wrap a.btn_modify {
+  float: right;
+  background-color: #ffde00;
 }
 
 .b2_pop .n_reply_pop {

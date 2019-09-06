@@ -1205,6 +1205,71 @@
             }
         }
 
+        &.reply_list {
+            .pt {
+                padding-top: 5px;
+            }
+
+            .point {
+                display: inline-block;
+                i {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    color: #dbdbdb;
+                    font-siZe: 15px;
+                    @include fas;
+                    &::after {
+                        content: "\f005";
+                    }
+                    
+                    &.on {
+                        color: #eb3700;
+                    }
+                }
+                button {
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    color: #dbdbdb;
+                    font-siZe: 40px;
+                    @include fas;
+
+                    &::after {
+                        content: "\f005";
+                    }
+
+                    &.on {
+                        color: #eb3700;
+                    }
+                }
+            }
+            .cate {
+                font-size: 14px;
+                color: #000;
+                font-weight: bold;
+                margin-left: 10px;
+            }
+            .name {
+                font-size: 13px;
+                color: #777;
+            }
+            .date {
+                font-size: 14px;
+                color: #777;
+                font-family: 'Roboto';
+                &::before {
+                    content: '|';
+                    display: inline-block;
+                    padding-right: 10px;
+                    margin-left: 10px;
+                    font-size: 10px;
+                    color: #cfcfcf;
+                    vertical-align: 2px;
+                }
+            }
+        }
+
         @include respond-to('large-over') {
             &>li {
                 padding: 20px 0;
@@ -1485,6 +1550,28 @@
                         font-size: 20px;
                         min-height: 1.5em;
                     }
+                }
+            }
+
+            &.reply_list {
+                .point {
+                    i {
+                        width: 20px;
+                        height: 20px;
+                        font-siZe: 20px;
+                    }
+                }
+
+                .cate {
+                    font-size: 18px;
+                }
+
+                .name {
+                    font-size: 18px;
+                }
+
+                .date {
+                    font-size: 18px;
                 }
             }
         }
