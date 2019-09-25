@@ -755,7 +755,17 @@
                             font-family: 'Roboto';
                             color: #eb3700;
                         }
+                    }
 
+                    br+em {
+                        &::before {
+                            content: '';
+                            padding-right: 0;
+                            margin-left: 0;
+                        }
+                    }
+
+                    span+em {
                         &::before {
                             content: '|';
                             display: inline-block;
@@ -764,14 +774,6 @@
                             font-size: 10px;
                             color: #cfcfcf;
                             vertical-align: 2px;
-                        }
-                    }
-
-                    br+em {
-                        &::before {
-                            content: '';
-                            padding-right: 0;
-                            margin-left: 0;
                         }
                     }
                 }
@@ -2313,6 +2315,7 @@
                 dl {
                     position: relative;
                     display: table;
+                    width: 100%;
                     &>dt {
                         display: table-cell;
                         vertical-align: middle;

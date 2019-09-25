@@ -296,6 +296,28 @@ $(document).ready(function () {
 	// 	}
 	// 	$(".popup").hide();
 	// });
+
+	// 약관 팝업
+	$(".openPop").on("click", function () {
+		var thisHref = $(this).attr("href").substring(1);
+		var thisTxt = $(this).text();
+		$("body").css({
+			"height": "100%",
+			"overflow": "hidden"
+		});
+		$(".terms_pop").show();
+		$(".terms_pop .pop_in." + thisHref+"").show();
+		$(".terms_pop h3").text(thisTxt);
+	});
+	// 팝업 닫기
+	$(".terms_pop .btn_pop").on("click", function () {
+		$("body").css({
+			"height": "auto",
+			"overflow": "visible"
+		});
+		$(".terms_pop .pop_in").hide();
+		$(".terms_pop").hide();
+	});
  });
 
 /* 팝업 // */
