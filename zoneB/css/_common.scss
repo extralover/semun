@@ -347,6 +347,14 @@ main {
             }
         }
     }
+
+    .error {
+        color: #ff2222;
+        font-size: 14px;
+        @include respond-to('large-over') {
+            font-size: 16px;
+        }
+    }
 }
 
 footer {

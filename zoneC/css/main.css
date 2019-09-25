@@ -713,6 +713,17 @@ main .notice .list .btn_more {
   }
 }
 
+main .error {
+  color: #ff2222;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 1280px) {
+  main .error {
+    font-size: 16px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   main {
     min-height: calc(100vh - 450px);
