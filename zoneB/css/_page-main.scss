@@ -194,8 +194,13 @@
         color: #555;
         font-size: 16px;
         margin-top: 10px;
+        
         em {
             color: #000;
+        }
+
+        a {
+            text-decoration: underline;
         }
 
         @include respond-to('large-over') {
@@ -381,6 +386,91 @@
                     }
                 }
             }
+        }
+    }
+
+    ul.terms_list {
+		margin-top: 20px;
+		border-top: #e5e5e5 solid 1px;
+
+		&>li {
+			margin-top: 15px;
+
+			input[type="checkbox"] {
+				position: absolute;
+				top: 0;
+				left: 0;
+				visibility: hidden;
+			}
+
+			label {
+				display: table;
+				box-sizing: border-box;
+				height: 20px;
+				width: 100%;
+				padding: 0 0 0 25px;
+				position: relative;
+				vertical-align: middle;
+				font-size: 13px;
+				letter-spacing: -1px;
+
+				&.terms1 {
+					color: #000;
+				}
+
+				&.terms2 {
+					color: #777;
+				}
+
+				&::before {
+					content: '';
+					display: block;
+					width: 20px;
+					height: 20px;
+					line-height: 20px;
+					text-align: center;
+					font-size: 10px;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					margin-top: -10px;
+					border: #e5e5e5 solid 2px;
+					box-sizing: border-box;
+				}
+			}
+
+			input[type="checkbox"]:checked+label {
+				&::before {
+					border: 0;
+					background-color: #ffde00;
+					color: #000;
+					@include fas;
+					content: "\f00c";
+				}
+			}
+        }
+        
+        @include respond-to('large-over') {
+			margin: 30px auto 0 auto;
+
+			&>li {
+				margin-top: 15px;
+
+				label {
+					height: 30px;
+					width: 100%;
+					padding: 0 0 0 45px;
+					font-size: 20px;
+
+					&::before {
+						width: 30px;
+						height: 30px;
+						line-height: 30px;
+						font-size: 20px;
+						margin-top: -15px;
+					}
+				}
+			}
         }
     }
 }

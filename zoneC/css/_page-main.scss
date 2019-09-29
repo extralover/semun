@@ -1175,6 +1175,16 @@
 			}
 		}
 	}
+
+	.col3 {
+		@include respond-to('large-over') {
+			@include clearfix;
+			&>li {
+				float: left;
+				width: 33.333%;
+			}
+		}
+	}
 }
 
 .popup {
