@@ -155,6 +155,15 @@ $(document).ready(function () {
 		$(".terms_pop .pop_in").hide();
 		$(".terms_pop").hide();
 	});
+	// 이용안내
+	$(".info_use .txt button").on("click", function () {
+		$(".info_use > li").removeClass("on");
+		$(this).parent().parent("li").addClass("on");
+		if ($(window).width() <= 1024) {
+			var thisTop = $(this).position().top;
+			$(window).scrollTop(thisTop);
+		}
+	});
 });
 
 // 주소 입력

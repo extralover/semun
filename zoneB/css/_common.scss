@@ -231,12 +231,12 @@ nav.gnb {
                     float: left;
                     vertical-align: middle;
                     margin-top: 0;
-                    margin-right: 60px;
+                    margin-right: 40px;
                     font-size: 18px;
                     border: none;
 
                     &:last-child {
-                        margin-left: 0;
+                        margin-right: 0;
                     }
 
                     a {
@@ -257,9 +257,8 @@ nav.gnb {
             }
 
             .g2 {
-                margin-left: 10px;
                 margin-top: 0;
-                float: left;
+                float: right;
                 @include clearfix;
 
                 &>li {

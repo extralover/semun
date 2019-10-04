@@ -889,6 +889,61 @@
                 }
             }
 
+            .pr4 {
+                position: relative;
+
+                .tit {
+                    font-size: 18px;
+                    color: #000;
+                    font-weight: bold;
+                }
+
+                .exp {
+                    font-size: 14px;
+                    color: #777;
+                    margin-top: 10px;
+
+                    span {
+                        b {
+                            font-family: 'Roboto';
+                            font-weight: normal;
+                        }
+
+                        strong {
+                            color: #eb3700;
+                            font-family: 'Noto Sans KR';
+                        }
+                    }
+
+                    em {
+                        strong {
+                            font-family: 'Roboto';
+                            color: #eb3700;
+                        }
+                    }
+
+                    br+em {
+                        &::before {
+                            content: '';
+                            padding-right: 0;
+                            margin-left: 0;
+                        }
+                    }
+
+                    span+em {
+                        &::before {
+                            content: '|';
+                            display: inline-block;
+                            padding-right: 10px;
+                            margin-left: 10px;
+                            font-size: 10px;
+                            color: #cfcfcf;
+                            vertical-align: 2px;
+                        }
+                    }
+                }
+            }
+
             .col1 {
                 padding: 0 5px;
 
@@ -1507,6 +1562,50 @@
                     }
                 }
 
+                .pr4 {
+                    padding-right: 250px;
+                    @include clearfix;
+
+                    .tit {
+                        font-size: 18px;
+                        position: relative;
+                        padding-left: 15px;
+                    }
+
+                    .exp {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        margin-top: 0;
+                        font-size: 18px;
+
+                        span {
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+
+                        em {
+                            display: inline-block;
+                            width: 150px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            vertical-align: middle;
+
+                            &::before {
+                                font-size: 15px;
+                            }
+                        }
+
+                        br+em {
+                            &::before {
+                                content: '|';
+                                padding-right: 10px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+
                 .col1 {
                     padding: 0 15px;
                     position: relative;
@@ -1578,6 +1677,91 @@
             }
         }
     }
+
+    .n_detail {
+		border-top: #53647c solid 3px;
+
+		&>dt {
+			padding: 12px 0;
+			.tit {
+				font-size: 16px;
+				font-weight: bold;
+				letter-spacing: -1px;
+			}
+
+			.exp {
+				font-size: 14px;
+				font-weight: normal;
+				margin-top: 10px;
+
+				span {
+					color: #777;
+					font-family: 'Roboto';
+				}
+
+				em {
+					color: #777;
+
+					&::before {
+						content: '|';
+						display: inline-block;
+						padding-right: 10px;
+						margin-left: 10px;
+						font-size: 10px;
+						color: #cfcfcf;
+						vertical-align: 2px;
+					}
+				}
+			}
+		}
+
+		&>dd {
+			padding: 12px 0;
+			border-top: #e5e5e5 solid 1px;
+			.exp {
+				font-size: 14px;
+				color: #555;
+			}
+		}
+
+		@include respond-to('large-over') {
+			&>dt {
+				padding: 30px 250px 30px 0;
+				position: relative;
+
+				.tit {
+					font-size: 20px;
+					color: #000;
+				}
+
+				.exp {
+					position: absolute;
+					right: 0;
+					top: 30px;
+					font-size: 18px;
+					margin-top: 0;
+
+					span {
+						vertical-align: middle;
+					}
+
+					em {
+						display: inline-block;
+						width: 150px;
+						white-space: nowrap;
+						overflow: hidden;
+						vertical-align: middle;
+					}
+				}
+			}
+
+			&>dd {
+				.exp {
+					font-size: 20px;
+				}
+			}
+		}
+	}
 
     .d_top {
         position: relative;
@@ -1730,6 +1914,23 @@
                 font-size: 24px;
             }
         }
+
+        .al {
+            float: left;
+
+            a,
+            button {
+                min-width: 80px;
+
+                @include respond-to('large-over') {
+                    min-width: 250px;
+                }
+            }
+		}
+
+		.ar {
+            float: right;
+		}
     }
 
     .paging {
@@ -2340,4 +2541,99 @@
             }
         }
     }
+
+    .info_use {
+		position: relative;
+		
+		&>li {
+			padding-top: 15px;
+			&:first-child {
+				padding-top: 0;
+			}
+			.txt {
+				button {
+					text-align: left;
+					width: 100%;
+					padding: 10px;
+					box-sizing: border-box;
+					background-color: #eee;
+                    position: relative;
+                    p {
+                        padding-left: 1em;
+                        em {
+                            color: #e40026;
+                        }
+                    }
+				}
+			}
+			.img {
+				display: none;
+                text-align: center;
+                img {
+                    border: #ffbb00 solid 1px;
+                    box-sizing: border-box;
+                }
+			}
+			&.on {
+				.txt {
+					button {
+						background-color: #ffbb00;
+					}
+				}
+				.img {
+					display: block;
+				}
+			}
+		}
+		@media only screen and (min-width: 1024px) {
+			min-height: 970px;
+			&>li {
+				padding-top: 35px;
+				&:first-child {
+					padding-top: 0;
+				}
+				.txt {
+					button {
+						padding: 20px;
+						border-radius: 10px;
+						width: calc(100% - 700px);
+						background-color: #eee;
+						p {
+							font-size: 16px;
+						}
+					}
+				}
+				.img {
+					position: absolute;
+					right: 0;
+                    top: 0;
+                    width: 650px;
+				}
+				&.on {
+					.txt {
+						button {
+							i {
+								position: absolute;
+								right: -48px;
+								top: 50%;
+								margin-top: -25px;
+								display: block;
+								width: 50px;
+								height: 50px;
+								color: #ffbb00;
+								font-siZe: 45px;
+								@include fas;
+								&::after {
+									content: "\f0da";
+								}
+							}
+						}
+					}
+					.img {
+						display: block;
+					}
+				}
+			}
+		}
+	}
 }

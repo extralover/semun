@@ -318,6 +318,19 @@ $(document).ready(function () {
 		$(".terms_pop .pop_in").hide();
 		$(".terms_pop").hide();
 	});
+
+	// 이용안내
+	$(".info .txt button").on("click", function () {
+		var imgSrc = $(this).parent().siblings(".img").find("img").attr("src");
+		$(".info > li").removeClass("on");
+		$(this).parent().parent("li").addClass("on");
+		$(this).parent().siblings(".img").find("img").attr("src", imgSrc + "?timestamp=" + new Date().getTime());
+
+		if ($(window).width() <= 1024) {
+			var thisTop = $(this).offset().top - 20;
+			$(window).scrollTop(thisTop);
+		}
+	});
  });
 
 /* 팝업 // */

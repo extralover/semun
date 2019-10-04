@@ -2300,15 +2300,84 @@ h2 {
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  .m11 .col3::after {
-    content: '';
-    display: block;
-    clear: both;
+.m11 .info {
+  position: relative;
+}
+
+.m11 .info > li {
+  padding-top: 15px;
+}
+
+.m11 .info > li:first-child {
+  padding-top: 0;
+}
+
+.m11 .info > li .txt button {
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #eee;
+  position: relative;
+}
+
+.m11 .info > li .img {
+  display: none;
+  text-align: center;
+}
+
+.m11 .info > li.on .txt button {
+  background-color: #ffbb00;
+}
+
+.m11 .info > li.on .img {
+  display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+  .m11 .info {
+    min-height: 800px;
   }
-  .m11 .col3 > li {
-    float: left;
-    width: 33.333%;
+  .m11 .info > li {
+    padding-top: 35px;
+  }
+  .m11 .info > li:first-child {
+    padding-top: 35px;
+  }
+  .m11 .info > li .txt button {
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(100% - 500px);
+    background-color: #eee;
+  }
+  .m11 .info > li .txt button p {
+    padding-left: 3.5em;
+    font-size: 16px;
+  }
+  .m11 .info > li .img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .m11 .info > li.on .txt button i {
+    position: absolute;
+    right: -48px;
+    top: 50%;
+    margin-top: -25px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: #ffbb00;
+    font-siZe: 45px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+  }
+  .m11 .info > li.on .txt button i::after {
+    content: "\f0da";
+  }
+  .m11 .info > li.on .img {
+    display: block;
   }
 }
 
