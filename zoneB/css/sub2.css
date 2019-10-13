@@ -1857,6 +1857,7 @@ h2 {
 .b2 .n_list > li .col1 .exp {
   font-size: 16px;
   color: #555;
+  min-height: 1.8rem;
 }
 
 .b2 .n_list > li .col1 .exp .pic_wrap {
