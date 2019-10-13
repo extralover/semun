@@ -714,13 +714,13 @@ main .notice .list .btn_more {
 }
 
 main .error {
-  color: #ff2222;
-  font-size: 14px;
+  color: #ff2222 !important;
+  font-size: 14px !important;
 }
 
 @media only screen and (min-width: 1280px) {
   main .error {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
@@ -757,7 +757,7 @@ footer .inner .links p:first-child {
 }
 
 footer .inner .links p:first-child a {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 footer .inner .links p:last-child {
@@ -765,7 +765,7 @@ footer .inner .links p:last-child {
 }
 
 footer .inner .links p:last-child .btn1 {
-  padding: 5px 20px 6px 20px;
+  padding: 5px 12px 6px 12px;
   border-radius: 100px;
   background-color: #ffbb00;
   font-weight: bold;
@@ -843,6 +843,7 @@ footer .inner .info {
 
 footer .inner .info span {
   margin-right: 10px;
+  line-height: 1.4em;
 }
 
 footer .inner .info .copy {
@@ -866,8 +867,14 @@ footer .inner .info .copy {
     padding: 6px 0 30px 0;
     font-size: 18px;
   }
+  footer .inner .links p:first-child a {
+    margin-right: 15px;
+  }
   footer .inner .links p:last-child {
     float: left;
+  }
+  footer .inner .links p:last-child .btn1 {
+    padding: 5px 20px 6px 20px;
   }
   footer .inner .sns {
     float: right;
@@ -906,6 +913,13 @@ footer .inner .info .copy {
   footer .inner .info .copy {
     margin-top: 20px;
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  footer .inner .links p:last-child {
+    float: left;
+    margin-top: 10px;
   }
 }
 

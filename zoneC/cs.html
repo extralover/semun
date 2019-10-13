@@ -66,32 +66,59 @@
 		</h2>
 		<section class="b2">
 			<div class="inner">
-				<!-- 190721 // -->
+				<!-- 191013_m1 // -->
 				<div class="map">
-					<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cedd58edb3a4dcf8cec27b43542163c2">
+					<div id="map" class="map_wrap"></div>
+					<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cedd58edb3a4dcf8cec27b43542163c2&libraries=services,clusterer,drawing">
 					</script>
 					<script>
-						var container = document.getElementById('map');
-						var options = {
-							center: new kakao.maps.LatLng(33.450701, 126.570667),
-							level: 3
-						};
+						var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+							mapOption = {
+								center: new kakao.maps.LatLng(37.5486904, 127.04398739999999), // 지도의 중심좌표
+								level: 3 // 지도의 확대 레벨
+							};
 
-						var map = new kakao.maps.Map(container, options);
+						var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+						// 마커가 표시될 위치입니다 
+						var markerPosition = new kakao.maps.LatLng(37.5486904, 127.04398739999999);
+
+						// 마커를 생성합니다
+						var marker = new kakao.maps.Marker({
+							position: markerPosition
+						});
+
+						// 마커가 지도 위에 표시되도록 설정합니다
+						marker.setMap(map);
+
+						var iwContent = '<div style="padding:5px;">세무앤</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+							iwPosition = new kakao.maps.LatLng(37.5486904, 127.04398739999999); //인포윈도우 표시 위치입니다
+
+						// 인포윈도우를 생성합니다
+						var infowindow = new kakao.maps.InfoWindow({
+							position: iwPosition,
+							content: iwContent
+						});
+
+						// 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+						infowindow.open(map, marker); 
 					</script>
-					<div id="map" class="map_wrap"></div>
-					<p>서울시 성동구 왕십리로 125 패스트파이브(서울숲점) 408호</p>
+					<p class="map_txt">서울시 성동구 왕십리로 125 패스트파이브(서울숲점) 408호</p>
 				</div>
+				<!-- // 191013_m1 -->
 				<ul class="col_list">
 					<li class="tel">
-						<strong>고객센터</strong>
-						<p><a href="tel:1668-2125">1668-2125</a></p>
+						<a href="tel:1668-2125">
+							<strong>고객센터</strong>
+							<p>1668-2125</p>
+						</a>
 					</li>
 					<li class="kakao">
-						<strong>카카오톡 상담</strong>
+						<a href="http://pf.kakao.com/_PtIxnT" target="_blank"> <!-- 191013_m1 -->
+							<strong>카카오톡 상담</strong>
+						</a>
 					</li>
 				</ul>
-				<!-- // 190721 -->
 			</div>
 		</section>
 	</main>

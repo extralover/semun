@@ -514,10 +514,10 @@ main {
 	}
 
 	.error {
-        color: #ff2222;
-        font-size: 14px;
+        color: #ff2222 !important;
+        font-size: 14px !important;
         @include respond-to('large-over') {
-            font-size: 16px;
+            font-size: 16px !important;
         }
     }
 
@@ -544,7 +544,7 @@ footer {
 				float: left;
 
 				a {
-					margin-right: 15px;
+					margin-right: 10px;
 				}
 			}
 
@@ -552,7 +552,7 @@ footer {
 				float: right;
 
 				.btn1 {
-					padding: 5px 20px 6px 20px;
+					padding: 5px 12px 6px 12px;
 					border-radius: 100px;
 					background-color: #ffbb00;
 					font-weight: bold;
@@ -628,6 +628,7 @@ footer {
 
 			span {
 				margin-right: 10px;
+				line-height: 1.4em;
 			}
 
 			.copy {
@@ -647,8 +648,18 @@ footer {
 				padding: 6px 0 30px 0;
 				font-size: 18px;
 
+				p:first-child {
+					a {
+						margin-right: 15px;
+					}
+				}
+
 				p:last-child {
 					float: left;
+
+					.btn1 {
+						padding: 5px 20px 6px 20px;
+					}
 				}
 			}
 
@@ -695,6 +706,15 @@ footer {
 				.copy {
 					margin-top: 20px;
 					font-size: 16px;
+				}
+			}
+		}
+
+		@include respond-to('small') {
+			.links {
+				p:last-child {
+					float: left;
+					margin-top: 10px;
 				}
 			}
 		}
