@@ -664,7 +664,7 @@
 						border-radius: 50%;
 						overflow: hidden;
 						background: url('../images/bg_profilePhoto.png') 50% 100% no-repeat;
-						background-size: 32px auto;
+						background-size: cover;
 						background-color: #9c7655;
 						vertical-align: middle;
 						text-align: center;
@@ -781,7 +781,6 @@
 							display: inline-block;
 							width: 60px;
 							height: 60px;
-							background-size: 50px auto;
 						}
 
 						b {

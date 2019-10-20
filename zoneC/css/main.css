@@ -1769,7 +1769,7 @@ h2 {
   border-radius: 50%;
   overflow: hidden;
   background: url("../images/bg_profilePhoto.png") 50% 100% no-repeat;
-  background-size: 32px auto;
+  background-size: cover;
   background-color: #9c7655;
   vertical-align: middle;
   text-align: center;
@@ -1888,7 +1888,6 @@ h2 {
     display: inline-block;
     width: 60px;
     height: 60px;
-    background-size: 50px auto;
   }
   .m5 .slider2 li .tit p:first-child b {
     font-size: 24px;

@@ -1766,8 +1766,11 @@
 
     .d_top {
         position: relative;
-        padding-right: 80px;
         margin-bottom: 15px;
+
+        .d_topin {
+            padding-right: 80px;
+        }
 
         .tit {
             font-size: 18px;
@@ -1847,10 +1850,38 @@
             }
         }
 
+        .state_info {
+            background-color: #fff;
+            border: #ffde00 solid 2px;
+            padding: 5px;
+            margin-top: 10px;
+            border-radius: 5px;
+
+            em {
+                color: #eb3700;
+            }
+
+            span {
+                display: block;
+                text-align: right;
+                margin-top: 5px;
+            }
+
+            a {
+                background-color: #a38248;
+                color: #fff;
+                display: inline-block;
+                padding: 5px 10px;
+            }
+        }
+
         @include respond-to('large-over') {
-            padding-right: 150px;
-            height: 60px;
-            @include clearfix;
+            min-height: 60px;
+            .d_topin {
+                height: 60px;
+                padding-right: 150px;
+                @include clearfix;
+            }
 
             .tit {
                 float: left;
@@ -1873,6 +1904,20 @@
                 height: 60px;
                 padding: 15px 0;
                 font-size: 20px;
+            }
+
+            .state_info {
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                border-radius: 10px;
+
+                span {
+                    display: inline-block;
+                    text-align: right;
+                    margin-top: 0;
+                    margin-left: 10px;
+                }
             }
         }
     }

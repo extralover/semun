@@ -2616,8 +2616,11 @@ h2 {
 
 .b2 .d_top {
   position: relative;
-  padding-right: 80px;
   margin-bottom: 15px;
+}
+
+.b2 .d_top .d_topin {
+  padding-right: 80px;
 }
 
 .b2 .d_top .tit {
@@ -2698,12 +2701,40 @@ h2 {
   color: #333;
 }
 
+.b2 .d_top .state_info {
+  background-color: #fff;
+  border: #ffde00 solid 2px;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.b2 .d_top .state_info em {
+  color: #eb3700;
+}
+
+.b2 .d_top .state_info span {
+  display: block;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.b2 .d_top .state_info a {
+  background-color: #a38248;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
 @media only screen and (min-width: 1280px) {
   .b2 .d_top {
-    padding-right: 150px;
-    height: 60px;
+    min-height: 60px;
   }
-  .b2 .d_top::after {
+  .b2 .d_top .d_topin {
+    height: 60px;
+    padding-right: 150px;
+  }
+  .b2 .d_top .d_topin::after {
     content: '';
     display: block;
     clear: both;
@@ -2727,6 +2758,18 @@ h2 {
     height: 60px;
     padding: 15px 0;
     font-size: 20px;
+  }
+  .b2 .d_top .state_info {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .b2 .d_top .state_info span {
+    display: inline-block;
+    text-align: right;
+    margin-top: 0;
+    margin-left: 10px;
   }
 }
 

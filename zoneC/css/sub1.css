@@ -1749,6 +1749,7 @@ h2 {
 
 .c2 ul.terms_list > li {
   margin-top: 15px;
+  position: relative;
 }
 
 .c2 ul.terms_list > li input[type="checkbox"] {
