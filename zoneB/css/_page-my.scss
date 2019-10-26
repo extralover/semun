@@ -1261,6 +1261,12 @@
                     color: #555;
                 }
             }
+
+            .nolist {
+				text-align: center;
+				padding: 50px 0;
+				font-size: 16px;
+			}
         }
 
         &.reply_list {
@@ -1653,6 +1659,10 @@
                         min-height: 1.5em;
                     }
                 }
+
+                .nolist {
+					font-size: 24px;
+				}
             }
 
             &.reply_list {
@@ -2467,6 +2477,12 @@
                     color: #555;
                     margin-top: 5px;
                 }
+
+                .nolist {
+                    text-align: center;
+                    padding: 50px 0;
+                    font-size: 16px;
+                }
             }
         }
 
@@ -2490,6 +2506,10 @@
                     }
 
                     .exp {
+                        font-size: 24px;
+                    }
+
+                    .nolist {
                         font-size: 24px;
                     }
                 }

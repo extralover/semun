@@ -436,7 +436,8 @@ main {
 
 		.list {
 			border-top: #e4e4e4 solid 1px;
-			padding-bottom: 50px;
+			border-bottom: #e4e4e4 solid 1px;
+			margin-bottom: 50px;
 
 			ul {
 				padding: 0 20px;
@@ -470,6 +471,12 @@ main {
 					&:first-child {
 						border-top: 0;
 					}
+
+					.nolist {
+						text-align: center;
+						padding: 50px 0;
+						font-size: 16px;
+					}
 				}
 			}
 
@@ -501,6 +508,10 @@ main {
 						}
 
 						.exp {
+							font-size: 24px;
+						}
+
+						.nolist {
 							font-size: 24px;
 						}
 					}

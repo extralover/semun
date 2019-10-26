@@ -641,7 +641,8 @@ main .notice .counter em {
 
 main .notice .list {
   border-top: #e4e4e4 solid 1px;
-  padding-bottom: 50px;
+  border-bottom: #e4e4e4 solid 1px;
+  margin-bottom: 50px;
 }
 
 main .notice .list ul {
@@ -684,6 +685,12 @@ main .notice .list ul > li:first-child {
   border-top: 0;
 }
 
+main .notice .list ul > li .nolist {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 16px;
+}
+
 main .notice .list .btn_more {
   border-top: #e5e5e5 solid 1px;
   background-color: #f8f8f8;
@@ -706,6 +713,9 @@ main .notice .list .btn_more {
     width: 150px;
   }
   main .notice .inner .list ul li .exp {
+    font-size: 24px;
+  }
+  main .notice .inner .list ul li .nolist {
     font-size: 24px;
   }
   main .notice .inner .list .btn_more {
@@ -1135,7 +1145,7 @@ h2 {
 
 .m1 .slider1 li p.tit {
   padding-top: 25px;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1em;
 }
 
@@ -1237,7 +1247,7 @@ h2 {
   }
   .m1 .slider1 li p.tit {
     padding-top: 40px;
-    font-size: 50px;
+    font-size: 38px;
     color: #000;
   }
   .m1 .slider1 li i {

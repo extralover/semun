@@ -2154,6 +2154,12 @@ h2 {
   color: #555;
 }
 
+.b2 .n_list > li .nolist {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 16px;
+}
+
 .b2 .n_list.reply_list .pt {
   padding-top: 5px;
 }
@@ -2517,6 +2523,9 @@ h2 {
     text-align: left;
     font-size: 20px;
     min-height: 1.5em;
+  }
+  .b2 .n_list > li .nolist {
+    font-size: 24px;
   }
   .b2 .n_list.reply_list .point i {
     width: 20px;
@@ -3370,6 +3379,12 @@ h2 {
   margin-top: 5px;
 }
 
+.b2 .notice_list ul > li .nolist {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 16px;
+}
+
 .b2 .notice_list .btn_more {
   border-top: #e5e5e5 solid 1px;
   background-color: #f8f8f8;
@@ -3386,6 +3401,9 @@ h2 {
     width: 150px;
   }
   .b2 .notice_list ul > li .exp {
+    font-size: 24px;
+  }
+  .b2 .notice_list ul > li .nolist {
     font-size: 24px;
   }
   .b2 .notice_list .btn_more {
