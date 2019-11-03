@@ -971,6 +971,41 @@ h2 {
   padding-top: 5px !important;
 }
 
+.list_terms.d1 > li {
+  margin-top: 30px;
+}
+
+.list_terms.d1 > li .tit1 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.list_terms.d1 > li > p + p {
+  margin-top: 10px;
+}
+
+.list_terms .d2 > li {
+  margin-top: 20px;
+}
+
+.list_terms .d2 > li .tit2 {
+  font-weight: bold;
+}
+
+.list_terms .d2 > li .exp2 {
+  margin-top: 5px;
+}
+
+.list_terms .d3 > li {
+  text-indent: -1.2rem;
+  padding-left: 1.2rem;
+}
+
+.list_terms .d4 > li {
+  text-indent: -1.2rem;
+  padding-left: 1.2rem;
+}
+
 .terms_pop {
   display: none;
   position: fixed;
@@ -1062,41 +1097,6 @@ h2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-top: #53647c solid 3px;
-}
-
-.terms_pop .list_terms.d1 > li {
-  margin-top: 30px;
-}
-
-.terms_pop .list_terms.d1 > li .tit1 {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.terms_pop .list_terms.d1 > li > p + p {
-  margin-top: 10px;
-}
-
-.terms_pop .list_terms .d2 > li {
-  margin-top: 20px;
-}
-
-.terms_pop .list_terms .d2 > li .tit2 {
-  font-weight: bold;
-}
-
-.terms_pop .list_terms .d2 > li .exp2 {
-  margin-top: 5px;
-}
-
-.terms_pop .list_terms .d3 > li {
-  text-indent: -1.2rem;
-  padding-left: 1.2rem;
-}
-
-.terms_pop .list_terms .d4 > li {
-  text-indent: -1.2rem;
-  padding-left: 1.2rem;
 }
 
 @media only screen and (min-width: 1280px) {

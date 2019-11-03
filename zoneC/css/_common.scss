@@ -766,6 +766,40 @@ h2 {
 	padding-top: 5px !important;
 }
 
+.list_terms {
+	&.d1 > li {
+		margin-top: 30px;
+		.tit1 {
+			font-weight: bold;
+			font-size: 1.2rem;
+		}
+		& > p + p {
+			margin-top: 10px;
+		}
+	}
+	.d2 > li {
+		margin-top: 20px;
+		.tit2 {
+			font-weight: bold;
+		}
+		.exp2 {
+			margin-top: 5px;
+		}
+	}
+	.d3 {
+		&>li {
+			text-indent: -1.2rem;
+			padding-left: 1.2rem;
+		}
+	}
+	.d4 {
+		&>li {
+			text-indent: -1.2rem;
+			padding-left: 1.2rem;
+		}
+	}
+}
+
 .terms_pop {
 	display: none;
 	position: fixed;
@@ -846,38 +880,6 @@ h2 {
 		overflow-y: scroll;
 		box-sizing: border-box;
 		border-top: #53647c solid 3px;
-
-		&.d1 > li {
-			margin-top: 30px;
-			.tit1 {
-				font-weight: bold;
-				font-size: 1.2rem;
-			}
-			& > p + p {
-				margin-top: 10px;
-			}
-		}
-		.d2 > li {
-			margin-top: 20px;
-			.tit2 {
-				font-weight: bold;
-			}
-			.exp2 {
-				margin-top: 5px;
-			}
-		}
-		.d3 {
-			&>li {
-				text-indent: -1.2rem;
-				padding-left: 1.2rem;
-			}
-		}
-		.d4 {
-			&>li {
-				text-indent: -1.2rem;
-				padding-left: 1.2rem;
-			}
-		}
 	}
 
 	@include respond-to('large-over') {

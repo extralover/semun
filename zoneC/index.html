@@ -49,6 +49,7 @@
 					<li class="w100 p_hide"><a href="recommend.html" class="btn_recomm"><i></i> 추천인 보기</a></li>
 				</ul>
 				<ul class="g2">
+					<li><a href="service.html">서비스소개<i></i></a></li> <!-- 191103_m1 -->
 					<li><a href="info.html">이용안내<i></i></a></li>
 					<!-- 190922_m1 // -->
 					<!-- <li><a href="company.html">회사소개<i></i></a></li> -->
@@ -95,6 +96,9 @@
 					</li>
 				</ul>
 				<div class="swiper-pagination pagination1"></div>
+			<!-- 191103_m2 // -->
+				<div class="swiper-button-next swiper-button-white"></div>
+				<div class="swiper-button-prev swiper-button-white"></div>
 			</div>
 			<script>
 				var swiper = new Swiper('.slider1', {
@@ -102,9 +106,17 @@
 					pagination: {
 						el: '.pagination1',
 						clickable: true,
-					}
+					},
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+					autoplay: {
+						delay: 3000,
+					},
 				});
 			</script>
+			<!-- // 191103_m2 -->
 		</section>
 		<section class="m2">
 			<div class="inner">
@@ -371,8 +383,8 @@
 		<div class="inner">
 			<div class="links">
 				<p>
-					<a href="terms1.html">이용약관</a>
-					<a href="terms2.html">개인정보처리방침</a>
+					<a href="terms1.html">이용약관</a><!-- 191103_m3 -->
+					<a href="terms2.html">개인정보처리방침</a><!-- 191103_m3 -->
 					<a href="cowith.html">제휴문의</a> <!-- 190922_m1 -->
 				</p>
 				<p>

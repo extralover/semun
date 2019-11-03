@@ -81,6 +81,12 @@
 				background: #60584c;
 			}
 		}
+
+		.swiper-button-prev,
+		.swiper-button-next
+		 {
+			display: none;
+		}
 	}
 
 	@include respond-to('medium-large') {
@@ -108,6 +114,11 @@
 						background-position: 80% 50%;
 					}
 				}
+			}
+
+			.swiper-button-prev,
+			.swiper-button-next {
+				display: block;
 			}
 		}
 	}
@@ -171,6 +182,21 @@
 						background-size: auto 80%;
 					}
 				}
+			}
+
+			.swiper-button-prev,
+			.swiper-button-next {
+				display: block;
+			}
+
+			.swiper-button-prev {
+				left: 50%;
+				margin-left: -640px;
+			}
+
+			.swiper-button-next {
+				right: 50%;
+				margin-right: -640px;
 			}
 		}
 	}
@@ -1254,6 +1280,195 @@
 					}
 					.img {
 						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	.service {
+		.tit {
+			font-size: 26px;
+			color: #000;
+		}
+		
+		.exp {
+			font-size: 14px;
+			color: #333;
+		}
+
+		.con1 {			
+			padding: 20px;
+			position: relative;
+
+			&::after {
+				content:'';
+				position: absolute;
+				left: 0; 
+				top: 0;
+				z-index: -1;
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-image: url(../images/bg_mainTop2.png);
+				background-repeat: no-repeat;
+				background-position: 90% 50%;
+				background-size: auto 90%;
+				background-color: #d5e2f7;
+			}
+			@include respond-to('medium') {
+				&::after {
+					background-image: none;
+				}
+			}
+
+			.exp {
+				padding-top: 10px;
+			}
+		}
+
+		.con2 {
+			padding: 20px 0;
+			.col2 {
+				padding: 20px 0;
+				border-top: #dbdbdb dashed 2px;
+				&:first-of-type {
+					border-top: none;
+				}
+				
+				&>dt {
+					text-align: center;
+					i {
+						display: block;
+						width: 100px;
+						height: 100px;
+						background-image: url(../images/bg_service1.png);
+						background-repeat: no-repeat;
+						background-position: 0 0;
+						background-size: auto 100%;
+						margin: 0 auto;
+					}
+				}
+				&>dd {
+					padding-top: 20px;
+					.ex {
+						padding-left: 1.8em;
+						text-indent: -1.8em;
+						padding-top: 10px;
+						font-size: 14px;
+					}
+					ul {
+						@include clearfix;
+						&>li {
+							float: left;
+							width: 50%;
+							box-sizing: border-box;
+							text-align: center;
+							&::before {
+								content:'';
+							}
+
+							i {
+								display: block;
+								width: 100px;
+								height: 100px;
+								background-repeat: no-repeat;
+								margin: 0 auto;
+
+								&.dd1 {
+									background-image: url(../images/bg_service1.png);
+									background-position: -120px 0;
+									background-size: auto 100%;
+								}
+								&.dd2 {
+									background-image: url(../images/bg_service1.png);
+									background-position: -240px 0;
+									background-size: auto 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.con3 {
+			ul {
+				margin-top: 20px;
+				background-color: #fff;
+				&>li {
+					box-sizing: border-box;
+					text-align: center;
+				}
+			}
+		}
+
+		@media only screen and (min-width: 768px) {
+			.con3 {
+				background-color: #e9e6e1;
+				padding: 40px;
+				ul {
+					@include clearfix;
+					margin-top: 20px;
+					padding: 30px 0;
+					background-color: #fff;
+					border: #ccc solid 3px;
+					border-radius: 20px;
+					&>li {
+						float: left;
+						width: 50%;
+						padding: 0 30px;
+						box-sizing: border-box;
+						text-align: center;
+						border-left: #dbdbdb dashed 2px;
+						&:first-child {
+							border-left: none;
+						}
+					}
+				}
+			}
+		}
+
+		@include respond-to('large-over') {
+			.tit {
+				font-size: 38px;
+			}
+			.exp {
+				font-size: 20px;
+			}
+			.con1 {
+				padding: 40px;
+
+				.exp {
+					padding-top: 30px;
+				}
+			}
+
+			.con2 {
+				padding: 40px;
+				.col2 {
+					display: table;
+					width: 100%;
+					padding: 30px 0;
+					border-top: #dbdbdb dashed 2px;
+					&:first-of-type {
+						border-top: none;
+					}
+					&>dt,
+					&>dd {
+						display: table-cell;
+						width: 50%;
+						vertical-align: middle;
+					}
+					&>dt {
+						text-align: center;
+					}
+					&>dd {
+						padding-top: 0;
+						.ex {
+							padding-top: 20px;
+							font-size: 16px;
+						}
 					}
 				}
 			}
