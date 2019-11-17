@@ -2303,6 +2303,30 @@ h2 {
   font-size: 14px;
 }
 
+.c2_pop .radio_list_pop > li .add_pop {
+  display: none;
+  border: 1px solid #53647c;
+  width: 100%;
+  height: 300px;
+  margin: 5px 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.c2_pop .radio_list_pop > li .add_pop .btn_close {
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: -46px;
+  width: 100px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  z-index: 1;
+}
+
 .c2_pop .radio_list_pop > li .btn_select,
 .c2_pop .radio_list_pop > li .btn_textarea,
 .c2_pop .radio_list_pop > li .btn_inputs {

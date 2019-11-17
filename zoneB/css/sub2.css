@@ -2018,7 +2018,7 @@ h2 {
   position: absolute;
   right: 0;
   top: 0;
-  width: 140px;
+  width: 90px;
   height: 50px;
   background-color: #000;
   color: #fff;
@@ -2033,6 +2033,36 @@ h2 {
 .b2 .n_list > li .col1 .exp .tel_hide .subtit {
   color: #000;
   font-weight: bold;
+}
+
+.b2 .n_list > li .col1 .exp .add_wrap::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.b2 .n_list > li .col1 .exp .add_pop {
+  display: none;
+  border: 1px solid #53647c;
+  width: 100%;
+  height: 300px;
+  margin: 5px 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.b2 .n_list > li .col1 .exp .add_pop .btn_close {
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: -56px;
+  width: 90px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  z-index: 1;
 }
 
 .b2 .n_list > li .col1 .exp .add_wrap1 {
@@ -2101,6 +2131,10 @@ h2 {
   .b2 .n_list > li .col1 .exp .tel_hide {
     width: 50%;
   }
+  .b2 .n_list > li .col1 .exp .add_pop .btn_close {
+    top: -50px;
+    font-size: 18px;
+  }
   .b2 .n_list > li .col1 .exp .add_wrap1 {
     padding: 0 150px 0 0;
     width: 20%;
@@ -2123,6 +2157,7 @@ h2 {
   }
   .b2 .n_list > li .col1 .exp .btn_r {
     font-size: 18px;
+    width: 140px;
   }
 }
 

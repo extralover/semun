@@ -1111,7 +1111,7 @@
                         position: absolute;
                         right: 0;
                         top: 0;
-                        width: 140px;
+                        width: 90px;
                         height: 50px;
                         background-color: #000;
                         color: #fff;
@@ -1124,6 +1124,33 @@
                         .subtit {
                             color: #000;
                             font-weight: bold;
+                        }
+                    }
+
+                    .add_wrap {
+                        @include clearfix;
+                    }
+
+                    .add_pop {
+                        display: none;
+                        border: 1px solid #53647c;
+                        width: 100%;
+                        height: 300px;
+                        margin: 5px 0;
+                        position: relative;
+                        box-sizing: border-box;
+
+                        .btn_close {
+                            cursor: pointer;
+                            position: absolute;
+                            right: 0px;
+                            top: -56px;
+                            width: 90px;
+                            height: 50px;
+                            background-color: #000;
+                            color: #fff;
+                            font-size: 14px;
+                            z-index: 1;
                         }
                     }
 
@@ -1209,6 +1236,13 @@
                             width: 50%;
                         }
 
+                        .add_pop {
+                            .btn_close {
+                                top: -50px;
+                                font-size: 18px;
+                            }
+                        }
+
                         .add_wrap1 {
                             padding: 0 150px 0 0;
                             width: 20%;
@@ -1233,6 +1267,7 @@
 
                         .btn_r {
                             font-size: 18px;
+                            width: 140px;
                         }
                     }
 
