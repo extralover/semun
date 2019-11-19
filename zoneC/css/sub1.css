@@ -2374,6 +2374,9 @@ h2 {
     font-size: 26px;
     padding-top: 0;
   }
+  .c2_pop .pop_in {
+    padding: 0 20px 20px 20px;
+  }
   .c2_pop .radio_list_pop > li label {
     font-size: 20px;
   }
