@@ -2315,16 +2315,21 @@ h2 {
 }
 
 .c2_pop .radio_list_pop > li .add_pop .btn_close {
-  cursor: pointer;
   position: absolute;
   right: 0px;
-  top: -46px;
-  width: 100px;
-  height: 40px;
+  top: -1px;
+  width: 30px;
+  height: 30px;
   background-color: #000;
   color: #fff;
   font-size: 14px;
-  z-index: 1;
+  z-index: 10;
+}
+
+.c2_pop .radio_list_pop > li .add_pop .btn_close::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f00d";
 }
 
 .c2_pop .radio_list_pop > li .btn_select,

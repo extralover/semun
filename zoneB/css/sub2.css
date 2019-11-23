@@ -2053,16 +2053,21 @@ h2 {
 }
 
 .b2 .n_list > li .col1 .exp .add_pop .btn_close {
-  cursor: pointer;
   position: absolute;
   right: 0px;
-  top: -56px;
-  width: 90px;
-  height: 50px;
+  top: -1px;
+  width: 30px;
+  height: 30px;
   background-color: #000;
   color: #fff;
   font-size: 14px;
-  z-index: 1;
+  z-index: 10;
+}
+
+.b2 .n_list > li .col1 .exp .add_pop .btn_close::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f00d";
 }
 
 .b2 .n_list > li .col1 .exp .add_wrap1 {

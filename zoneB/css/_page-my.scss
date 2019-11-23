@@ -1141,16 +1141,19 @@
                         box-sizing: border-box;
 
                         .btn_close {
-                            cursor: pointer;
                             position: absolute;
                             right: 0px;
-                            top: -56px;
-                            width: 90px;
-                            height: 50px;
+                            top: -1px;
+                            width: 30px;
+                            height: 30px;
                             background-color: #000;
                             color: #fff;
                             font-size: 14px;
-                            z-index: 1;
+                            z-index: 10;
+                            &::after {
+                                @include fas;
+                                content: "\f00d";
+                            }
                         }
                     }
 
