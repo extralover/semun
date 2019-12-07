@@ -113,6 +113,9 @@ header {
 
     &.menu {
         background-color: #fff;
+        height: 100%;
+		position: fixed;
+		z-index: 100;
     }
 
     @include respond-to('large-over') {
@@ -129,7 +132,7 @@ header {
 }
 
 nav.gnb {
-    position: fixed;
+    position: absolute;
     display: block;
     right: 0;
     top: 60px;

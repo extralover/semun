@@ -322,6 +322,9 @@ header .btn_notice i {
 
 header.menu {
   background-color: #fff;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -338,7 +341,7 @@ header.menu {
 }
 
 nav.gnb {
-  position: fixed;
+  position: absolute;
   display: block;
   right: 0;
   top: 60px;
