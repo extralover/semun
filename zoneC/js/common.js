@@ -4,8 +4,9 @@ $(document).ready(function () {
 		if ($(this).hasClass("on")) {
 			if ($(window).width() <= 1280) {
 				$("body").css({
-					"height": "auto",
-					"overflow": "visible"
+					// "height": "auto",
+					// "overflow": "visible",
+					"position": "static"
 				});
 				$(".gnb").removeClass("on");
 				setTimeout(function () {
@@ -16,8 +17,12 @@ $(document).ready(function () {
 		} else {
 			if ($(window).width() <= 1280) {
 				$("body").css({
-					"height": "100%",
-					"overflow": "hidden"
+					// "height": "100%",
+					// "overflow": "hidden",
+					"position": "fixed",
+					"width": "100%",
+					"left": 0,
+					"top": 0
 				});
 				$("header").addClass("menu");
 				$(".btn_gnb").addClass("on");
