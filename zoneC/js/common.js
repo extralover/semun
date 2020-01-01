@@ -336,6 +336,14 @@ $(document).ready(function () {
 			$(window).scrollTop(thisTop);
 		}
 	});
+
+	// 기본조정료 191225_1
+	$(".price button").on("click", function () {
+		$(this).siblings("i").toggle();
+	});
+	$(".price i").on("click", function () {
+		$(this).hide();
+	});
  });
 
 /* 팝업 // */

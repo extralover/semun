@@ -66,7 +66,7 @@
 		</h2>
 		<section class="b2">
 			<div class="inner">
-				<!-- 191013_m1 // -->
+				<!-- 191225_7 // -->
 				<div class="map">
 					<div id="map" class="map_wrap"></div>
 					<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cedd58edb3a4dcf8cec27b43542163c2&libraries=services,clusterer,drawing">
@@ -74,14 +74,14 @@
 					<script>
 						var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 							mapOption = {
-								center: new kakao.maps.LatLng(37.5486904, 127.04398739999999), // 지도의 중심좌표
+								center: new kakao.maps.LatLng(37.546687, 127.045170), // 지도의 중심좌표
 								level: 3 // 지도의 확대 레벨
 							};
 
 						var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
 						// 마커가 표시될 위치입니다 
-						var markerPosition = new kakao.maps.LatLng(37.5486904, 127.04398739999999);
+						var markerPosition = new kakao.maps.LatLng(37.546687, 127.045170);
 
 						// 마커를 생성합니다
 						var marker = new kakao.maps.Marker({
@@ -91,8 +91,8 @@
 						// 마커가 지도 위에 표시되도록 설정합니다
 						marker.setMap(map);
 
-						var iwContent = '<div style="padding:5px;">세무앤</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-							iwPosition = new kakao.maps.LatLng(37.5486904, 127.04398739999999); //인포윈도우 표시 위치입니다
+						var iwContent = '<div style="width:140px;text-align:center">세무앤</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+							iwPosition = new kakao.maps.LatLng(37.546687, 127.045170); //인포윈도우 표시 위치입니다
 
 						// 인포윈도우를 생성합니다
 						var infowindow = new kakao.maps.InfoWindow({
@@ -103,9 +103,9 @@
 						// 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
 						infowindow.open(map, marker); 
 					</script>
-					<p class="map_txt">서울시 성동구 왕십리로 125 패스트파이브(서울숲점) 408호</p>
+					<p class="map_txt">서울시 성동구 왕십리로10길 6, 12층 1204호(성수동1가, 서울숲비즈포레)</p>
 				</div>
-				<!-- // 191013_m1 -->
+				<!-- // 191225_7 -->
 				<ul class="col_list">
 					<li class="tel">
 						<a href="tel:1668-2125">
@@ -127,24 +127,29 @@
 		<div class="inner">
 			<div class="links">
 				<p>
-					<a href="terms1.html">이용약관</a>
-					<a href="terms2.html">개인정보처리방침</a>
+					<a href="terms1.html">이용약관</a><!-- 191103_m3 -->
+					<a href="terms2.html">개인정보처리방침</a><!-- 191103_m3 -->
+					<a href="cowith.html">제휴문의</a> <!-- 190922_m1 -->
 				</p>
 				<p>
 					<a href="../zoneB/index.html" target="_blank" class="btn1">파트너 센터</a>
 				</p>
 			</div>
 			<div class="sns">
-				<button class="kakao" title="Kakao Talk"></button>
-				<button class="facebook" title="Facebook"></button>
-				<button class="instagram" title="Instagram"></button>
-				<button class="youtube" title="Youtube"></button>
-				<button class="naver" title="naver blog"></button>
+				<a class="kakao" href="https://pf.kakao.com/_PtIxnT#orm" target="_blank" title="Kakao Talk"></a>
+				<a class="facebook" href="https://www.facebook.com/세무앤-101731827946527#orm" target="_blank"
+					title="Facebook"></a>
+				<a class="youtube" href="https://www.youtube.com/channel/UC8VyF7O_ec9I11ZvrbhCxpA#orm" target="_blank"
+					title="Youtube"></a>
+				<a class="naver" href="https://blog.naver.com/semuand#orm" target="_blank" title="Naver blog"></a>
+				<a class="playstore" href="https://play.google.com/store/apps/details?id=semuand.user#orm" target="_blank"
+					title="Google play"></a>
 			</div>
+			<!-- 190721 // -->
 			<div class="tel">
 				<dl>
 					<dt>고객센터</dt>
-					<dd><strong>1668-2125</strong>오전9시 ~ 오후6시 (토/일/공휴일 제외)</dd>
+					<dd><strong>1668-2125</strong>오전10시 ~ 오후5시 (토/일/공휴일 제외)</dd> <!-- 191024_m1 -->
 				</dl>
 			</div>
 			<div class="info">
@@ -152,10 +157,11 @@
 					<li><span>전화 : 1668-2125</span></li>
 					<li><span>대표메일 : semun@semuand.com</span></li>
 					<li><span>대표 : 김형태</span> <span>사업자번호 : 771-86-00727</span></li>
-					<li><span>서울시 성동구 왕십리로 125 패스트파이브(서울숲점)  408호</span></li>
+					<li><span>서울시 성동구 왕십리로10길 6, 12층 1204호(성수동1가, 서울숲비즈포레)</span></li> <!-- 191013_m2 -->
 				</ul>
 				<p class="copy">COPYRIGHT 2019 SEMUAND. All rights reserved.</p>
 			</div>
+			<!-- // 190721 -->
 		</div>
 	</footer>
 </body>

@@ -1148,6 +1148,7 @@
 			float: right;
 			font-size: 13px;
 			color: #000;
+			position: relative;
 
 			strong {
 				font-family: 'Roboto';
@@ -1156,6 +1157,27 @@
 
 			span {
 				color: #999;
+			}
+
+			button {
+				width: 20px;
+				height: 20px;
+				text-align: center;
+				line-height: 20px;
+				border: #eb3700 solid 1px;
+				border-radius: 50%;
+			}
+
+			i {
+				display: none;
+				position: absolute;
+				right: 0;
+				top: 3.5em;
+				background-color: #fff;
+				border: #999 solid 1px;
+				border-radius: 10px;
+				padding: 10px;
+				z-index: 10;
 			}
 		}
 	}

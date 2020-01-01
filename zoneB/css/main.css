@@ -530,6 +530,8 @@ nav.gnb.on {
   }
   nav.gnb .inner .g2 > li.notice a i::after {
     content: "";
+    padding-left: 0;
+    margin-right: 0;
   }
 }
 
